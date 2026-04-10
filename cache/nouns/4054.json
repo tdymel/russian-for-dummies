@@ -1,6 +1,8 @@
 {
   "id": "Cabbage",
-  "translation": "Kohl",
+  "translation": [
+    "Kohl"
+  ],
   "root": [
     {
       "content": "капуста",
@@ -90,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Was ist denn der Unterschied zwischen Weißkohl und Kopfsalat?",
-    "russian": "Какая разница между белокочанной капустой и кочанным салатом?"
+    "translation": "Ja, Bratwurst mit Sauerkraut, bitte.",
+    "russian": "Да, жареную сосиску с кислой капустой, пожалуйста."
   }
 }

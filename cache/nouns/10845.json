@@ -1,0 +1,94 @@
+{
+  "id": "Banana",
+  "translation": [
+    "Banane"
+  ],
+  "root": [
+    {
+      "content": "банан",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "банан",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "банана",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "банану",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "банан",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "бананом",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "банане",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "бананы",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "бананов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "бананам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "бананы",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "бананами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "бананах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Die Bananen schmecken.",
+    "russian": "Бананы вкусны."
+  }
+}

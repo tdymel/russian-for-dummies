@@ -1,6 +1,8 @@
 {
   "id": "Carrote",
-  "translation": "Karotten",
+  "translation": [
+    "Karotten"
+  ],
   "root": [
     {
       "content": "морковь",
@@ -86,7 +88,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Tom schnitt die Karotten.",
-    "russian": "Том порезал морковь."
+    "translation": "Auf dem Markt habe ich Karotten und Nüsse gekauft, die ich für die Zubereitung eines Salat verwenden werde.",
+    "russian": "На рынке я купил морковь и орехи, которые я использую для приготовления салата."
   }
 }

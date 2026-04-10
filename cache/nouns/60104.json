@@ -1,6 +1,8 @@
 {
   "id": "Paprika",
-  "translation": "Paprika",
+  "translation": [
+    "Paprika"
+  ],
   "root": [
     {
       "content": "паприка",

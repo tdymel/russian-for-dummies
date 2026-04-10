@@ -1,6 +1,8 @@
 {
   "id": "Pea",
-  "translation": "Erbsen",
+  "translation": [
+    "Erbsen"
+  ],
   "root": [
     {
       "content": "горох",

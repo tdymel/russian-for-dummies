@@ -1,6 +1,8 @@
 {
   "id": "Radish",
-  "translation": "Radieschen",
+  "translation": [
+    "Radieschen"
+  ],
   "root": [
     {
       "content": "редис",

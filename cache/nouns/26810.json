@@ -1,6 +1,8 @@
 {
   "id": "Eggplant",
-  "translation": "Aubergine",
+  "translation": [
+    "Aubergine"
+  ],
   "root": [
     {
       "content": "баклажан",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Man kann so viele leckere Gerichte mit Auberginen zubereiten!",
-    "russian": "С баклажанами можно приготовить столько вкусных блюд!"
+    "translation": "„Was hast du dir heute zum Frühstück gegönnt?“ — „Nichts Besonderes: nur Reis mit Nattō und gebratene Aubergine.“",
+    "russian": "«Что ты себе сегодня вкусненького на завтрак сделал?» — «Ничего особенного. Только рис с натто и жареные баклажаны»."
   }
 }

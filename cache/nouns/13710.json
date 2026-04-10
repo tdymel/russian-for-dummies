@@ -1,6 +1,8 @@
 {
   "id": "Courgette",
-  "translation": "Zucchini",
+  "translation": [
+    "Zucchini"
+  ],
   "root": [
     {
       "content": "кабачок",

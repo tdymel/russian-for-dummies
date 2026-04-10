@@ -1,6 +1,8 @@
 {
   "id": "Mushroom",
-  "translation": "Pilz",
+  "translation": [
+    "Pilz"
+  ],
   "root": [
     {
       "content": "гриб",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Jean und Chantal sammeln Pilze.",
-    "russian": "Жан и Шанталь собирают грибы."
+    "translation": "Im Wald gibt es jetzt viele Pilze.",
+    "russian": "В лесу сейчас много грибов."
   }
 }

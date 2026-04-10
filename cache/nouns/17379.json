@@ -1,0 +1,98 @@
+{
+  "id": "Strawberry",
+  "translation": [
+    "Erdbeere"
+  ],
+  "root": [
+    {
+      "content": "клубника",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "клубника",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "клубники",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "клубнике",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "клубнику",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "клубникой,",
+        "stress": 5
+      },
+      {
+        "content": "клубникою",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "клубнике",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "клубники",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "клубник",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "клубникам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "клубники",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "клубниками",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "клубниках",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Eine Erdbeere liegt auf meiner Handfläche.",
+    "russian": "Ягода клубники лежит на моей ладони."
+  }
+}

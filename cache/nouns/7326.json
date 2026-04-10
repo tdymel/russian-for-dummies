@@ -1,6 +1,8 @@
 {
   "id": "Corn",
-  "translation": "Mais",
+  "translation": [
+    "Mais"
+  ],
   "root": [
     {
       "content": "кукуруза",
@@ -90,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Ich bin allergisch gegen Mais.",
-    "russian": "У меня аллергия на кукурузу."
+    "translation": "Bourbon wird aus Mais gemacht.",
+    "russian": "Бурбон делают из кукурузы."
   }
 }

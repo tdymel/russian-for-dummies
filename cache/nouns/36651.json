@@ -1,0 +1,95 @@
+{
+  "id": "Blueberry",
+  "translation": [
+    "Rauschbeere"
+  ],
+  "root": [
+    {
+      "content": "голубика",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "голубика",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "голубики",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "голубике",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "голубику",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "голубикой,",
+        "stress": 5
+      },
+      {
+        "content": "голубикою",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "голубике",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "голубики",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "голубик",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "голубикам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "голубики",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "голубиками",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "голубиках",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

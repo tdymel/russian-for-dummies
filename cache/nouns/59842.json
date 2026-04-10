@@ -1,6 +1,8 @@
 {
   "id": "Spinach",
-  "translation": "Spinat",
+  "translation": [
+    "Spinat"
+  ],
   "root": [
     {
       "content": "шпинат",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Mein Lieblingsgericht sind Nudeln mit Spinat.",
-    "russian": "Моё любимое блюдо — макароны со шпинатом."
+    "translation": "Iss deinen Spinat auf!",
+    "russian": "Съешь весь свой шпинат."
   }
 }

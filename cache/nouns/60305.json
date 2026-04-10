@@ -1,6 +1,8 @@
 {
   "id": "Broccoli",
-  "translation": "Brokkoli",
+  "translation": [
+    "Brokkoli"
+  ],
   "root": [
     {
       "content": "брокколи",
@@ -86,7 +88,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "„Brokkoli“ ist im Russischen ein Femininum, im Deutschen ein Maskulinum, in der Herkunftssprache Italienisch aber ein Plural.",
-    "russian": "В русском «брокколи» женского рода, в немецком — мужского, но в исходном языке, итальянском, это множественное число."
+    "translation": "Iss deinen Broccoli! Sonst gibt es keinen Nachtisch!",
+    "russian": "Ешь свою брокколи, иначе останешься без десерта!"
   }
 }

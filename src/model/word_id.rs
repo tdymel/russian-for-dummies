@@ -71,4 +71,11 @@ word_ids! {
     Mushroom = 1830,
 
     Fruit = 4080,
+    Apple = 2471,
+    Banana = 10845,
+    Orange = 4132,
+    Strawberry = 17379,
+    Blueberry = 36651,
+    Raspberry = 10981,
+    Blackberry = 22980
 }

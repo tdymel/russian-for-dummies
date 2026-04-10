@@ -1,6 +1,8 @@
 {
   "id": "Salat",
-  "translation": "Salat",
+  "translation": [
+    "Salat"
+  ],
   "root": [
     {
       "content": "салат",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Magst du Obstsalat?",
-    "russian": "Ты любишь фруктовый салат?"
+    "translation": "Er verzehrte einen Heringssalat.",
+    "russian": "Он поглощал селёдочный салат."
   }
 }

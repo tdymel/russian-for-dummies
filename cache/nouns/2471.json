@@ -1,0 +1,94 @@
+{
+  "id": "Apple",
+  "translation": [
+    "Apfel"
+  ],
+  "root": [
+    {
+      "content": "яблоко",
+      "stress": 0
+    }
+  ],
+  "csfr": "C1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "яблоко",
+        "stress": 0
+      }
+    ],
+    "genitive": [
+      {
+        "content": "яблока",
+        "stress": 0
+      }
+    ],
+    "dative": [
+      {
+        "content": "яблоку",
+        "stress": 0
+      }
+    ],
+    "accusative": [
+      {
+        "content": "яблоко",
+        "stress": 0
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "яблоком",
+        "stress": 0
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "яблоке",
+        "stress": 0
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "яблоки",
+        "stress": 0
+      }
+    ],
+    "genitive": [
+      {
+        "content": "яблок",
+        "stress": 0
+      }
+    ],
+    "dative": [
+      {
+        "content": "яблокам",
+        "stress": 0
+      }
+    ],
+    "accusative": [
+      {
+        "content": "яблоки",
+        "stress": 0
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "яблоками",
+        "stress": 0
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "яблоках",
+        "stress": 0
+      }
+    ]
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Der Apfel ist rot.",
+    "russian": "Яблоко красное."
+  }
+}

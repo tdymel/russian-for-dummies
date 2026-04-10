@@ -1,6 +1,8 @@
 {
   "id": "Fruit",
-  "translation": "Frucht",
+  "translation": [
+    "Frucht"
+  ],
   "root": [
     {
       "content": "фрукт",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Sie sollten mehr Obst essen.",
-    "russian": "Вам следует есть больше фруктов."
+    "translation": "Ich esse Obst.",
+    "russian": "Я ем фрукт."
   }
 }

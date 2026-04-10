@@ -1,6 +1,8 @@
 {
   "id": "Argugula",
-  "translation": "ruccola",
+  "translation": [
+    "ruccola"
+  ],
   "root": [
     {
       "content": "руккола",

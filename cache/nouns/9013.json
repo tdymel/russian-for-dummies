@@ -1,6 +1,8 @@
 {
   "id": "Potato",
-  "translation": "Kartoffel",
+  "translation": [
+    "Kartoffel"
+  ],
   "root": [
     {
       "content": "картофель",
@@ -56,7 +58,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Kartoffeln sind billig.",
-    "russian": "Картофель дешёвый."
+    "translation": "Gestern früh habe ich meine Erdäpfel geerntet. Wegen des Regens waren sie zum Teil verfault.",
+    "russian": "Вчера утром я собирал свой урожай картофеля. Из-за дождя он был частично гнилой."
   }
 }

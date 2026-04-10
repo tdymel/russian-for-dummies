@@ -1,6 +1,8 @@
 {
   "id": "Cucumber",
-  "translation": "Gurke",
+  "translation": [
+    "Gurke"
+  ],
   "root": [
     {
       "content": "огурец",

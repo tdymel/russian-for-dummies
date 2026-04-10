@@ -1,6 +1,8 @@
 {
   "id": "Vegetable",
-  "translation": "Gemüse",
+  "translation": [
+    "Gemüse"
+  ],
   "root": [
     {
       "content": "овощ",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Mein Lieblingsgemüse ist die Tomate.",
-    "russian": "Мой любимый овощ — помидор."
+    "translation": "Wie heißt dieses Gemüse?",
+    "russian": "Как называется этот овощ?"
   }
 }

@@ -1,0 +1,98 @@
+{
+  "id": "Raspberry",
+  "translation": [
+    "Himbeere"
+  ],
+  "root": [
+    {
+      "content": "малина",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "малина",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "малины",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "малине",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "малину",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "малиной,",
+        "stress": 3
+      },
+      {
+        "content": "малиною",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "малине",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "малины",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "малин",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "малинам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "малины",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "малинами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "малинах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Ich mag Himbeeren.",
+    "russian": "Я люблю малину."
+  }
+}

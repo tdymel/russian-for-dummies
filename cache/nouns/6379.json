@@ -1,6 +1,8 @@
 {
   "id": "Tomato",
-  "translation": "Tomate",
+  "translation": [
+    "Tomate"
+  ],
   "root": [
     {
       "content": "помидор",
@@ -86,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Mag Tom Tomaten?",
-    "russian": "Том любит помидоры?"
+    "translation": "Wir brauchen Karotten und Tomaten für die Suppe.",
+    "russian": "Нам нужны морковь и помидоры для супа."
   }
 }

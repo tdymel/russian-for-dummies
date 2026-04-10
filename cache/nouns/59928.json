@@ -1,6 +1,8 @@
 {
   "id": "Lentil",
-  "translation": "Linse",
+  "translation": [
+    "Linse"
+  ],
   "root": [
     {
       "content": "чечевица",

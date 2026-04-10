@@ -1,6 +1,8 @@
 {
   "id": "Avocado",
-  "translation": "Avocado",
+  "translation": [
+    "Avocado"
+  ],
   "root": [
     {
       "content": "авокадо",

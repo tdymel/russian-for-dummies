@@ -1,0 +1,93 @@
+{
+  "id": "Lentil",
+  "translation": "Linse",
+  "root": [
+    {
+      "content": "чечевица",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "чечевица",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "чечевицы",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "чечевице",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "чечевицу",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "чечевицей,",
+        "stress": 5
+      },
+      {
+        "content": "чечевицею",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "чечевице",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "чечевицы",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "чечевиц",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "чечевицам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "чечевицы",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "чечевицами",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "чечевицах",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

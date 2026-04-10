@@ -1,0 +1,92 @@
+{
+  "id": "Salat",
+  "translation": "Salat",
+  "root": [
+    {
+      "content": "салат",
+      "stress": 3
+    }
+  ],
+  "csfr": "A2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "салат",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "салата",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "салату",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "салат",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "салатом",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "салате",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "салаты",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "салатов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "салатам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "салаты",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "салатами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "салатах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Er verzehrte einen Heringssalat.",
+    "russian": "Он поглощал селёдочный салат."
+  }
+}

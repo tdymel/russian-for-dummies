@@ -1,0 +1,96 @@
+{
+  "id": "Corn",
+  "translation": "Mais",
+  "root": [
+    {
+      "content": "кукуруза",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "кукуруза",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "кукурузы",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "кукурузе",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "кукурузу",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "кукурузой,",
+        "stress": 5
+      },
+      {
+        "content": "кукурузою",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "кукурузе",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "кукурузы",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "кукуруз",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "кукурузам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "кукурузы",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "кукурузами",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "кукурузах",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Bourbon wird aus Mais gemacht.",
+    "russian": "Бурбон делают из кукурузы."
+  }
+}

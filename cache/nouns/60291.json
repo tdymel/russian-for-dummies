@@ -1,0 +1,92 @@
+{
+  "id": "Avocado",
+  "translation": "Avocado",
+  "root": [
+    {
+      "content": "авокадо",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "авокадо",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Avocados sind reich an Vitamin E.",
+    "russian": "Авокадо богато витамином Е."
+  }
+}

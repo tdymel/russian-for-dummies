@@ -1,0 +1,92 @@
+{
+  "id": "Broccoli",
+  "translation": "Brokkoli",
+  "root": [
+    {
+      "content": "брокколи",
+      "stress": 2
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "брокколи",
+        "stress": 2
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "„Brokkoli“ ist im Russischen ein Femininum, im Deutschen ein Maskulinum, in der Herkunftssprache Italienisch aber ein Plural.",
+    "russian": "В русском «брокколи» женского рода, в немецком — мужского, но в исходном языке, итальянском, это множественное число."
+  }
+}

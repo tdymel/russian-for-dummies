@@ -1,0 +1,92 @@
+{
+  "id": "Bean",
+  "translation": "die Bohne",
+  "root": [
+    {
+      "content": "фасоль",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "фасоль",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "фасоли",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "фасоли",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "фасоль",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "фасолью",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "фасоли",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "фасоли",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "фасолей",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "фасолям",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "фасоли",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "фасолями",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "фасолях",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Bringen Sie mir einen Lammbraten mit grünen Bohnen, Kartoffeln und Soße!",
+    "russian": "Принесите мне жареную баранину с зелёной фасолью, картофелем и соусом!"
+  }
+}

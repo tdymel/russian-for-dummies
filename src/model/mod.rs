@@ -8,6 +8,7 @@ mod noun;
 mod word;
 mod word_id;
 mod sentence;
+mod phrase;
 
 pub use category::*;
 pub use csfr::*;
@@ -19,3 +20,4 @@ pub use noun::*;
 pub use word::*;
 pub use word_id::*;
 pub use sentence::*;
+pub use phrase::*;

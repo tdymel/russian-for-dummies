@@ -6,7 +6,34 @@ pub struct Word {
     pub stress: Option<usize>,
 }
 
+impl std::fmt::Display for Word {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        self.content.fmt(f)
+    }
+}
+
 impl Word {
+    pub fn accented(&self) -> String {
+        match self.stress {
+            Some(pos) => {
+                let chars: Vec<char> = self.content.chars().collect();
+                if pos > chars.len() {
+                    return self.content.clone();
+                }
+
+                let mut out = String::with_capacity(self.content.len() + 1);
+                for (i, ch) in chars.iter().enumerate() {
+                    out.push(*ch);
+                    if i == pos {
+                        out.push('\'');
+                    }
+                }
+                out
+            }
+            None => self.content.clone(),
+        }
+    }
+
     pub fn from_stressed(stressed: &str) -> Self {
         let mut content = String::new();
         let mut stress = None;

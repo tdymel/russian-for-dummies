@@ -1,0 +1,92 @@
+{
+  "id": "Cucumber",
+  "translation": "Gurke",
+  "root": [
+    {
+      "content": "огурец",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "огурец",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "огурца",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "огурцу",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "огурец",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "огурцом",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "огурце",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "огурцы",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "огурцов",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "огурцам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "огурцы",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "огурцами",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "огурцах",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Die Gurke ist bitter? Wirf sie doch einfach weg!",
+    "russian": "Огурец горький? Просто выброси его!"
+  }
+}

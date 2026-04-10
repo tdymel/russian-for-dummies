@@ -1,0 +1,92 @@
+{
+  "id": "Mushroom",
+  "translation": "Pilz",
+  "root": [
+    {
+      "content": "гриб",
+      "stress": null
+    }
+  ],
+  "csfr": "C1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "гриб",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "гриба",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "грибу",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "гриб",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "грибом",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "грибе",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "грибы",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "грибов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "грибам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "грибы",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "грибами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "грибах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Mir ist zu Ohren gekommen, dass irgendwo im Wald eine Pilzart wächst, deren Sporen jemanden, der sie einatmet, in weniger als fünf Sekunden in den Schlaf versetzen können.",
+    "russian": "Я прослышал, что где-то в лесу растёт такой гриб, споры которого могут усыпить любого, кто их вдохнёт, меньше чем за пять секунд."
+  }
+}

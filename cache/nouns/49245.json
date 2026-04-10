@@ -1,0 +1,93 @@
+{
+  "id": "Asparagus",
+  "translation": "Spargel",
+  "root": [
+    {
+      "content": "спаржа",
+      "stress": 2
+    }
+  ],
+  "csfr": "A2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "спаржа",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "спаржи",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "спарже",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "спаржу",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "спаржей,",
+        "stress": 2
+      },
+      {
+        "content": "спаржею",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "спарже",
+        "stress": 2
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "спаржи",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "спарж",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "спаржам",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "спаржи",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "спаржами",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "спаржах",
+        "stress": 2
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

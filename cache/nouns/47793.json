@@ -1,0 +1,89 @@
+{
+  "id": "Radish",
+  "translation": "Radieschen",
+  "root": [
+    {
+      "content": "редис",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "редис",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "редиса",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "редису",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "редис",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "редисом",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "редисе",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "редисы",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "редисов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "редисам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "редисы",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "редисами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "редисах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Unknown",
+  "example": null
+}

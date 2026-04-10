@@ -1,0 +1,92 @@
+{
+  "id": "Vegetable",
+  "translation": "Gemüse",
+  "root": [
+    {
+      "content": "овощ",
+      "stress": 0
+    }
+  ],
+  "csfr": "C2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "овощ",
+        "stress": 0
+      }
+    ],
+    "genitive": [
+      {
+        "content": "овоща",
+        "stress": 0
+      }
+    ],
+    "dative": [
+      {
+        "content": "овощу",
+        "stress": 0
+      }
+    ],
+    "accusative": [
+      {
+        "content": "овощ",
+        "stress": 0
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "овощем",
+        "stress": 0
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "овоще",
+        "stress": 0
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "овощи",
+        "stress": 0
+      }
+    ],
+    "genitive": [
+      {
+        "content": "овощей",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "овощам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "овощи",
+        "stress": 0
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "овощами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "овощах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Möhren sind Gemüse.",
+    "russian": "Морковь - это овощ."
+  }
+}

@@ -5,16 +5,7 @@ pub enum Gender {
     Male,
     Female,
     Neuter,
-}
-
-impl std::fmt::Display for Gender {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        match self {
-            Gender::Male => f.write_str("Maskulin"),
-            Gender::Female => f.write_str("Feminin"),
-            Gender::Neuter => f.write_str("Neutrum"),
-        }
-    }
+    Unknown
 }
 
 impl From<String> for Gender {

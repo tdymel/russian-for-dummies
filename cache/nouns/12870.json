@@ -1,0 +1,92 @@
+{
+  "id": "Carrote",
+  "translation": "Karotten",
+  "root": [
+    {
+      "content": "морковь",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "морковь",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "моркови",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "моркови",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "морковь",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "морковью",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "моркови",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "моркови",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "морковей",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "морковям",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "моркови",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "морковями",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "морковях",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Auf dem Markt habe ich Karotten und Nüsse gekauft, die ich für die Zubereitung eines Salat verwenden werde.",
+    "russian": "На рынке я купил морковь и орехи, которые я использую для приготовления салата."
+  }
+}

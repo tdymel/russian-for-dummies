@@ -1,5 +1,5 @@
 use crate::{
-    model::{Csfr, Declension, Noun, Sentence, Word, WordId},
+    model::{Csfr, Declension, Gender, Noun, Phrase, Sentence, Word, WordId},
     open_russian::word_api::fetch_word,
 };
 
@@ -12,7 +12,14 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
         translation: word_entry.translations[0].tls[0].clone(),
         root: from_accented(&word_entry.accented),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
-        gender: word_entry.noun.as_ref().unwrap().gender.clone().into(),
+        gender: word_entry
+            .noun
+            .as_ref()
+            .unwrap()
+            .gender
+            .as_ref()
+            .map(|it| Gender::from(it.clone()))
+            .unwrap_or(Gender::Unknown),
         singular: map_declension(&word_entry.noun.as_ref().unwrap().declension.sg),
         plural: map_declension(&word_entry.noun.as_ref().unwrap().declension.pl),
         example: word_entry.sentences.get(0).map(|it| Sentence {
@@ -33,7 +40,7 @@ fn map_declension(declension: &crate::open_russian::word_api::DeclensionForms) -
     }
 }
 
-fn map_declension_words(word: &str) -> Option<Vec<Word>> {
+fn map_declension_words(word: &str) -> Option<Phrase> {
     if word.is_empty() {
         return None;
     }
@@ -41,9 +48,11 @@ fn map_declension_words(word: &str) -> Option<Vec<Word>> {
     Some(from_accented(word))
 }
 
-fn from_accented(accented: &str) -> Vec<Word> {
-    accented
-        .split_whitespace()
-        .map(Word::from_stressed)
-        .collect()
+fn from_accented(accented: &str) -> Phrase {
+    Phrase(
+        accented
+            .split_whitespace()
+            .map(Word::from_stressed)
+            .collect(),
+    )
 }

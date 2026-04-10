@@ -1,0 +1,96 @@
+{
+  "id": "Cabbage",
+  "translation": "Kohl",
+  "root": [
+    {
+      "content": "капуста",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "капуста",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "капусты",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "капусте",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "капусту",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "капустой,",
+        "stress": 3
+      },
+      {
+        "content": "капустою",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "капусте",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "капусты",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "капуст",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "капустам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "капусты",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "капустами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "капустах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Tom mag jedes Gemüse außer Kohl.",
+    "russian": "Том любит все овощи, кроме капусты."
+  }
+}

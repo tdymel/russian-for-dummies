@@ -146,7 +146,7 @@ pub struct RelatedTranslation {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct NounData {
-    pub gender: String,
+    pub gender: Option<String>,
     pub partner: Option<Value>,
     pub animate: bool,
     #[serde(rename = "declensionMode")]

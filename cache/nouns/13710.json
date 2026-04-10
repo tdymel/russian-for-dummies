@@ -1,0 +1,92 @@
+{
+  "id": "Courgette",
+  "translation": "Zucchini",
+  "root": [
+    {
+      "content": "кабачок",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "кабачок",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "кабачка",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "кабачку",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "кабачок",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "кабачком",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "кабачке",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "кабачки",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "кабачков",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "кабачкам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "кабачки",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "кабачками",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "кабачках",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Auf dem Markt kauften wir Pfirsiche, Artischocken, Zucchini, Erdbeeren und Auberginen.",
+    "russian": "На рынке мы купили персики, артишоки, кабачки, клубнику и баклажаны."
+  }
+}

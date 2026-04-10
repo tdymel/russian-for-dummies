@@ -93,50 +93,62 @@ const TEMPLATE_ANSWER: &'static str = r#"
     <div class="rfd-header">{{Question}}</div>
 
     <div class="rfd-body">
-        <div class="rfd-root">{{Root}} ({{Gender}})</div>
+        <div class="rfd-root" onclick="document.getElementById('sn').play()">{{Root}} ({{Gender}})</div>
 
         <table>
             <tr>
                 <td>Nom</td>
-                <td>{{Nominativ-Singular}}</td>
-                <td>{{Nominativ-Plural}}</td>
+                <td onclick="document.getElementById('sn').play()">{{Nominativ-Singular}}</td>
+                <td onclick="document.getElementById('pn').play()">{{Nominativ-Plural}}</td>
             </tr>
             <tr>
                 <td>Gen</td>
-                <td>{{Genitiv-Singular}}</td>
-                <td>{{Genitiv-Plural}}</td>
+                <td onclick="document.getElementById('sg').play()">{{Genitiv-Singular}}</td>
+                <td onclick="document.getElementById('pg').play()">{{Genitiv-Plural}}</td>
             </tr>
             <tr>
                 <td>Dat</td>
-                <td>{{Dativ-Singular}}</td>
-                <td>{{Dativ-Plural}}</td>
+                <td onclick="document.getElementById('sd').play()">{{Dativ-Singular}}</td>
+                <td onclick="document.getElementById('pd').play()">{{Dativ-Plural}}</td>
             </tr>
             <tr>
                 <td>Akk</td>
-                <td>{{Akkusativ-Singular}}</td>
-                <td>{{Akkusativ-Plural}}</td>
+                <td onclick="document.getElementById('sa').play()">{{Akkusativ-Singular}}</td>
+                <td onclick="document.getElementById('pa').play()">{{Akkusativ-Plural}}</td>
             </tr>
             <tr>
                 <td>Ins</td>
-                <td>{{Instrumental-Singular}}</td>
-                <td>{{Instrumental-Plural}}</td>
+                <td onclick="document.getElementById('si').play()">{{Instrumental-Singular}}</td>
+                <td onclick="document.getElementById('pi').play()">{{Instrumental-Plural}}</td>
             </tr>
             <tr>
                 <td>Prä</td>
-                <td>{{Praepositiv-Singular}}</td>
-                <td>{{Praepositiv-Plural}}</td>
+                <td onclick="document.getElementById('sp').play()">{{Praepositiv-Singular}}</td>
+                <td onclick="document.getElementById('pp').play()">{{Praepositiv-Plural}}</td>
             </tr>
         </table>
 
         <div class="rfd-example">{{Example}}</div>
     </div>
+    {{AudioSn}}
+    {{AudioPn}}
+    {{AudioSi}}
+    {{AudioPi}}
+    {{AudioSd}}
+    {{AudioPd}}
+    {{AudioSa}}
+    {{AudioPa}}
+    {{AudioSp}}
+    {{AudioPp}}
+    {{AudioSg}}
+    {{AudioPg}}
 </div>
 "#;
 
 pub static NOUN_MODEL: LazyLock<Model> = LazyLock::new(|| {
     Model::new(
         // Have to change the id every time, otherwise it wont refresh on the device
-        1607392320 + 6,
+        1607392320 + 12,
         "Noun",
         vec![
             Field::new("Question"),
@@ -155,6 +167,18 @@ pub static NOUN_MODEL: LazyLock<Model> = LazyLock::new(|| {
             Field::new("Praepositiv-Singular"),
             Field::new("Praepositiv-Plural"),
             Field::new("Example"),
+            Field::new("AudioSn"),
+            Field::new("AudioPn"),
+            Field::new("AudioSi"),
+            Field::new("AudioPi"),
+            Field::new("AudioSd"),
+            Field::new("AudioPd"),
+            Field::new("AudioSg"),
+            Field::new("AudioPg"),
+            Field::new("AudioSa"),
+            Field::new("AudioPa"),
+            Field::new("AudioSp"),
+            Field::new("AudioPp"),
         ],
         vec![
             Template::new("Noun")

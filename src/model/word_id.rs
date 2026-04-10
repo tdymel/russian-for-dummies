@@ -46,4 +46,28 @@ impl std::fmt::Display for WordId {
 
 word_ids! {
     Garlic = 10770,
+    Vegetable = 5166,
+    Tomato = 6379,
+    Broccoli = 60305,
+    Avocado = 60291,
+    Cucumber = 4629,
+
+    Carrote = 12870,
+    Onion = 2333,
+    Potato = 9013,
+    Salat = 7337,
+    Cabbage = 4054,
+    Lentil = 59928,
+    Spinach = 59842,
+    Courgette = 13710,
+    Eggplant = 26810,
+    Pumpkin = 11111,
+    Corn = 7326,
+    Pea = 8536,
+    Bean = 20785,
+    Radish = 47793,
+    Argugula = 60608,
+    Asparagus = 49245,
+    Paprika = 60104,
+    Mushroom = 1830
 }

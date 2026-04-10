@@ -1,0 +1,89 @@
+{
+  "id": "Argugula",
+  "translation": "ruccola",
+  "root": [
+    {
+      "content": "руккола",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "руккола",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "рукколы",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "рукколе",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "рукколу",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "рукколой",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "рукколе",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "рукколы",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "руккол",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "рукколам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "рукколы",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "рукколами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "рукколах",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

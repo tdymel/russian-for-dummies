@@ -1,0 +1,92 @@
+{
+  "id": "Eggplant",
+  "translation": "Aubergine",
+  "root": [
+    {
+      "content": "баклажан",
+      "stress": 6
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "баклажан",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "баклажана",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "баклажану",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "баклажан",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "баклажаном",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "баклажане",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "баклажаны",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "баклажанов",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "баклажанам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "баклажаны",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "баклажанами",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "баклажанах",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Zum Frühstück habe ich mir Aubergine mit Ei zubereitet.",
+    "russian": "На завтрак я приготовил себе баклажан с яйцом."
+  }
+}

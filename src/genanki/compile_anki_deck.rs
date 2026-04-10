@@ -1,9 +1,10 @@
 use crate::{
+    content::noun_mp3_path,
     genanki::models::NOUN_MODEL,
-    model::{Deck, FlashCard, Gender, Sentence, Word},
+    model::{Deck, FlashCard, Gender, Phrase, Sentence, Word, WordId},
 };
 
-use genanki_rs::{Deck as AnkiDeck, Note};
+use genanki_rs::{Deck as AnkiDeck, Note, Package};
 
 trait ToTemplate {
     fn to_template(&self) -> String;
@@ -15,13 +16,15 @@ impl ToTemplate for Gender {
             Gender::Male => "M".to_string(),
             Gender::Female => "F".to_string(),
             Gender::Neuter => "N".to_string(),
+            Gender::Unknown => "?".to_string(),
         }
     }
 }
 
-impl ToTemplate for Vec<Word> {
+impl ToTemplate for Phrase {
     fn to_template(&self) -> String {
-        self.iter()
+        self.0
+            .iter()
             .map(|it| it.to_template())
             .collect::<Vec<_>>()
             .join(" ")
@@ -58,7 +61,7 @@ impl ToTemplate for Word {
     }
 }
 
-impl ToTemplate for Option<Vec<Word>> {
+impl ToTemplate for Option<Phrase> {
     fn to_template(&self) -> String {
         self.as_ref()
             .map(|it| it.to_template())
@@ -100,6 +103,18 @@ impl ToNote for FlashCard {
                     &noun.singular.prepositional.to_template(),
                     &noun.plural.prepositional.to_template(),
                     &noun.example.to_template(),
+                    &format!("<audio id=\"sn\" src=\"{}-sn.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pn\" src=\"{}-pn.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"si\" src=\"{}-si.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pi\" src=\"{}-pi.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"sd\" src=\"{}-sd.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pd\" src=\"{}-pd.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"sg\" src=\"{}-sg.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pg\" src=\"{}-pg.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"sa\" src=\"{}-sa.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pa\" src=\"{}-pa.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"sp\" src=\"{}-sp.mp3\"></audio>", noun.id.id()),
+                    &format!("<audio id=\"pp\" src=\"{}-pp.mp3\"></audio>", noun.id.id()),
                 ],
             )
             .unwrap(),
@@ -119,13 +134,41 @@ impl CompileAnkiDeck for Deck {
             self.description.unwrap_or("Potato; Potato"),
         );
 
+        let mut media_files = Vec::new();
+
         for category in self.categories {
             for flash_card in category.flash_cards {
+                match &flash_card {
+                    FlashCard::Noun(noun) => {
+                        push_noun_media_files(&mut media_files, noun.id);
+                    }
+                };
                 deck.add_note(flash_card.to_note());
             }
         }
 
-        deck.write_to_file("russian_for_dummies.apkg").unwrap();
+        let mut package = Package::new(
+            vec![deck],
+            media_files.iter().map(|it| it.as_str()).collect::<Vec<_>>(),
+        )
+        .unwrap();
+        package.write_to_file("russian_for_dummies.apkg").unwrap();
+    }
+}
+
+use std::path::PathBuf;
+
+fn push_if_exists(media_files: &mut Vec<String>, path: PathBuf) {
+    if path.exists() {
+        media_files.push(path.to_string_lossy().to_string());
+    }
+}
+
+fn push_noun_media_files(media_files: &mut Vec<String>, noun_id: WordId) {
+    for form in [
+        "sn", "sg", "sd", "si", "sp", "sa", "pn", "pg", "pd", "pi", "pp", "pa",
+    ] {
+        push_if_exists(media_files, noun_mp3_path(noun_id, form));
     }
 }
 

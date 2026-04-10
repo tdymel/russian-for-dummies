@@ -1,0 +1,92 @@
+{
+  "id": "Pea",
+  "translation": "Erbsen",
+  "root": [
+    {
+      "content": "горох",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "горох",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "гороха",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "гороху",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "горох",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "горохом",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "горохе",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "горохи",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "горохов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "горохам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "горохи",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "горохами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "горохах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Tom kennt nicht den Unterschied zwischen Reis und einer Erbse.",
+    "russian": "Том не знает, какая разница между рисом и горохом."
+  }
+}

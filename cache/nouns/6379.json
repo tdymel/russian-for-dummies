@@ -1,0 +1,92 @@
+{
+  "id": "Tomato",
+  "translation": "Tomate",
+  "root": [
+    {
+      "content": "помидор",
+      "stress": 5
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "помидор",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "помидора",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "помидору",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "помидор",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "помидором",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "помидоре",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "помидоры",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "помидоров",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "помидорам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "помидоры",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "помидорами",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "помидорах",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Wir brauchen Karotten und Tomaten für die Suppe.",
+    "russian": "Нам нужны морковь и помидоры для супа."
+  }
+}

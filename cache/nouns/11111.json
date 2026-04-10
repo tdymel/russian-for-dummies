@@ -1,0 +1,96 @@
+{
+  "id": "Pumpkin",
+  "translation": "Kürbis",
+  "root": [
+    {
+      "content": "тыква",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "тыква",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "тыквы",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "тыкве",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "тыкву",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "тыквой,",
+        "stress": 1
+      },
+      {
+        "content": "тыквою",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "тыкве",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "тыквы",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "тыкв",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "тыквам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "тыквы",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "тыквами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "тыквах",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Was für ein großer Kürbis!",
+    "russian": "Какая большая тыква!"
+  }
+}

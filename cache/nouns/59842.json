@@ -1,0 +1,92 @@
+{
+  "id": "Spinach",
+  "translation": "Spinat",
+  "root": [
+    {
+      "content": "шпинат",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "шпинат",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "шпината",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "шпинату",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "шпинат",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "шпинатом",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "шпинате",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "шпинаты",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "шпинатов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "шпинатам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "шпинаты",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "шпинатами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "шпинатах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Als Kind habe ich Spinat gehasst.",
+    "russian": "В детстве я ненавидел шпинат."
+  }
+}

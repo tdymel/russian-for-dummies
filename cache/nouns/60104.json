@@ -1,0 +1,93 @@
+{
+  "id": "Paprika",
+  "translation": "Paprika",
+  "root": [
+    {
+      "content": "паприка",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "паприка",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "паприки",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "паприке",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "паприку",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "паприкой,",
+        "stress": 1
+      },
+      {
+        "content": "паприкою",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "паприке",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "паприки",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "паприк",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "паприкам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "паприки",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "паприками",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "паприках",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

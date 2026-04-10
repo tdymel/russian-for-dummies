@@ -1,12 +1,12 @@
 use serde::{Deserialize, Serialize};
 
-use crate::model::{Csfr, Declension, Gender, Sentence, Word, WordId};
+use crate::model::{Csfr, Declension, Gender, Phrase, Sentence, WordId};
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Noun {
     pub id: WordId,
     pub translation: String,
-    pub root: Vec<Word>,
+    pub root: Phrase,
     pub csfr: Csfr,
     pub singular: Declension,
     pub plural: Declension,

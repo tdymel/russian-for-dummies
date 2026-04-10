@@ -51,7 +51,6 @@ word_ids! {
     Broccoli = 60305,
     Avocado = 60291,
     Cucumber = 4629,
-
     Carrote = 12870,
     Onion = 2333,
     Potato = 9013,
@@ -69,5 +68,7 @@ word_ids! {
     Argugula = 60608,
     Asparagus = 49245,
     Paprika = 60104,
-    Mushroom = 1830
+    Mushroom = 1830,
+
+    Fruit = 4080,
 }

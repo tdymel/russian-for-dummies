@@ -5,7 +5,7 @@ use crate::model::{Csfr, Declension, Gender, Phrase, Sentence, WordId};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Noun {
     pub id: WordId,
-    pub translation: String,
+    pub translation: Vec<String>,
     pub root: Phrase,
     pub csfr: Csfr,
     pub singular: Declension,

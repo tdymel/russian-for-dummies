@@ -1,0 +1,92 @@
+{
+  "id": "Fruit",
+  "translation": "Frucht",
+  "root": [
+    {
+      "content": "фрукт",
+      "stress": null
+    }
+  ],
+  "csfr": "C2",
+  "singular": {
+    "nominative": [
+      {
+        "content": "фрукт",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "фрукта",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "фрукту",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "фрукт",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "фруктом",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "фрукте",
+        "stress": 2
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "фрукты",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "фруктов",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "фруктам",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "фрукты",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "фруктами",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "фруктах",
+        "stress": 2
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Sie sollten mehr Obst essen.",
+    "russian": "Вам следует есть больше фруктов."
+  }
+}

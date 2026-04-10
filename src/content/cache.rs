@@ -12,40 +12,40 @@ pub async fn get_noun(id: WordId) -> Noun {
 
     let noun = fetch_noun(id).await.expect("Expected to fetch noun!");
     if let Some(val) = &noun.singular.nominative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "sn")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.singular.genitive {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "sg")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.singular.dative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "sd")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.singular.accusative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "sa")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.singular.instrumental {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "si")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.singular.prepositional {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "sp")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.nominative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pn")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.genitive {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pg")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.dative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pd")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.accusative {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pa")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.instrumental {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pi")).await;
+        fetch_mp3(&val.accented()).await;
     }
     if let Some(val) = &noun.plural.prepositional {
-        fetch_mp3(&val.accented(), noun_mp3_path(id, "pp")).await;
+        fetch_mp3(&val.accented()).await;
     }
 
     cache_noun(&noun);
@@ -57,12 +57,6 @@ fn nouns_folder() -> PathBuf {
     PathBuf::from(env!("CARGO_MANIFEST_DIR"))
         .join("cache")
         .join("nouns")
-}
-
-pub fn noun_mp3_path(id: WordId, suffix: &str) -> PathBuf {
-    nouns_folder()
-        .join("mp3")
-        .join(format!("{id}-{suffix}.mp3"))
 }
 
 fn noun_path(id: WordId) -> PathBuf {

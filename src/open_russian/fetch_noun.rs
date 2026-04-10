@@ -6,10 +6,12 @@ use crate::{
 pub async fn fetch_noun(id: WordId) -> Option<Noun> {
     println!("Fetching {id}");
     let word_entry = fetch_word(id).await?;
+    // println!("{:#?}", word_entry);
 
     Some(Noun {
         id: WordId::try_from(word_entry.id as usize).unwrap(),
-        translation: word_entry.translations[0].tls[0].clone(),
+        // TODO
+        translation: vec![word_entry.translations[0].tls[0].clone()],
         root: from_accented(&word_entry.accented),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
         gender: word_entry

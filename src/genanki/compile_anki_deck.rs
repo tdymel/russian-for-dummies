@@ -1,7 +1,8 @@
+use std::{fs, path::PathBuf};
+
 use crate::{
-    content::noun_mp3_path,
     genanki::models::NOUN_MODEL,
-    model::{Deck, FlashCard, Gender, Phrase, Sentence, Word, WordId},
+    model::{Deck, FlashCard, Gender, Phrase, Sentence, Word},
 };
 
 use genanki_rs::{Deck as AnkiDeck, Note, Package};
@@ -87,7 +88,7 @@ impl ToNote for FlashCard {
             FlashCard::Noun(noun) => Note::new(
                 NOUN_MODEL.clone(),
                 vec![
-                    &noun.translation,
+                    &noun.translation.join(", "),
                     &noun.root.to_template(),
                     &noun.gender.to_template(),
                     &noun.singular.nominative.to_template(),
@@ -103,18 +104,90 @@ impl ToNote for FlashCard {
                     &noun.singular.prepositional.to_template(),
                     &noun.plural.prepositional.to_template(),
                     &noun.example.to_template(),
-                    &format!("<audio id=\"sn\" src=\"{}-sn.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pn\" src=\"{}-pn.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"si\" src=\"{}-si.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pi\" src=\"{}-pi.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"sd\" src=\"{}-sd.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pd\" src=\"{}-pd.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"sg\" src=\"{}-sg.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pg\" src=\"{}-pg.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"sa\" src=\"{}-sa.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pa\" src=\"{}-pa.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"sp\" src=\"{}-sp.mp3\"></audio>", noun.id.id()),
-                    &format!("<audio id=\"pp\" src=\"{}-pp.mp3\"></audio>", noun.id.id()),
+                    &format!(
+                        "<audio id=\"sn\" src=\"{}.mp3\"></audio>",
+                        noun.singular
+                            .nominative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pn\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .nominative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"si\" src=\"{}-si.mp3\"></audio>",
+                        noun.singular
+                            .instrumental
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pi\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .instrumental
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"sd\" src=\"{}.mp3\"></audio>",
+                        noun.singular
+                            .dative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pd\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .dative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"sg\" src=\"{}.mp3\"></audio>",
+                        noun.singular
+                            .genitive
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pg\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .genitive
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"sa\" src=\"{}.mp3\"></audio>",
+                        noun.singular
+                            .accusative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pa\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .accusative
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"sp\" src=\"{}.mp3\"></audio>",
+                        noun.singular
+                            .prepositional
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"pp\" src=\"{}.mp3\"></audio>",
+                        noun.plural
+                            .prepositional
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
                 ],
             )
             .unwrap(),
@@ -134,18 +207,20 @@ impl CompileAnkiDeck for Deck {
             self.description.unwrap_or("Potato; Potato"),
         );
 
-        let mut media_files = Vec::new();
-
         for category in self.categories {
             for flash_card in category.flash_cards {
-                match &flash_card {
-                    FlashCard::Noun(noun) => {
-                        push_noun_media_files(&mut media_files, noun.id);
-                    }
-                };
                 deck.add_note(flash_card.to_note());
             }
         }
+
+        let media_files = fs::read_dir(
+            PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+                .join("cache")
+                .join("mp3"),
+        )
+        .unwrap()
+        .map(|it| it.unwrap().path().to_string_lossy().to_string())
+        .collect::<Vec<_>>();
 
         let mut package = Package::new(
             vec![deck],
@@ -153,22 +228,6 @@ impl CompileAnkiDeck for Deck {
         )
         .unwrap();
         package.write_to_file("russian_for_dummies.apkg").unwrap();
-    }
-}
-
-use std::path::PathBuf;
-
-fn push_if_exists(media_files: &mut Vec<String>, path: PathBuf) {
-    if path.exists() {
-        media_files.push(path.to_string_lossy().to_string());
-    }
-}
-
-fn push_noun_media_files(media_files: &mut Vec<String>, noun_id: WordId) {
-    for form in [
-        "sn", "sg", "sd", "si", "sp", "sa", "pn", "pg", "pd", "pi", "pp", "pa",
-    ] {
-        push_if_exists(media_files, noun_mp3_path(noun_id, form));
     }
 }
 

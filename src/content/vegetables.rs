@@ -29,6 +29,4 @@ pub async fn vegetables() -> Category {
         .add(get_noun(WordId::Asparagus).await)
         .add(get_noun(WordId::Paprika).await)
         .add(get_noun(WordId::Mushroom).await)
-
-    
 }

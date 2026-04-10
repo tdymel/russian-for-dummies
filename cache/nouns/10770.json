@@ -1,0 +1,62 @@
+{
+  "id": "Garlic",
+  "translation": "Knoblauch",
+  "root": [
+    {
+      "content": "чеснок",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "чеснок",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "чеснока",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "чесноку",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "чеснок",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "чесноком",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "чесноке",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Die Suppe schmeckt nach Knoblauch.",
+    "russian": "Суп отдаёт чесноком."
+  }
+}

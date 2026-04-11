@@ -1,11 +1,12 @@
 {
-  "id": "Blackberry",
+  "id": "Blueberry",
   "translation": [
-    "Brombeere"
+    "Heidelbeere",
+    "Schwarzbeere"
   ],
   "root": [
     {
-      "content": "ежевика",
+      "content": "черника",
       "stress": 4
     }
   ],
@@ -13,41 +14,41 @@
   "singular": {
     "nominative": [
       {
-        "content": "ежевика",
+        "content": "черника",
         "stress": 4
       }
     ],
     "genitive": [
       {
-        "content": "ежевики",
+        "content": "черники",
         "stress": 4
       }
     ],
     "dative": [
       {
-        "content": "ежевике",
+        "content": "чернике",
         "stress": 4
       }
     ],
     "accusative": [
       {
-        "content": "ежевику",
+        "content": "чернику",
         "stress": 4
       }
     ],
     "instrumental": [
       {
-        "content": "ежевикой,",
+        "content": "черникой,",
         "stress": 4
       },
       {
-        "content": "ежевикою",
+        "content": "черникою",
         "stress": 4
       }
     ],
     "prepositional": [
       {
-        "content": "ежевике",
+        "content": "чернике",
         "stress": 4
       }
     ]
@@ -55,44 +56,41 @@
   "plural": {
     "nominative": [
       {
-        "content": "ежевики",
+        "content": "черники",
         "stress": 4
       }
     ],
     "genitive": [
       {
-        "content": "ежевик",
+        "content": "черник",
         "stress": 4
       }
     ],
     "dative": [
       {
-        "content": "ежевикам",
+        "content": "черникам",
         "stress": 4
       }
     ],
     "accusative": [
       {
-        "content": "ежевики",
+        "content": "черники",
         "stress": 4
       }
     ],
     "instrumental": [
       {
-        "content": "ежевиками",
+        "content": "черниками",
         "stress": 4
       }
     ],
     "prepositional": [
       {
-        "content": "ежевиках",
+        "content": "черниках",
         "stress": 4
       }
     ]
   },
   "gender": "Female",
-  "example": {
-    "translation": "Ich mag Brombeeren.",
-    "russian": "Я люблю ежевику."
-  }
+  "example": null
 }

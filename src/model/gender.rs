@@ -5,7 +5,7 @@ pub enum Gender {
     Male,
     Female,
     Neuter,
-    Unknown
+    Unknown,
 }
 
 impl From<String> for Gender {

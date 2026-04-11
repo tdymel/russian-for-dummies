@@ -1,8 +1,8 @@
-use std::{fs, path::PathBuf};
+use std::{collections::HashSet, fs, path::PathBuf};
 
 use crate::{
     genanki::models::NOUN_MODEL,
-    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word},
+    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word, WordId},
 };
 
 use genanki_rs::{Deck as AnkiDeck, Note, Package};
@@ -225,10 +225,26 @@ impl CompileAnkiDeck for Deck {
             self.description.unwrap_or("Potato; Potato"),
         );
 
-        for category in self.categories {
-            for flash_card in category.flash_cards {
-                deck.add_note(flash_card.to_note());
+        let mut words = HashSet::<WordId>::new();
+        let mut flash_cards = self
+            .categories
+            .into_iter()
+            .flat_map(|it| it.flash_cards)
+            .collect::<Vec<_>>();
+
+        flash_cards.sort_by(|l, r| match (l, r) {
+            (FlashCard::Noun(nl), FlashCard::Noun(nr)) => nl.csfr.cmp(&nr.csfr),
+        });
+
+        for flash_card in flash_cards {
+            let id = match &flash_card {
+                FlashCard::Noun(noun) => noun.id,
+            };
+            if words.contains(&id) {
+                panic!("Duplicate word: {}!", id);
             }
+            words.insert(id);
+            deck.add_note(flash_card.to_note());
         }
 
         let media_files = fs::read_dir(

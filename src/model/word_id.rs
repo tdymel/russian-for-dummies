@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 macro_rules! word_ids {
     ($($name:ident = $id:expr),* $(,)?) => {
-        #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
+        #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Serialize, Deserialize)]
         pub enum WordId {
             $($name),*
         }
@@ -75,7 +75,7 @@ word_ids! {
     Banana = 10845,
     Orange = 4132,
     Strawberry = 17379,
-    Blueberry = 36651,
+    Blueberry = 20545,
     Raspberry = 10981,
     Blackberry = 22980
 }

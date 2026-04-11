@@ -10,8 +10,11 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
 
     Some(Noun {
         id: WordId::try_from(word_entry.id as usize).unwrap(),
-        // TODO
-        translation: vec![word_entry.translations[0].tls[0].clone()],
+        translation: word_entry
+            .translations
+            .iter()
+            .map(|it| it.tls[0].clone())
+            .collect(),
         root: from_accented(&word_entry.accented),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
         gender: word_entry

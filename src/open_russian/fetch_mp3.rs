@@ -8,9 +8,9 @@ pub async fn fetch_mp3(russian: &str) {
         .join("mp3")
         .join(format!("{}.mp3", russian.replace("'", "")));
 
-    // if path.exists() {
-    //     return;
-    // }
+    if path.exists() {
+        return;
+    }
 
     let encoded = urlencoding::encode(russian);
     let url = format!("https://api.openrussian.org/read/ru/{encoded}");
@@ -19,7 +19,10 @@ pub async fn fetch_mp3(russian: &str) {
     let client = reqwest::Client::new();
     let bytes = client
         .get(url)
-        .header(COOKIE, "session=2e489016ccbf9ecd7f7493b1724bfd7a; SentenceConstruction.read=true")
+        .header(
+            COOKIE,
+            "session=2e489016ccbf9ecd7f7493b1724bfd7a; SentenceConstruction.read=true",
+        )
         .send()
         .await
         .unwrap()

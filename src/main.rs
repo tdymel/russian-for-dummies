@@ -9,10 +9,6 @@ mod open_russian;
 
 /*
 TODO:
-* countable?
-* Show the multiple translations
-* Sort by language level
-* Duplicate validation
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian
 * Add Wisdom
 * Find list of the 80% must used words and use them for validation and suggestions of what to add

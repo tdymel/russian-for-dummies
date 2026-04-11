@@ -5,5 +5,5 @@ pub enum DeclensionType {
     First,
     Second,
     Third,
-    Irregular
+    Irregular,
 }

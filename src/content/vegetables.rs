@@ -10,7 +10,7 @@ pub async fn vegetables() -> Category {
         .add(get_noun(WordId::Tomato).await)
         .add(get_noun(WordId::Broccoli).await)
         .add(get_noun(WordId::Avocado).await)
-        .add(get_noun(WordId::Cucumber).await)        
+        .add(get_noun(WordId::Cucumber).await)
         .add(get_noun(WordId::Carrote).await)
         .add(get_noun(WordId::Onion).await)
         .add(get_noun(WordId::Potato).await)

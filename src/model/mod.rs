@@ -9,6 +9,7 @@ mod word;
 mod word_id;
 mod sentence;
 mod phrase;
+mod declension_type;
 
 pub use category::*;
 pub use csfr::*;
@@ -21,3 +22,4 @@ pub use word::*;
 pub use word_id::*;
 pub use sentence::*;
 pub use phrase::*;
+pub use declension_type::*;

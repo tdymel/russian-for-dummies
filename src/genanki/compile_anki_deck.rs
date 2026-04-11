@@ -2,7 +2,7 @@ use std::{fs, path::PathBuf};
 
 use crate::{
     genanki::models::NOUN_MODEL,
-    model::{Deck, FlashCard, Gender, Phrase, Sentence, Word},
+    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word},
 };
 
 use genanki_rs::{Deck as AnkiDeck, Note, Package};
@@ -78,6 +78,17 @@ impl ToTemplate for Option<Sentence> {
     }
 }
 
+impl ToTemplate for DeclensionType {
+    fn to_template(&self) -> String {
+        match self {
+            DeclensionType::First => "D1".to_string(),
+            DeclensionType::Second => "D2".to_string(),
+            DeclensionType::Third => "D3".to_string(),
+            DeclensionType::Irregular => "DI".to_string(),
+        }
+    }
+}
+
 trait ToNote {
     fn to_note(self) -> Note;
 }
@@ -91,6 +102,7 @@ impl ToNote for FlashCard {
                     &noun.translation.join(", "),
                     &noun.root.to_template(),
                     &noun.gender.to_template(),
+                    &noun.declension_type().to_template(),
                     &noun.singular.nominative.to_template(),
                     &noun.plural.nominative.to_template(),
                     &noun.singular.genitive.to_template(),
@@ -185,6 +197,12 @@ impl ToNote for FlashCard {
                         "<audio id=\"pp\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .prepositional
+                            .map(|it| it.to_string())
+                            .unwrap_or("none".to_string())
+                    ),
+                    &format!(
+                        "<audio id=\"example\" src=\"{}.mp3\"></audio>",
+                        noun.example
                             .map(|it| it.to_string())
                             .unwrap_or("none".to_string())
                     ),

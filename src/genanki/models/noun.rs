@@ -93,7 +93,7 @@ const TEMPLATE_ANSWER: &'static str = r#"
     <div class="rfd-header">{{Question}}</div>
 
     <div class="rfd-body">
-        <div class="rfd-root" onclick="document.getElementById('sn').play()">{{Root}} ({{Gender}})</div>
+        <div class="rfd-root" onclick="document.getElementById('sn').play()">{{Root}} ({{Gender}} / {{DeclensionType}})</div>
 
         <table>
             <tr>
@@ -128,7 +128,7 @@ const TEMPLATE_ANSWER: &'static str = r#"
             </tr>
         </table>
 
-        <div class="rfd-example">{{Example}}</div>
+        <div class="rfd-example" onclick="document.getElementById('example').play()">{{Example}}</div>
     </div>
     {{AudioSn}}
     {{AudioPn}}
@@ -142,18 +142,20 @@ const TEMPLATE_ANSWER: &'static str = r#"
     {{AudioPp}}
     {{AudioSg}}
     {{AudioPg}}
+    {{AudioExample}}
 </div>
 "#;
 
 pub static NOUN_MODEL: LazyLock<Model> = LazyLock::new(|| {
     Model::new(
         // Have to change the id every time, otherwise it wont refresh on the device
-        1607392320 + 12,
+        1607392320 + 13,
         "Noun",
         vec![
             Field::new("Question"),
             Field::new("Root"),
             Field::new("Gender"),
+            Field::new("DeclensionType"),
             Field::new("Nominativ-Singular"),
             Field::new("Nominativ-Plural"),
             Field::new("Genitiv-Singular"),
@@ -179,6 +181,7 @@ pub static NOUN_MODEL: LazyLock<Model> = LazyLock::new(|| {
             Field::new("AudioPa"),
             Field::new("AudioSp"),
             Field::new("AudioPp"),
+            Field::new("AudioExample"),
         ],
         vec![
             Template::new("Noun")

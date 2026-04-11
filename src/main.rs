@@ -6,7 +6,7 @@ mod content;
 mod genanki;
 mod model;
 mod open_russian;
-
+mod stats;
 /*
 TODO:
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian

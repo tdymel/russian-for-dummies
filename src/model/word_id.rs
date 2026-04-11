@@ -20,6 +20,16 @@ macro_rules! word_ids {
                     _ => None,
                 }
             }
+
+            pub const fn all() -> &'static [Self] {
+                &[
+                    $(Self::$name),*
+                ]
+            }
+
+            pub fn all_ids() -> Vec<usize> {
+                Self::all().iter().map(|word| word.id()).collect()
+            }
         }
 
         impl TryFrom<usize> for WordId {
@@ -37,6 +47,7 @@ macro_rules! word_ids {
         }
     };
 }
+
 
 impl std::fmt::Display for WordId {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {

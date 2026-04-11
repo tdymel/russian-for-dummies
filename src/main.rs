@@ -9,6 +9,7 @@ mod open_russian;
 
 /*
 TODO:
+* countable?
 * Show the multiple translations
 * Sort by language level
 * Duplicate validation

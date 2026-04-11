@@ -11,6 +11,9 @@ pub async fn get_noun(id: WordId) -> Noun {
     }
 
     let noun = fetch_noun(id).await.expect("Expected to fetch noun!");
+    if let Some(val) = &noun.example {
+        fetch_mp3(&val.to_string()).await;
+    }
     if let Some(val) = &noun.singular.nominative {
         fetch_mp3(&val.accented()).await;
     }

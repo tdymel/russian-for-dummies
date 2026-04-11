@@ -1,0 +1,98 @@
+{
+  "id": "Pear",
+  "translation": [
+    "Birne"
+  ],
+  "root": [
+    {
+      "content": "груша",
+      "stress": 2
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "груша",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "груши",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "груше",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "грушу",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "грушей,",
+        "stress": 2
+      },
+      {
+        "content": "грушею",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "груше",
+        "stress": 2
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "груши",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "груш",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "грушам",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "груши",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "грушами",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "грушах",
+        "stress": 2
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Ich esse gerne Birnen.",
+    "russian": "Я люблю есть груши."
+  }
+}

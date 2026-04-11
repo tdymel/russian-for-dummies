@@ -1,0 +1,94 @@
+{
+  "id": "Orange",
+  "translation": [
+    "Apfelsine"
+  ],
+  "root": [
+    {
+      "content": "апельсин",
+      "stress": 6
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "апельсин",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "апельсина",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "апельсину",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "апельсин",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "апельсином",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "апельсине",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "апельсины",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "апельсинов",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "апельсинам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "апельсины",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "апельсинами",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "апельсинах",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Sie mag Orangen.",
+    "russian": "Она любит апельсины."
+  }
+}

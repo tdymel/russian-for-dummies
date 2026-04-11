@@ -1,0 +1,94 @@
+{
+  "id": "Watermelon",
+  "translation": [
+    "Wassermelone"
+  ],
+  "root": [
+    {
+      "content": "арбуз",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "арбуз",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "арбуза",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "арбузу",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "арбуз",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "арбузом",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "арбузе",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "арбузы",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "арбузов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "арбузам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "арбузы",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "арбузами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "арбузах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Ich habe noch nie so eine große Wassermelone gesehen!",
+    "russian": "Такого огромного арбуза я ещё никогда не видел."
+  }
+}

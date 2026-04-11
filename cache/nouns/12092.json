@@ -1,0 +1,94 @@
+{
+  "id": "Peach",
+  "translation": [
+    "Pfirsich"
+  ],
+  "root": [
+    {
+      "content": "персик",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "персик",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "персика",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "персику",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "персик",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "персиком",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "персике",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "персики",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "персиков",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "персикам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "персики",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "персиками",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "персиках",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Die ersten Pfirsiche fielen schon vom Baum.",
+    "russian": "Первые персики уже падали с дерева."
+  }
+}

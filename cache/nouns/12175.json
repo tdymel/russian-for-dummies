@@ -1,0 +1,99 @@
+{
+  "id": "Cherry",
+  "translation": [
+    "Kirsche",
+    "Kirschbaum"
+  ],
+  "root": [
+    {
+      "content": "вишня",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "вишня",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вишни",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "вишне",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "вишню",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "вишней,",
+        "stress": 1
+      },
+      {
+        "content": "вишнею",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "вишне",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "вишни",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вишен",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "вишням",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "вишни",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "вишнями",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "вишнях",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Der Wind ließ Kirschblüten auf Maria herabregnen, als sie auf der Wiese saß und auf das Meer hinausblickte.",
+    "russian": "Когда Мария сидела на лугу и смотрела на море, ветер осыпал её цветочками вишни."
+  }
+}

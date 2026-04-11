@@ -1,0 +1,95 @@
+{
+  "id": "Lemon",
+  "translation": [
+    "Zitrone",
+    "eine Million"
+  ],
+  "root": [
+    {
+      "content": "лимон",
+      "stress": 3
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "лимон",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "лимона",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "лимону",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "лимон",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "лимоном",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "лимоне",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "лимоны",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "лимонов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "лимонам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "лимоны",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "лимонами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "лимонах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Die Zitrone ist eine saure Frucht.",
+    "russian": "Лимон - кислый фрукт."
+  }
+}

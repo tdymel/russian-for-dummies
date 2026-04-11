@@ -1,0 +1,34 @@
+{
+  "id": "Mango",
+  "translation": [
+    "Mangobaum"
+  ],
+  "root": [
+    {
+      "content": "манго",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Ich habe noch nie eine Mango gegessen.",
+    "russian": "Я ещё ни разу не ел манго."
+  }
+}

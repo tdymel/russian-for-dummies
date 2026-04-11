@@ -1,0 +1,94 @@
+{
+  "id": "Pomegranate",
+  "translation": [
+    "Granatapfel"
+  ],
+  "root": [
+    {
+      "content": "гранат",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "гранат",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "граната",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "гранату",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "гранат",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "гранатом",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "гранате",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "гранаты",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "гранатов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "гранатам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "гранаты",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "гранатами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "гранатах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Tom kennt nicht den Unterschied zwischen einer Granate und einem Granatapfel.",
+    "russian": "Том не знает разницы между гранатой и гранатом."
+  }
+}

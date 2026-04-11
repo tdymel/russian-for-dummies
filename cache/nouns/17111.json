@@ -1,0 +1,94 @@
+{
+  "id": "Pineapple",
+  "translation": [
+    "Ananas"
+  ],
+  "root": [
+    {
+      "content": "ананас",
+      "stress": 4
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "ананас",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "ананаса",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "ананасу",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "ананас",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "ананасом",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ананасе",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "ананасы",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "ананасов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "ананасам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "ананасы",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "ананасами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ананасах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Ich esse gerne Ananas.",
+    "russian": "Я люблю ананасы."
+  }
+}

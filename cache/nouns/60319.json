@@ -1,0 +1,94 @@
+{
+  "id": "Kiwi",
+  "translation": [
+    "Kiwi"
+  ],
+  "root": [
+    {
+      "content": "киви",
+      "stress": 1
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "киви",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Ich habe eine Kiwi und eine Kokosnuss.",
+    "russian": "У меня есть киви и кокос."
+  }
+}

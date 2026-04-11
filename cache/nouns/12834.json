@@ -1,0 +1,96 @@
+{
+  "id": "Plum",
+  "translation": [
+    "Pflaume",
+    "Pflaumenbaum"
+  ],
+  "root": [
+    {
+      "content": "слива",
+      "stress": 2
+    }
+  ],
+  "csfr": "C2Plus",
+  "singular": {
+    "nominative": [
+      {
+        "content": "слива",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "сливы",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "сливе",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "сливу",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "сливой,",
+        "stress": 2
+      },
+      {
+        "content": "сливою",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "сливе",
+        "stress": 2
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "сливы",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "слив",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "сливам",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "сливы",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "сливами",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "сливах",
+        "stress": 2
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": null
+}

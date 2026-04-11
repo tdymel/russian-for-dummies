@@ -56,14 +56,11 @@ pub async fn get_noun(id: WordId) -> Noun {
     noun
 }
 
-fn nouns_folder() -> PathBuf {
+fn noun_path(id: WordId) -> PathBuf {
     PathBuf::from(env!("CARGO_MANIFEST_DIR"))
         .join("cache")
         .join("nouns")
-}
-
-fn noun_path(id: WordId) -> PathBuf {
-    nouns_folder().join(format!("{id}.json"))
+        .join(format!("{id}.json"))
 }
 
 fn fetch_noun_from_cache(id: WordId) -> Option<Noun> {

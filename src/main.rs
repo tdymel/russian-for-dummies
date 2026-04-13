@@ -14,19 +14,18 @@ mod stats;
 mod utility;
 /*
 TODO:
-* Different declension types for a and ya and possibly others. Also format it differently.
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian
+* Custom FlashCards müssen WordId referenzieren
 * Add Wisdom
 * Ausdrücke
 * Kategorien von OpenRussian inspirieren lassen
-* Custom FlashCards müssen WordId referenzieren
 * Support english language as well
 * CI/CD + Publish on GitHub later
 
 */
 
 #[derive(Parser, Debug)]
-#[command(name = "myapp")]
+#[command(name = "rfd")]
 struct Args {
     #[arg(short, long)]
     anki: bool,

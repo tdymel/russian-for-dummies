@@ -93,7 +93,7 @@ const TEMPLATE_ANSWER: &'static str = r#"
     <div class="rfd-header">{{Question}}</div>
 
     <div class="rfd-body">
-        <div class="rfd-root" onclick="document.getElementById('sn').play()">{{Root}} ({{Gender}} / {{DeclensionType}})</div>
+        <div class="rfd-root" onclick="document.getElementById('sn').play()">{{Root}} ({{DeclensionType}})</div>
 
         <table>
             <tr>
@@ -149,12 +149,11 @@ const TEMPLATE_ANSWER: &'static str = r#"
 pub static NOUN_MODEL: LazyLock<Model> = LazyLock::new(|| {
     Model::new(
         // Have to change the id every time, otherwise it wont refresh on the device
-        1607392320 + 13,
+        1607392320 + 14,
         "Noun",
         vec![
             Field::new("Question"),
             Field::new("Root"),
-            Field::new("Gender"),
             Field::new("DeclensionType"),
             Field::new("Nominativ-Singular"),
             Field::new("Nominativ-Plural"),

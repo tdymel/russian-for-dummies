@@ -82,10 +82,14 @@ impl ToTemplate for Option<Sentence> {
 impl ToTemplate for DeclensionType {
     fn to_template(&self) -> String {
         match self {
-            DeclensionType::First => "D1".to_string(),
-            DeclensionType::Second => "D2".to_string(),
-            DeclensionType::Third => "D3".to_string(),
-            DeclensionType::Irregular => "DI".to_string(),
+            DeclensionType::Irregular => "I".to_string(),
+            DeclensionType::F1 => "F1".to_string(),
+            DeclensionType::F2 => "F2".to_string(),
+            DeclensionType::F3 => "F3".to_string(),
+            DeclensionType::M1 => "M1".to_string(),
+            DeclensionType::M2 => "M2".to_string(),
+            DeclensionType::M3 => "M3".to_string(),
+            DeclensionType::N => "N".to_string(),
         }
     }
 }
@@ -102,7 +106,6 @@ impl ToNote for FlashCard {
                 vec![
                     &noun.translation.join(", "),
                     &noun.root.to_template(),
-                    &noun.gender.to_template(),
                     &noun.declension_type().to_template(),
                     &noun.singular.nominative.to_template(),
                     &noun.plural.nominative.to_template(),

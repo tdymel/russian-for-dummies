@@ -1,0 +1,104 @@
+{
+  "id": "ToLive",
+  "translation": [
+    "leben",
+    "wohnen"
+  ],
+  "root": [
+    {
+      "content": "жить",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "живу",
+      "stress": 3
+    },
+    "you": {
+      "content": "живёшь",
+      "stress": null
+    },
+    "you_they_formal": {
+      "content": "живёте",
+      "stress": null
+    },
+    "he_she_it": {
+      "content": "живёт",
+      "stress": null
+    },
+    "we": {
+      "content": "живём",
+      "stress": null
+    },
+    "they": {
+      "content": "живут",
+      "stress": 3
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "живи",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "живите",
+      "stress": 3
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "жил",
+      "stress": 1
+    },
+    "feminine": {
+      "content": "жила",
+      "stress": 3
+    },
+    "neuter": {
+      "content": "жило, жило",
+      "stress": 9
+    },
+    "plural": {
+      "content": "жили",
+      "stress": 1
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "lebend, am Leben",
+      "russian": {
+        "content": "живущий",
+        "stress": 3
+      }
+    },
+    "active_past": {
+      "translation": "der/die/das gelebt hat, ehemals lebend",
+      "russian": {
+        "content": "живший",
+        "stress": 1
+      }
+    },
+    "passive_present": null,
+    "passive_past": null,
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "живя",
+        "stress": 3
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "живши",
+        "stress": 1
+      }
+    }
+  },
+  "example": {
+    "translation": "von seiner eigenen Arbeit leben, auf Kosten anderer leben",
+    "russian": "жить собственным трудом, жить на за чужой счёт"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ToHelp",
+  "translation": [
+    "helfen"
+  ],
+  "root": [
+    {
+      "content": "помочь",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "помогу",
+      "stress": 5
+    },
+    "you": {
+      "content": "поможешь",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "поможете",
+      "stress": 3
+    },
+    "he_she_it": {
+      "content": "поможет",
+      "stress": 3
+    },
+    "we": {
+      "content": "поможем",
+      "stress": 3
+    },
+    "they": {
+      "content": "помогут",
+      "stress": 3
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "помоги",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "помогите",
+      "stress": 5
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "помог",
+      "stress": 3
+    },
+    "feminine": {
+      "content": "помогла",
+      "stress": 6
+    },
+    "neuter": {
+      "content": "помогло",
+      "stress": 6
+    },
+    "plural": {
+      "content": "помогли",
+      "stress": 6
+    }
+  },
+  "participles": {
+    "active_present": null,
+    "active_past": {
+      "translation": "der geholfen hat, der Hilfe leistete",
+      "russian": {
+        "content": "помогший",
+        "stress": 3
+      }
+    },
+    "passive_present": null,
+    "passive_past": null,
+    "gerund_present": null,
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "помогши",
+        "stress": 3
+      }
+    }
+  },
+  "example": {
+    "translation": "Das wird nicht helfen.",
+    "russian": "Это не поможет."
+  }
+}

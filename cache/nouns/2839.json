@@ -1,0 +1,94 @@
+{
+  "id": "Toilet",
+  "translation": [
+    "Toilette"
+  ],
+  "root": [
+    {
+      "content": "туалет",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "туалет",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "туалета",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "туалету",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "туалет",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "туалетом",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "туалете",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "туалеты",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "туалетов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "туалетам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "туалеты",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "туалетами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "туалетах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Wo sind bitte die Toiletten?",
+    "russian": "Простите, где туалет?"
+  }
+}

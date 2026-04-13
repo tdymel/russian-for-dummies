@@ -1,0 +1,94 @@
+{
+  "id": "Taxi",
+  "translation": [
+    "Taxi"
+  ],
+  "root": [
+    {
+      "content": "такси",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "такси",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Taxiunternehmen",
+    "russian": "услуги такси"
+  }
+}

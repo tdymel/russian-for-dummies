@@ -1,0 +1,98 @@
+{
+  "id": "Bill",
+  "translation": [
+    "Rechnung"
+  ],
+  "root": [
+    {
+      "content": "счёт",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "счёт",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "счёта",
+        "stress": null
+      }
+    ],
+    "dative": [
+      {
+        "content": "счёту",
+        "stress": null
+      }
+    ],
+    "accusative": [
+      {
+        "content": "счёт",
+        "stress": null
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "счётом",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "счету,",
+        "stress": 4
+      },
+      {
+        "content": "счёте",
+        "stress": null
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "счета",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "счетов",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "счетам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "счета",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "счетами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "счетах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Zahlen (Rechnung) bitte!",
+    "russian": "Счёт, пожалуйста!"
+  }
+}

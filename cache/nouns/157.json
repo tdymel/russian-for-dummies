@@ -1,0 +1,98 @@
+{
+  "id": "Water",
+  "translation": [
+    "Wasser"
+  ],
+  "root": [
+    {
+      "content": "вода",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "вода",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "воды",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "воде",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "воду",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "водой,",
+        "stress": 3
+      },
+      {
+        "content": "водою",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "воде",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "воды",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вод",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "водам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "воды",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "водами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "водах",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Es ist wenig Wasser im Eimer.",
+    "russian": "В ведре мало воды."
+  }
+}

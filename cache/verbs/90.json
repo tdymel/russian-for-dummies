@@ -1,0 +1,105 @@
+{
+  "id": "ToWant",
+  "translation": [
+    "mögen",
+    "wünschen",
+    "wollen"
+  ],
+  "root": [
+    {
+      "content": "хотеть",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "хочу",
+      "stress": 3
+    },
+    "you": {
+      "content": "хочешь",
+      "stress": 1
+    },
+    "you_they_formal": {
+      "content": "хотите",
+      "stress": 3
+    },
+    "he_she_it": {
+      "content": "хочет",
+      "stress": 1
+    },
+    "we": {
+      "content": "хотим",
+      "stress": 3
+    },
+    "they": {
+      "content": "хотят",
+      "stress": 3
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "хоти",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "хотите",
+      "stress": 3
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "хотел",
+      "stress": 3
+    },
+    "feminine": {
+      "content": "хотела",
+      "stress": 3
+    },
+    "neuter": {
+      "content": "хотело",
+      "stress": 3
+    },
+    "plural": {
+      "content": "хотели",
+      "stress": 3
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "wollend, wünschend",
+      "russian": {
+        "content": "хотящий",
+        "stress": 3
+      }
+    },
+    "active_past": {
+      "translation": "wollend, der wollte, wünschend",
+      "russian": {
+        "content": "хотевший",
+        "stress": 3
+      }
+    },
+    "passive_present": null,
+    "passive_past": null,
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "хотя",
+        "stress": 3
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "хотев",
+        "stress": 3
+      }
+    }
+  },
+  "example": {
+    "translation": "Möchtest du Tee?",
+    "russian": "Хочешь чаю?"
+  }
+}

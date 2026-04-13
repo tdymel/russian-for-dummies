@@ -1,0 +1,99 @@
+{
+  "id": "ToAsk",
+  "translation": [
+    "fragen",
+    "eine Frage stellen",
+    "sich erkundigen"
+  ],
+  "root": [
+    {
+      "content": "спросить",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "спрошу",
+      "stress": 5
+    },
+    "you": {
+      "content": "спросишь",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "спросите",
+      "stress": 3
+    },
+    "he_she_it": {
+      "content": "спросит",
+      "stress": 3
+    },
+    "we": {
+      "content": "спросим",
+      "stress": 3
+    },
+    "they": {
+      "content": "спросят",
+      "stress": 3
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "спроси",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "спросите",
+      "stress": 5
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "спросил",
+      "stress": 5
+    },
+    "feminine": {
+      "content": "спросила",
+      "stress": 5
+    },
+    "neuter": {
+      "content": "спросило",
+      "stress": 5
+    },
+    "plural": {
+      "content": "спросили",
+      "stress": 5
+    }
+  },
+  "participles": {
+    "active_present": null,
+    "active_past": {
+      "translation": "der/die gefragt hat",
+      "russian": {
+        "content": "спросивший",
+        "stress": 5
+      }
+    },
+    "passive_present": null,
+    "passive_past": {
+      "translation": "gefragt, befragt",
+      "russian": {
+        "content": "спрошенный",
+        "stress": 3
+      }
+    },
+    "gerund_present": null,
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "спросив",
+        "stress": 5
+      }
+    }
+  },
+  "example": {
+    "translation": "Fragen Sie den Direktor!",
+    "russian": "Спросите директора!"
+  }
+}

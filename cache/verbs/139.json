@@ -1,0 +1,116 @@
+{
+  "id": "ToUnderstand",
+  "translation": [
+    "verstehen",
+    "erkennen"
+  ],
+  "root": [
+    {
+      "content": "понимать",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "понимаю",
+      "stress": 5
+    },
+    "you": {
+      "content": "понимаешь",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "понимаете",
+      "stress": 5
+    },
+    "he_she_it": {
+      "content": "понимает",
+      "stress": 5
+    },
+    "we": {
+      "content": "понимаем",
+      "stress": 5
+    },
+    "they": {
+      "content": "понимают",
+      "stress": 5
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "понимай",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "понимайте",
+      "stress": 5
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "понимал",
+      "stress": 5
+    },
+    "feminine": {
+      "content": "понимала",
+      "stress": 5
+    },
+    "neuter": {
+      "content": "понимало",
+      "stress": 5
+    },
+    "plural": {
+      "content": "понимали",
+      "stress": 5
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "verständig",
+      "russian": {
+        "content": "понимающий",
+        "stress": 5
+      }
+    },
+    "active_past": {
+      "translation": "verstehend, der verstand, der verstanden hat",
+      "russian": {
+        "content": "понимавший",
+        "stress": 5
+      }
+    },
+    "passive_present": {
+      "translation": "verstanden, begriffen",
+      "russian": {
+        "content": "понимаемый",
+        "stress": 5
+      }
+    },
+    "passive_past": {
+      "translation": "",
+      "russian": {
+        "content": "понимается",
+        "stress": null
+      }
+    },
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "понимая",
+        "stress": 5
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "понимав",
+        "stress": null
+      }
+    }
+  },
+  "example": {
+    "translation": "Er versteht den britischen Humor nicht.",
+    "russian": "Он не понимает английский юмор."
+  }
+}

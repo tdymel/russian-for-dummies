@@ -14,7 +14,9 @@ mod stats;
 mod utility;
 /*
 TODO:
-* Support: Verbs, Ajectives, Pronouns, other from OpenRussian
+* Noun declensions can be comma separated. Example Person.
+* Verb Usage
+* Support: Ajectives, Pronouns, other from OpenRussian
 * Custom FlashCards müssen WordId referenzieren
 * Add Wisdom
 * Only package USED media files

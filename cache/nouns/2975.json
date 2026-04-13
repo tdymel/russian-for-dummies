@@ -1,0 +1,94 @@
+{
+  "id": "Sock",
+  "translation": [
+    "Socke"
+  ],
+  "root": [
+    {
+      "content": "носок",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "носок",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "носка",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "носку",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "носок",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "носком",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "носке",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "носки",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "носков",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "носкам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "носки",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "носками",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "носках",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Ich habe keine Socken an.",
+    "russian": "Я без носков."
+  }
+}

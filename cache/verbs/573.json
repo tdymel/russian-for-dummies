@@ -1,0 +1,97 @@
+{
+  "id": "ToBuy",
+  "translation": [
+    "kaufen"
+  ],
+  "root": [
+    {
+      "content": "купить",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "куплю",
+      "stress": 4
+    },
+    "you": {
+      "content": "купишь",
+      "stress": 1
+    },
+    "you_they_formal": {
+      "content": "купите",
+      "stress": 1
+    },
+    "he_she_it": {
+      "content": "купит",
+      "stress": 1
+    },
+    "we": {
+      "content": "купим",
+      "stress": 1
+    },
+    "they": {
+      "content": "купят",
+      "stress": 1
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "купи",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "купите",
+      "stress": 3
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "купил",
+      "stress": 3
+    },
+    "feminine": {
+      "content": "купила",
+      "stress": 3
+    },
+    "neuter": {
+      "content": "купило",
+      "stress": 3
+    },
+    "plural": {
+      "content": "купили",
+      "stress": 3
+    }
+  },
+  "participles": {
+    "active_present": null,
+    "active_past": {
+      "translation": "gekauft habend, der/die/das gekauft hat",
+      "russian": {
+        "content": "купивший",
+        "stress": 3
+      }
+    },
+    "passive_present": null,
+    "passive_past": {
+      "translation": "gekauft",
+      "russian": {
+        "content": "купленный",
+        "stress": 1
+      }
+    },
+    "gerund_present": null,
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "купив",
+        "stress": 3
+      }
+    }
+  },
+  "example": {
+    "translation": "Ich kaufte eine Uhr und verlor sie am nächsten Tag.",
+    "russian": "Я купил часы, а на следующий день их потерял."
+  }
+}

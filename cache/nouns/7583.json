@@ -1,0 +1,94 @@
+{
+  "id": "Bar",
+  "translation": [
+    "Bar"
+  ],
+  "root": [
+    {
+      "content": "бар",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "бар",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "бара",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "бару",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "бар",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "баром",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "баре",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "бары",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "баров",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "барам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "бары",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "барами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "барах",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Sushibar",
+    "russian": "суши-бар"
+  }
+}

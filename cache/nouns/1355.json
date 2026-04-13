@@ -1,0 +1,94 @@
+{
+  "id": "Restaurant",
+  "translation": [
+    "Restaurant"
+  ],
+  "root": [
+    {
+      "content": "ресторан",
+      "stress": 6
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "ресторан",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "ресторана",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "ресторану",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "ресторан",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "рестораном",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ресторане",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "рестораны",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "ресторанов",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "ресторанам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "рестораны",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "ресторанами",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ресторанах",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Unser Restaurant ist das beste.",
+    "russian": "Наш ресторан - лучший."
+  }
+}

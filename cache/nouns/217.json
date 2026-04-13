@@ -1,0 +1,65 @@
+{
+  "id": "Russia",
+  "translation": [
+    "Russland"
+  ],
+  "root": [
+    {
+      "content": "Россия",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "Россия",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "России",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "России",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "Россию",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "Россией,",
+        "stress": 4
+      },
+      {
+        "content": "Россиею",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "России",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "gender": "Female",
+  "example": null
+}

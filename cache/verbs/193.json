@@ -1,0 +1,117 @@
+{
+  "id": "ToLove",
+  "translation": [
+    "lieben",
+    "liebhaben",
+    "gern haben"
+  ],
+  "root": [
+    {
+      "content": "любить",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "люблю",
+      "stress": 4
+    },
+    "you": {
+      "content": "любишь",
+      "stress": 1
+    },
+    "you_they_formal": {
+      "content": "любите",
+      "stress": 1
+    },
+    "he_she_it": {
+      "content": "любит",
+      "stress": 1
+    },
+    "we": {
+      "content": "любим",
+      "stress": 1
+    },
+    "they": {
+      "content": "любят",
+      "stress": 1
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "люби",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "любите",
+      "stress": 3
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "любил",
+      "stress": 3
+    },
+    "feminine": {
+      "content": "любила",
+      "stress": 3
+    },
+    "neuter": {
+      "content": "любило",
+      "stress": 3
+    },
+    "plural": {
+      "content": "любили",
+      "stress": 3
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "liebevoll, liebend",
+      "russian": {
+        "content": "любящий",
+        "stress": 1
+      }
+    },
+    "active_past": {
+      "translation": "der/die/das geliebt hat",
+      "russian": {
+        "content": "любивший",
+        "stress": 3
+      }
+    },
+    "passive_present": {
+      "translation": "Lieblings-",
+      "russian": {
+        "content": "любимый",
+        "stress": 3
+      }
+    },
+    "passive_past": {
+      "translation": "geliebt",
+      "russian": {
+        "content": "любленный",
+        "stress": 1
+      }
+    },
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "любя",
+        "stress": 3
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "любив",
+        "stress": null
+      }
+    }
+  },
+  "example": {
+    "translation": "ich liebe Russland",
+    "russian": "Я люблю Рoссию"
+  }
+}

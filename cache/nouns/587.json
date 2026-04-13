@@ -1,0 +1,94 @@
+{
+  "id": "Ruble",
+  "translation": [
+    "Rubel"
+  ],
+  "root": [
+    {
+      "content": "рубль",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "рубль",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "рубля",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "рублю",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "рубль",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "рублём",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "рубле",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "рубли",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "рублей",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "рублям",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "рубли",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "рублями",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "рублях",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Wer den Pfennig nicht ehrt, ist den Taler nicht wert.",
+    "russian": "Копейка рубль бережёт."
+  }
+}

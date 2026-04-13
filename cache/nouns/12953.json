@@ -1,0 +1,94 @@
+{
+  "id": "Supermarket",
+  "translation": [
+    "Supermarkt"
+  ],
+  "root": [
+    {
+      "content": "супермаркет",
+      "stress": 6
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "супермаркет",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "супермаркета",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "супермаркету",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "супермаркет",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "супермаркетом",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "супермаркете",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "супермаркеты",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "супермаркетов",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "супермаркетам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "супермаркеты",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "супермаркетами",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "супермаркетах",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Ich bin zum Supermarkt gegangen.",
+    "russian": "Я ходил в супермаркет."
+  }
+}

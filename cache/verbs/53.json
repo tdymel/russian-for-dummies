@@ -1,0 +1,116 @@
+{
+  "id": "ToSpeak",
+  "translation": [
+    "sprechen",
+    "reden"
+  ],
+  "root": [
+    {
+      "content": "говорить",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "говорю",
+      "stress": 5
+    },
+    "you": {
+      "content": "говоришь",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "говорите",
+      "stress": 5
+    },
+    "he_she_it": {
+      "content": "говорит",
+      "stress": 5
+    },
+    "we": {
+      "content": "говорим",
+      "stress": 5
+    },
+    "they": {
+      "content": "говорят",
+      "stress": 5
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "говори",
+      "stress": 5
+    },
+    "you_they_formal": {
+      "content": "говорите",
+      "stress": 5
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "говорил",
+      "stress": 5
+    },
+    "feminine": {
+      "content": "говорила",
+      "stress": 5
+    },
+    "neuter": {
+      "content": "говорило",
+      "stress": 5
+    },
+    "plural": {
+      "content": "говорили",
+      "stress": 5
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "sprechend",
+      "russian": {
+        "content": "говорящий",
+        "stress": 5
+      }
+    },
+    "active_past": {
+      "translation": "sprechend, der/die/das gesprochen hat, gesprochen habend",
+      "russian": {
+        "content": "говоривший",
+        "stress": 5
+      }
+    },
+    "passive_present": {
+      "translation": "gesprochen, sagbar, aussprechbar",
+      "russian": {
+        "content": "говоримый",
+        "stress": 5
+      }
+    },
+    "passive_past": {
+      "translation": "gesprochen, gesagt",
+      "russian": {
+        "content": "говорённый",
+        "stress": null
+      }
+    },
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "говоря",
+        "stress": 5
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "говорив",
+        "stress": null
+      }
+    }
+  },
+  "example": {
+    "translation": "Er spricht nicht nur Französisch, er spricht auch Spanisch.",
+    "russian": "Он говорит не только на французском, но и на испанском."
+  }
+}

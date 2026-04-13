@@ -1,0 +1,98 @@
+{
+  "id": "Hotel",
+  "translation": [
+    "Hotel"
+  ],
+  "root": [
+    {
+      "content": "гостиница",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "гостиница",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "гостиницы",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "гостинице",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "гостиницу",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "гостиницей,",
+        "stress": 4
+      },
+      {
+        "content": "гостиницею",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "гостинице",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "гостиницы",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "гостиниц",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "гостиницам",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "гостиницы",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "гостиницами",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "гостиницах",
+        "stress": 4
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Können Sie mir ein Hotel empfehlen?",
+    "russian": "Вы можете посоветовать мне гостиницу?"
+  }
+}

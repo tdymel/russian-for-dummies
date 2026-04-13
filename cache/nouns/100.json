@@ -1,0 +1,102 @@
+{
+  "id": "House",
+  "translation": [
+    "Haus"
+  ],
+  "root": [
+    {
+      "content": "дом",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "дом",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "дома",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "дому",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "дом",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "домом",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "доме,",
+        "stress": 1
+      },
+      {
+        "content": "на",
+        "stress": null
+      },
+      {
+        "content": "дому",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "дома",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "домов",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "домам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "дома",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "домами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "домах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Das Haus ist groß.",
+    "russian": "Дом большой."
+  }
+}

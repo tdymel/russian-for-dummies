@@ -1,0 +1,94 @@
+{
+  "id": "Wine",
+  "translation": [
+    "Wein"
+  ],
+  "root": [
+    {
+      "content": "вино",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "вино",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вина",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "вину",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "вино",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "вином",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "вине",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "вина",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вин",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "винам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "вина",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "винами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "винах",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Neuter",
+  "example": {
+    "translation": "Ich habe Wein.",
+    "russian": "У меня есть вино."
+  }
+}

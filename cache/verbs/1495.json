@@ -1,0 +1,103 @@
+{
+  "id": "ToCost",
+  "translation": [
+    "kosten"
+  ],
+  "root": [
+    {
+      "content": "стоить",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "стою",
+      "stress": 2
+    },
+    "you": {
+      "content": "стоишь",
+      "stress": 2
+    },
+    "you_they_formal": {
+      "content": "стоите",
+      "stress": 2
+    },
+    "he_she_it": {
+      "content": "стоит",
+      "stress": 2
+    },
+    "we": {
+      "content": "стоим",
+      "stress": 2
+    },
+    "they": {
+      "content": "стоят",
+      "stress": 2
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "стой",
+      "stress": 2
+    },
+    "you_they_formal": {
+      "content": "стойте",
+      "stress": 2
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "стоил",
+      "stress": 2
+    },
+    "feminine": {
+      "content": "стоила",
+      "stress": 2
+    },
+    "neuter": {
+      "content": "стоило",
+      "stress": 2
+    },
+    "plural": {
+      "content": "стоили",
+      "stress": 2
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "wert, lohnend, wertvoll",
+      "russian": {
+        "content": "стоящий",
+        "stress": 2
+      }
+    },
+    "active_past": {
+      "translation": "kostend, wert, der/die/das gekostet hat",
+      "russian": {
+        "content": "стоивший",
+        "stress": 2
+      }
+    },
+    "passive_present": null,
+    "passive_past": null,
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "стоя",
+        "stress": 2
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "стоив",
+        "stress": null
+      }
+    }
+  },
+  "example": {
+    "translation": "Das hat ihn seine Arbeit gekostet.",
+    "russian": "Это стоило ему работы."
+  }
+}

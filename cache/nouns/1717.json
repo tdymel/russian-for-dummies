@@ -1,0 +1,94 @@
+{
+  "id": "October",
+  "translation": [
+    "Oktober"
+  ],
+  "root": [
+    {
+      "content": "октябрь",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "октябрь",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "октября",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "октябрю",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "октябрь",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "октябрём",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "октябре",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "октябри",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "октябрей",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "октябрям",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "октябри",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "октябрями",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "октябрях",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Im November ist es kälter als im Oktober. Die Tage sind kürzer als die Nächte.",
+    "russian": "В ноябре холоднее, чем в октябре. Дни короче, чем ночи."
+  }
+}

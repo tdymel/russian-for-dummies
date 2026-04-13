@@ -1,0 +1,122 @@
+{
+  "id": "Person",
+  "translation": [
+    "Mensch"
+  ],
+  "root": [
+    {
+      "content": "человек",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "человек",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "человека",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "человеку",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "человека",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "человеком",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "человеке",
+        "stress": 5
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "люди,",
+        "stress": 1
+      },
+      {
+        "content": "человеки",
+        "stress": 5
+      }
+    ],
+    "genitive": [
+      {
+        "content": "людей,",
+        "stress": 3
+      },
+      {
+        "content": "человеков,",
+        "stress": 5
+      },
+      {
+        "content": "человек",
+        "stress": 5
+      }
+    ],
+    "dative": [
+      {
+        "content": "людям,",
+        "stress": 1
+      },
+      {
+        "content": "человекам",
+        "stress": 5
+      }
+    ],
+    "accusative": [
+      {
+        "content": "людей,",
+        "stress": 3
+      },
+      {
+        "content": "человеков",
+        "stress": 5
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "людьми,",
+        "stress": 5
+      },
+      {
+        "content": "человеками",
+        "stress": 5
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "людях,",
+        "stress": 1
+      },
+      {
+        "content": "человеках",
+        "stress": 5
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Jeder Mensch, der allein ist, ist allein, weil er Angst vor den anderen hat.",
+    "russian": "Каждый одинокий человек одинок из-за страха перед окружающими."
+  }
+}

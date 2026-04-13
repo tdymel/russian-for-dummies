@@ -48,7 +48,6 @@ macro_rules! word_ids {
     };
 }
 
-
 impl std::fmt::Display for WordId {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         self.id().fmt(f)

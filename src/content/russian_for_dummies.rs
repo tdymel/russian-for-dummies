@@ -3,8 +3,10 @@ use crate::{
     model::Deck,
 };
 
+pub const DECK_NAME: &'static str = "Russisch für Dummies";
+
 pub async fn create_deck() -> Deck {
-    Deck::new("Russisch für Dummies")
+    Deck::new(DECK_NAME)
         .add(vegetables().await)
         .add(fruits().await)
 }

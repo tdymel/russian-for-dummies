@@ -1,7 +1,9 @@
 use clap::Parser;
 
 use crate::{
-    content::russian_for_dummies::create_deck, genanki::CompileAnkiDeck, stats::print_stats,
+    content::russian_for_dummies::create_deck,
+    genanki::{CompileAnkiDeck, sync_deck},
+    stats::print_stats,
 };
 
 mod content;
@@ -15,12 +17,11 @@ TODO:
 * Different declension types for a and ya and possibly others. Also format it differently.
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian
 * Add Wisdom
-* Find a way to publish and update it more easily
-* CI/CD + Publish on GitHub later
 * Ausdrücke
 * Kategorien von OpenRussian inspirieren lassen
 * Custom FlashCards müssen WordId referenzieren
 * Support english language as well
+* CI/CD + Publish on GitHub later
 
 */
 
@@ -53,6 +54,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     if args.anki {
         println!("Generating Anki-Deck!");
         create_deck().await.compile();
+        sync_deck().await.unwrap();
     }
 
     Ok(())

@@ -14,9 +14,17 @@ pub async fn fetch_word(id: WordId) -> Option<WordEntry> {
             .get(url)
             .send()
             .await
+            .map_err(|err| {
+                println!("ERROR: {:#?}", err);
+                err
+            })
             .ok()?
             .json::<ApiResponse>()
             .await
+            .map_err(|err| {
+                println!("ERROR: {:#?}", err);
+                err
+            })
             .ok()?
             .result,
     )
@@ -61,6 +69,7 @@ pub struct WordEntry {
     #[serde(rename = "isParticiple")]
     pub is_participle: Option<bool>,
     pub noun: Option<NounData>,
+    pub verb: Option<VerbData>,
     #[serde(default)]
     pub sentences: Vec<Sentence>,
 }
@@ -161,6 +170,61 @@ pub struct NounData {
     #[serde(rename = "declFullAudio")]
     pub decl_full_audio: String,
     pub partner2: Option<Value>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct VerbData {
+    pub aspect: Option<String>,
+    pub directionality: Option<String>,
+    #[serde(rename = "directionalityPartnerWord")]
+    pub directionality_partner_word: Option<Value>,
+    #[serde(default)]
+    pub partners: Vec<String>,
+    #[serde(default)]
+    pub partners2: Vec<Value>,
+    #[serde(default)]
+    pub imperatives: Vec<String>,
+    #[serde(rename = "imperativesAudio")]
+    pub imperatives_audio: Option<String>,
+    #[serde(default)]
+    pub pasts: Vec<String>,
+    #[serde(rename = "pastsAudio")]
+    pub pasts_audio: Option<String>,
+    #[serde(default)]
+    pub presfut: Vec<String>,
+    #[serde(default)]
+    pub present: Vec<String>,
+    #[serde(default)]
+    pub future: Vec<String>,
+    #[serde(rename = "presfutAudio")]
+    pub presfut_audio: Option<String>,
+    #[serde(rename = "hasPresfutStressChange")]
+    pub has_presfut_stress_change: Option<bool>,
+    pub participles: Option<VerbParticiples>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct VerbParticiples {
+    #[serde(rename = "activePresent", default)]
+    pub active_present: Vec<VerbParticipleEntry>,
+    #[serde(rename = "activePast", default)]
+    pub active_past: Vec<VerbParticipleEntry>,
+    #[serde(rename = "passivePresent", default)]
+    pub passive_present: Vec<VerbParticipleEntry>,
+    #[serde(rename = "passivePast", default)]
+    pub passive_past: Vec<VerbParticipleEntry>,
+    #[serde(rename = "gerundPresent", default)]
+    pub gerund_present: Vec<VerbParticipleEntry>,
+    #[serde(rename = "gerundPast", default)]
+    pub gerund_past: Vec<VerbParticipleEntry>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct VerbParticipleEntry {
+    pub accented: String,
+    pub id: Option<String>,
+    #[serde(default)]
+    pub translations: Vec<Translation>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -17,10 +17,12 @@ TODO:
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian
 * Custom FlashCards müssen WordId referenzieren
 * Add Wisdom
+* Only package USED media files
 * Ausdrücke
 * Kategorien von OpenRussian inspirieren lassen
 * Support english language as well
 * CI/CD + Publish on GitHub later
+
 
 */
 

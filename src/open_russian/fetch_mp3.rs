@@ -37,10 +37,10 @@ pub async fn fetch_mp3_test(russian: &str, test: bool) {
         .unwrap();
 
     if bytes.len() < 2000 {
-        panic!("Faulty mp3 for '{russian}'");
+        println!("Skipping faulty mp3 for '{russian}'");
     }
 
-    if !test {
+    if !test && bytes.len() > 2000 {
         let mut file = File::create(path).unwrap();
         file.write_all(&bytes).unwrap();
     }

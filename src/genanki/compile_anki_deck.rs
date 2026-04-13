@@ -1,7 +1,7 @@
 use std::{fs, path::PathBuf};
 
 use crate::{
-    genanki::models::NOUN_MODEL,
+    genanki::models::{NOUN_MODEL, VERB_MODEL},
     model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word},
     utility::hash_to_base64,
 };
@@ -94,6 +94,48 @@ impl ToTemplate for DeclensionType {
     }
 }
 
+trait ToAudio {
+    fn to_audio(&self, id: &str) -> String;
+}
+
+impl<T: ToAudio> ToAudio for Option<T> {
+    fn to_audio(&self, id: &str) -> String {
+        self.as_ref()
+            .map(|it| it.to_audio(id))
+            .unwrap_or("".to_string())
+    }
+}
+
+impl ToAudio for Phrase {
+    fn to_audio(&self, id: &str) -> String {
+        format!(
+            "<audio id=\"{}\" src=\"{}.mp3\"></audio>",
+            id,
+            hash_to_base64(&self.accented().replace("'", ""))
+        )
+    }
+}
+
+impl ToAudio for Sentence {
+    fn to_audio(&self, id: &str) -> String {
+        format!(
+            "<audio id=\"{}\" src=\"{}.mp3\"></audio>",
+            id,
+            hash_to_base64(&self.to_string())
+        )
+    }
+}
+
+impl ToAudio for Word {
+    fn to_audio(&self, id: &str) -> String {
+        format!(
+            "<audio id=\"{}\" src=\"{}.mp3\"></audio>",
+            id,
+            hash_to_base64(&self.accented().replace("'", ""))
+        )
+    }
+}
+
 trait ToNote {
     fn to_note(self) -> Note;
 }
@@ -101,6 +143,41 @@ trait ToNote {
 impl ToNote for FlashCard {
     fn to_note(self) -> Note {
         match self {
+            FlashCard::Verb(verb) => Note::new(
+                VERB_MODEL.clone(),
+                vec![
+                    &verb.translation.join(", "),
+                    &verb.root.to_template(),
+                    &verb.present.i.to_template(),
+                    &verb.present.you.to_template(),
+                    &verb.present.he_she_it.to_template(),
+                    &verb.present.we.to_template(),
+                    &verb.present.you_they_formal.to_template(),
+                    &verb.present.they.to_template(),
+                    &verb.imperative.you.to_template(),
+                    &verb.imperative.you_they_formal.to_template(),
+                    &verb.past.masculine.to_template(),
+                    &verb.past.feminine.to_template(),
+                    &verb.past.neuter.to_template(),
+                    &verb.past.plural.to_template(),
+                    &verb.example.to_template(),
+                    &verb.root.to_audio("root"),
+                    &verb.present.i.to_audio("Present1"),
+                    &verb.present.you.to_audio("Present2"),
+                    &verb.present.he_she_it.to_audio("Present3"),
+                    &verb.present.we.to_audio("Present4"),
+                    &verb.present.you_they_formal.to_audio("Present5"),
+                    &verb.present.they.to_audio("Present6"),
+                    &verb.imperative.you.to_audio("Imp1"),
+                    &verb.imperative.you_they_formal.to_audio("Imp2"),
+                    &verb.past.masculine.to_audio("Past1"),
+                    &verb.past.feminine.to_audio("Past2"),
+                    &verb.past.neuter.to_audio("Past3"),
+                    &verb.past.plural.to_audio("Past4"),
+                    &verb.example.to_audio("example"),
+                ],
+            )
+            .unwrap(),
             FlashCard::Noun(noun) => Note::new(
                 NOUN_MODEL.clone(),
                 vec![
@@ -120,96 +197,19 @@ impl ToNote for FlashCard {
                     &noun.singular.prepositional.to_template(),
                     &noun.plural.prepositional.to_template(),
                     &noun.example.to_template(),
-                    &format!(
-                        "<audio id=\"sn\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .nominative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pn\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .nominative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"si\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .instrumental
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pi\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .instrumental
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"sd\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .dative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pd\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .dative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"sg\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .genitive
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pg\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .genitive
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"sa\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .accusative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pa\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .accusative
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"sp\" src=\"{}.mp3\"></audio>",
-                        noun.singular
-                            .prepositional
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"pp\" src=\"{}.mp3\"></audio>",
-                        noun.plural
-                            .prepositional
-                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
-                            .unwrap_or("none".to_string())
-                    ),
-                    &format!(
-                        "<audio id=\"example\" src=\"{}.mp3\"></audio>",
-                        noun.example
-                            .map(|it| hash_to_base64(&it.to_string()))
-                            .unwrap_or("none".to_string())
-                    ),
+                    &noun.singular.nominative.to_audio("sn"),
+                    &noun.plural.nominative.to_audio("pn"),
+                    &noun.singular.instrumental.to_audio("si"),
+                    &noun.plural.instrumental.to_audio("pi"),
+                    &noun.singular.dative.to_audio("sd"),
+                    &noun.plural.dative.to_audio("pd"),
+                    &noun.singular.genitive.to_audio("sg"),
+                    &noun.plural.genitive.to_audio("pg"),
+                    &noun.singular.accusative.to_audio("sa"),
+                    &noun.plural.accusative.to_audio("pa"),
+                    &noun.singular.prepositional.to_audio("sp"),
+                    &noun.plural.prepositional.to_audio("pp"),
+                    &noun.example.to_audio("example"),
                 ],
             )
             .unwrap(),
@@ -235,9 +235,7 @@ impl CompileAnkiDeck for Deck {
             .flat_map(|it| it.flash_cards)
             .collect::<Vec<_>>();
 
-        flash_cards.sort_by(|l, r| match (l, r) {
-            (FlashCard::Noun(nl), FlashCard::Noun(nr)) => nl.csfr.cmp(&nr.csfr),
-        });
+        flash_cards.sort_by(|l, r| l.csfr().cmp(&r.csfr()));
 
         for flash_card in flash_cards {
             deck.add_note(flash_card.to_note());

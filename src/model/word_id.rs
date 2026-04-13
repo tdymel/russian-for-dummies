@@ -1,3 +1,5 @@
+#![allow(non_camel_case_types)]
+
 use serde::{Deserialize, Serialize};
 
 macro_rules! word_ids {
@@ -55,6 +57,10 @@ impl std::fmt::Display for WordId {
 }
 
 word_ids! {
+    // A1 unsorted
+    Can_AbleTo = 32,
+
+    // Vegetables
     Garlic = 10770,
     Vegetable = 5166,
     Tomato = 6379,
@@ -80,6 +86,7 @@ word_ids! {
     Paprika = 60104,
     Mushroom = 1830,
 
+    // Fruits
     Fruit = 4080,
     Apple = 2471,
     Banana = 10845,

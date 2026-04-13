@@ -1,6 +1,6 @@
 use crate::{
     model::{Csfr, Declension, Gender, Noun, Phrase, Sentence, Word, WordId},
-    open_russian::word_api::fetch_word,
+    open_russian::api::fetch_word,
 };
 
 pub async fn fetch_noun(id: WordId) -> Option<Noun> {
@@ -46,7 +46,7 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
     })
 }
 
-fn map_declension(declension: &crate::open_russian::word_api::DeclensionForms) -> Declension {
+fn map_declension(declension: &crate::open_russian::api::DeclensionForms) -> Declension {
     Declension {
         nominative: map_declension_words(&declension.nom),
         genitive: map_declension_words(&declension.r#gen),

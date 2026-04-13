@@ -8,6 +8,7 @@ mod gender;
 mod noun;
 mod phrase;
 mod sentence;
+mod verb;
 mod word;
 mod word_id;
 
@@ -21,5 +22,6 @@ pub use gender::*;
 pub use noun::*;
 pub use phrase::*;
 pub use sentence::*;
+pub use verb::*;
 pub use word::*;
 pub use word_id::*;

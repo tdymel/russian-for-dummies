@@ -1,0 +1,105 @@
+{
+  "id": "Can_AbleTo",
+  "translation": [
+    "können",
+    "imstande sein",
+    "dürfen"
+  ],
+  "root": [
+    {
+      "content": "мочь",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "present": {
+    "i": {
+      "content": "могу",
+      "stress": 3
+    },
+    "you": {
+      "content": "можешь",
+      "stress": 1
+    },
+    "you_they_formal": {
+      "content": "можете",
+      "stress": 1
+    },
+    "he_she_it": {
+      "content": "может",
+      "stress": 1
+    },
+    "we": {
+      "content": "можем",
+      "stress": 1
+    },
+    "they": {
+      "content": "могут",
+      "stress": 1
+    }
+  },
+  "imperative": {
+    "you": {
+      "content": "моги",
+      "stress": 3
+    },
+    "you_they_formal": {
+      "content": "могите",
+      "stress": 3
+    }
+  },
+  "past": {
+    "masculine": {
+      "content": "мог",
+      "stress": 1
+    },
+    "feminine": {
+      "content": "могла",
+      "stress": 4
+    },
+    "neuter": {
+      "content": "могло",
+      "stress": 4
+    },
+    "plural": {
+      "content": "могли",
+      "stress": 4
+    }
+  },
+  "participles": {
+    "active_present": {
+      "translation": "fähig, mächtig",
+      "russian": {
+        "content": "могущий",
+        "stress": 1
+      }
+    },
+    "active_past": {
+      "translation": "der fähig war zu, der imstande war zu",
+      "russian": {
+        "content": "могший",
+        "stress": 1
+      }
+    },
+    "passive_present": null,
+    "passive_past": null,
+    "gerund_present": {
+      "translation": "",
+      "russian": {
+        "content": "мога",
+        "stress": 3
+      }
+    },
+    "gerund_past": {
+      "translation": "",
+      "russian": {
+        "content": "могши",
+        "stress": 1
+      }
+    }
+  },
+  "example": {
+    "translation": "Sie kann nicht nur Englisch sprechen, sondern auch Französisch.",
+    "russian": "Она может говорить не только по-английски, но и по-французски."
+  }
+}

@@ -15,6 +15,11 @@ pub struct Noun {
 }
 
 impl Noun {
+    pub fn translation(mut self, trans: &str) -> Self {
+        self.translation = vec![trans.to_string()];
+        self
+    }
+
     pub fn declension_type(&self) -> DeclensionType {
         match self.root.to_string().chars().last().unwrap() {
             'а' | 'я' if self.gender == Gender::Female || self.gender == Gender::Male => {

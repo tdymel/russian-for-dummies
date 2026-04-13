@@ -98,6 +98,5 @@ word_ids! {
     Mango = 40850,
     Watermelon = 8884,
     Lemon = 5650,
-    Lime = 22711,
     Pomegranate = 6526,
 }

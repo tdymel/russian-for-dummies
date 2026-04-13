@@ -1,8 +1,7 @@
 {
   "id": "Cherry",
   "translation": [
-    "Kirsche",
-    "Kirschbaum"
+    "Kirsche"
   ],
   "root": [
     {
@@ -93,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Der Wind ließ Kirschblüten auf Maria herabregnen, als sie auf der Wiese saß und auf das Meer hinausblickte.",
-    "russian": "Когда Мария сидела на лугу и смотрела на море, ветер осыпал её цветочками вишни."
+    "translation": "Kirschen sind rot.",
+    "russian": "Вишни красные."
   }
 }

@@ -6,11 +6,7 @@ use crate::{
 };
 
 pub async fn get_noun(id: WordId) -> Noun {
-    if let Some(noun) = fetch_noun_from_cache(id) {
-        return noun;
-    }
-
-    let noun = fetch_noun(id).await.expect("Expected to fetch noun!");
+    let noun = fetch_noun_try_cached(id).await;
     if let Some(val) = &noun.example {
         fetch_mp3(&val.to_string()).await;
     }
@@ -51,8 +47,6 @@ pub async fn get_noun(id: WordId) -> Noun {
         fetch_mp3(&val.accented()).await;
     }
 
-    cache_noun(&noun);
-
     noun
 }
 
@@ -63,11 +57,19 @@ fn noun_path(id: WordId) -> PathBuf {
         .join(format!("{id}.json"))
 }
 
-fn fetch_noun_from_cache(id: WordId) -> Option<Noun> {
+async fn fetch_noun_try_cached(id: WordId) -> Noun {
     let path = noun_path(id);
 
-    let file = File::open(path).ok()?;
-    serde_json::from_reader(file).ok()
+    if let Some(file) = File::open(path).ok() {
+        if let Some(noun) = serde_json::from_reader(file).ok() {
+            return noun;
+        }
+    }
+
+    let noun = fetch_noun(id).await.expect("Expected to fetch noun!");
+    cache_noun(&noun);
+
+    noun
 }
 
 fn cache_noun(noun: &Noun) {

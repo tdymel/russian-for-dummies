@@ -1,8 +1,7 @@
 {
   "id": "Fruit",
   "translation": [
-    "Frucht",
-    "Obst"
+    "Frucht"
   ],
   "root": [
     {
@@ -89,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Er aß Obst und Gemüse.",
-    "russian": "Он ел фрукты и овощи."
+    "translation": "So ein Früchtchen!",
+    "russian": "Вот так фрукт!"
   }
 }

@@ -1,8 +1,9 @@
-use std::{collections::HashSet, fs, path::PathBuf};
+use std::{fs, path::PathBuf};
 
 use crate::{
     genanki::models::NOUN_MODEL,
-    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word, WordId},
+    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word},
+    utility::hash_to_base64,
 };
 
 use genanki_rs::{Deck as AnkiDeck, Note, Package};
@@ -120,90 +121,90 @@ impl ToNote for FlashCard {
                         "<audio id=\"sn\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .nominative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pn\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .nominative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
-                        "<audio id=\"si\" src=\"{}-si.mp3\"></audio>",
+                        "<audio id=\"si\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .instrumental
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pi\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .instrumental
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"sd\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .dative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pd\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .dative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"sg\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .genitive
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pg\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .genitive
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"sa\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .accusative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pa\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .accusative
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"sp\" src=\"{}.mp3\"></audio>",
                         noun.singular
                             .prepositional
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"pp\" src=\"{}.mp3\"></audio>",
                         noun.plural
                             .prepositional
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.accented().replace("'", "")))
                             .unwrap_or("none".to_string())
                     ),
                     &format!(
                         "<audio id=\"example\" src=\"{}.mp3\"></audio>",
                         noun.example
-                            .map(|it| it.to_string())
+                            .map(|it| hash_to_base64(&it.to_string()))
                             .unwrap_or("none".to_string())
                     ),
                 ],
@@ -225,7 +226,6 @@ impl CompileAnkiDeck for Deck {
             self.description.unwrap_or("Potato; Potato"),
         );
 
-        let mut words = HashSet::<WordId>::new();
         let mut flash_cards = self
             .categories
             .into_iter()
@@ -237,13 +237,6 @@ impl CompileAnkiDeck for Deck {
         });
 
         for flash_card in flash_cards {
-            let id = match &flash_card {
-                FlashCard::Noun(noun) => noun.id,
-            };
-            if words.contains(&id) {
-                panic!("Duplicate word: {}!", id);
-            }
-            words.insert(id);
             deck.add_note(flash_card.to_note());
         }
 

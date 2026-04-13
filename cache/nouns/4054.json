@@ -1,8 +1,7 @@
 {
   "id": "Cabbage",
   "translation": [
-    "Kohl",
-    "Kraut"
+    "Kohl"
   ],
   "root": [
     {
@@ -93,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Er hat viel Kohle.",
-    "russian": "У него много капусты."
+    "translation": "Tom mag jedes Gemüse außer Kohl.",
+    "russian": "Том любит все овощи, кроме капусты."
   }
 }

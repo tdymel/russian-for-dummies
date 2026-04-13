@@ -91,5 +91,8 @@
     ]
   },
   "gender": "Female",
-  "example": null
+  "example": {
+    "translation": "Ich habe rote Linsensuppe gekocht.",
+    "russian": "Я приготовила суп из красной чечевицы."
+  }
 }

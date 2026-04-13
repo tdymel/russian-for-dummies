@@ -10,11 +10,12 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
 
     Some(Noun {
         id: WordId::try_from(word_entry.id as usize).unwrap(),
-        translation: word_entry
-            .translations
-            .iter()
-            .map(|it| it.tls[0].clone())
-            .collect(),
+        translation: vec![word_entry.translations[0].tls[0].clone()],
+        // translation: word_entry
+        //     .translations
+        //     .iter()
+        //     .map(|it| it.tls[0].clone())
+        //     .collect(),
         root: from_accented(&word_entry.accented),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
         gender: word_entry
@@ -27,10 +28,21 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
             .unwrap_or(Gender::Unknown),
         singular: map_declension(&word_entry.noun.as_ref().unwrap().declension.sg),
         plural: map_declension(&word_entry.noun.as_ref().unwrap().declension.pl),
-        example: word_entry.sentences.get(0).map(|it| Sentence {
-            translation: it.tl.clone(),
-            russian: it.ru.clone().replace("'", ""),
-        }),
+        example: word_entry.translations[0]
+            .example_ru
+            .clone()
+            .map(|it| Sentence {
+                translation: word_entry.translations[0]
+                    .example_tl
+                    .as_ref()
+                    .unwrap()
+                    .clone(),
+                russian: it.clone().replace("'", ""),
+            })
+            .or(word_entry.sentences.get(0).map(|it| Sentence {
+                translation: it.tl.clone(),
+                russian: it.ru.clone().replace("'", ""),
+            })),
     })
 }
 

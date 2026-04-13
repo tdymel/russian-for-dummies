@@ -1,8 +1,7 @@
 {
   "id": "Lemon",
   "translation": [
-    "Zitrone",
-    "eine Million"
+    "Zitrone"
   ],
   "root": [
     {
@@ -89,7 +88,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Die Zitrone ist eine saure Frucht.",
-    "russian": "Лимон - кислый фрукт."
+    "translation": "Frischer Zitronenduft erfüllt die Luft.",
+    "russian": "Свежий запах лимона наполняет воздух."
   }
 }

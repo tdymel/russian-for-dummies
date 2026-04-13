@@ -1,19 +1,26 @@
 use clap::Parser;
 
-use crate::{content::russian_for_dummies::create_deck, genanki::CompileAnkiDeck, stats::print_stats};
+use crate::{
+    content::russian_for_dummies::create_deck, genanki::CompileAnkiDeck, stats::print_stats,
+};
 
 mod content;
 mod genanki;
 mod model;
 mod open_russian;
 mod stats;
+mod utility;
 /*
 TODO:
+* Different declension types for a and ya and possibly others. Also format it differently.
 * Support: Verbs, Ajectives, Pronouns, other from OpenRussian
 * Add Wisdom
 * Find a way to publish and update it more easily
-* Support english language as well
 * CI/CD + Publish on GitHub later
+* Ausdrücke
+* Kategorien von OpenRussian inspirieren lassen
+* Custom FlashCards müssen WordId referenzieren
+* Support english language as well
 
 */
 
@@ -26,7 +33,6 @@ struct Args {
     test: bool,
     #[arg(short, long)]
     stats: bool,
-
 }
 
 #[tokio::main]

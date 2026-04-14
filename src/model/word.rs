@@ -13,6 +13,10 @@ impl std::fmt::Display for Word {
 }
 
 impl Word {
+    pub fn contains(&self, pat: &str) -> bool {
+        self.content.contains(pat)
+    }
+
     pub fn accented(&self) -> String {
         match self.stress {
             Some(pos) => {

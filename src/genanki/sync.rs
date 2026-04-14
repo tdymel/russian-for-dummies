@@ -1,5 +1,5 @@
 use reqwest::Client;
-use serde::{Deserialize, Serialize};
+use serde::Deserialize;
 use serde_json::{Value, json};
 use std::error::Error;
 
@@ -77,12 +77,5 @@ pub async fn sync_deck() -> Result<(), Box<dyn Error>> {
     delete_deck().await?;
     import_apkg().await?;
     trigger_sync().await?;
-    Ok(())
-}
-
-#[tokio::main]
-async fn main() -> Result<(), Box<dyn Error>> {
-    sync_deck().await?;
-    println!("Deck synced successfully.");
     Ok(())
 }

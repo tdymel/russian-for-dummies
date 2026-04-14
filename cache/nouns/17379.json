@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "клубникой,",
+        "content": "клубникой",
         "stress": 5
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Magst du Erdbeeren?",
-    "russian": "Ты любишь клубнику?"
+    "translation": "Auf dem Markt kauften wir Pfirsiche, Artischocken, Zucchini, Erdbeeren und Auberginen.",
+    "russian": "На ры'нке мы купи'ли пе'рсики, артишо'ки, кабачки', клубни'ку и баклажа'ны."
   }
 }

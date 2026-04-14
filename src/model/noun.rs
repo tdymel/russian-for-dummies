@@ -15,6 +15,11 @@ pub struct Noun {
 }
 
 impl Noun {
+    pub fn decl_plural_keep(mut self, pat: &str) -> Self {
+        self.plural = self.plural.keep_contains(pat);
+        self
+    }
+
     pub fn translation(mut self, trans: &str) -> Self {
         self.translation = vec![trans.to_string()];
         self

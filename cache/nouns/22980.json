@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "ежевикой,",
+        "content": "ежевикой",
         "stress": 4
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Es gibt viele Brombeeren in Norddeutschland.",
-    "russian": "В Северной Германии растет много ежевики."
+    "translation": "Ich mag Brombeeren.",
+    "russian": "Я люблю' ежеви'ку."
   }
 }

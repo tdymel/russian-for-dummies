@@ -10,31 +10,82 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": true,
   "present": {
-    "i": {
-      "content": "куплю",
-      "stress": 4
-    },
-    "you": {
-      "content": "купишь",
-      "stress": 1
-    },
-    "you_they_formal": {
-      "content": "купите",
-      "stress": 1
-    },
-    "he_she_it": {
-      "content": "купит",
-      "stress": 1
-    },
-    "we": {
-      "content": "купим",
-      "stress": 1
-    },
-    "they": {
-      "content": "купят",
-      "stress": 1
-    }
+    "i": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "you": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "we": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "they": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "куплю",
+        "stress": 4
+      }
+    ],
+    "you": [
+      {
+        "content": "купишь",
+        "stress": 1
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "купите",
+        "stress": 1
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "купит",
+        "stress": 1
+      }
+    ],
+    "we": [
+      {
+        "content": "купим",
+        "stress": 1
+      }
+    ],
+    "they": [
+      {
+        "content": "купят",
+        "stress": 1
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -68,30 +119,36 @@
     "active_present": null,
     "active_past": {
       "translation": "gekauft habend, der/die/das gekauft hat",
-      "russian": {
-        "content": "купивший",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "купивший",
+          "stress": 3
+        }
+      ]
     },
     "passive_present": null,
     "passive_past": {
       "translation": "gekauft",
-      "russian": {
-        "content": "купленный",
-        "stress": 1
-      }
+      "russian": [
+        {
+          "content": "купленный",
+          "stress": 1
+        }
+      ]
     },
     "gerund_present": null,
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "купив",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "купив",
+          "stress": 3
+        }
+      ]
     }
   },
   "example": {
-    "translation": "Ich kaufte eine Uhr und verlor sie am nächsten Tag.",
-    "russian": "Я купил часы, а на следующий день их потерял."
+    "translation": "Ich habe genug Geld, um ein Auto zu kaufen.",
+    "russian": "У меня доста'точно де'нег, чтобы купи'ть маши'ну."
   }
 }

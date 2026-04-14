@@ -12,31 +12,106 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": false,
   "present": {
-    "i": {
-      "content": "могу",
-      "stress": 3
-    },
-    "you": {
-      "content": "можешь",
-      "stress": 1
-    },
-    "you_they_formal": {
-      "content": "можете",
-      "stress": 1
-    },
-    "he_she_it": {
-      "content": "может",
-      "stress": 1
-    },
-    "we": {
-      "content": "можем",
-      "stress": 1
-    },
-    "they": {
-      "content": "могут",
-      "stress": 1
-    }
+    "i": [
+      {
+        "content": "могу",
+        "stress": 3
+      }
+    ],
+    "you": [
+      {
+        "content": "можешь",
+        "stress": 1
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "можете",
+        "stress": 1
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "может",
+        "stress": 1
+      }
+    ],
+    "we": [
+      {
+        "content": "можем",
+        "stress": 1
+      }
+    ],
+    "they": [
+      {
+        "content": "могут",
+        "stress": 1
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "буду",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ],
+    "you": [
+      {
+        "content": "будешь",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "будете",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "будет",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ],
+    "we": [
+      {
+        "content": "будем",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ],
+    "they": [
+      {
+        "content": "будут",
+        "stress": 1
+      },
+      {
+        "content": "мочь",
+        "stress": null
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -69,37 +144,45 @@
   "participles": {
     "active_present": {
       "translation": "fähig, mächtig",
-      "russian": {
-        "content": "могущий",
-        "stress": 1
-      }
+      "russian": [
+        {
+          "content": "могущий",
+          "stress": 1
+        }
+      ]
     },
     "active_past": {
       "translation": "der fähig war zu, der imstande war zu",
-      "russian": {
-        "content": "могший",
-        "stress": 1
-      }
+      "russian": [
+        {
+          "content": "могший",
+          "stress": 1
+        }
+      ]
     },
     "passive_present": null,
     "passive_past": null,
     "gerund_present": {
       "translation": "",
-      "russian": {
-        "content": "мога",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "мога",
+          "stress": 3
+        }
+      ]
     },
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "могши",
-        "stress": 1
-      }
+      "russian": [
+        {
+          "content": "могши",
+          "stress": 1
+        }
+      ]
     }
   },
   "example": {
-    "translation": "Sie kann nicht nur Englisch sprechen, sondern auch Französisch.",
-    "russian": "Она может говорить не только по-английски, но и по-французски."
+    "translation": "Was auch immer ich tue, sie sagt, ich kann es besser.",
+    "russian": "Что бы я ни сде'лал, она говори'т, что я мог бы сде'лать э'то лу'чше."
   }
 }

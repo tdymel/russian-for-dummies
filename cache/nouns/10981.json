@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "малиной,",
+        "content": "малиной",
         "stress": 3
       },
       {
@@ -93,6 +93,6 @@
   "gender": "Female",
   "example": {
     "translation": "Ich mag Himbeeren.",
-    "russian": "Я люблю малину."
+    "russian": "Я люблю' мали'ну."
   }
 }

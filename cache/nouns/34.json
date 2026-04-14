@@ -51,7 +51,7 @@
   "plural": {
     "nominative": [
       {
-        "content": "люди,",
+        "content": "люди",
         "stress": 1
       },
       {
@@ -61,11 +61,11 @@
     ],
     "genitive": [
       {
-        "content": "людей,",
+        "content": "людей",
         "stress": 3
       },
       {
-        "content": "человеков,",
+        "content": "человеков",
         "stress": 5
       },
       {
@@ -75,7 +75,7 @@
     ],
     "dative": [
       {
-        "content": "людям,",
+        "content": "людям",
         "stress": 1
       },
       {
@@ -85,7 +85,7 @@
     ],
     "accusative": [
       {
-        "content": "людей,",
+        "content": "людей",
         "stress": 3
       },
       {
@@ -95,7 +95,7 @@
     ],
     "instrumental": [
       {
-        "content": "людьми,",
+        "content": "людьми",
         "stress": 5
       },
       {
@@ -105,7 +105,7 @@
     ],
     "prepositional": [
       {
-        "content": "людях,",
+        "content": "людях",
         "stress": 1
       },
       {
@@ -116,7 +116,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Jeder Mensch, der allein ist, ist allein, weil er Angst vor den anderen hat.",
-    "russian": "Каждый одинокий человек одинок из-за страха перед окружающими."
+    "translation": "Der Mensch ist ein denkend Wesen.",
+    "russian": "Челове'к — мы'слящее существо'."
   }
 }

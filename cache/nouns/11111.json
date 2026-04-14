@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "тыквой,",
+        "content": "тыквой",
         "stress": 1
       },
       {
@@ -93,6 +93,6 @@
   "gender": "Female",
   "example": {
     "translation": "Tom ist kahlköpfig wie ein Kürbis, aber er hatte volles Haar, als er jung war.",
-    "russian": "Том лысый, как тыква, но у него было много волос, когда он был молодой."
+    "russian": "Том лы'сый, как ты'ква, но у него бы'ло много волос, когда он был молодо'й."
   }
 }

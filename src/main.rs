@@ -11,15 +11,13 @@ mod genanki;
 mod model;
 mod open_russian;
 mod stats;
+mod tts;
 mod utility;
 /*
 TODO:
-* Noun declensions can be comma separated. Example Person.
-* Verb Usage
 * Support: Ajectives, Pronouns, other from OpenRussian
 * Custom FlashCards müssen WordId referenzieren
 * Add Wisdom
-* Only package USED media files
 * Ausdrücke
 * Kategorien von OpenRussian inspirieren lassen
 * Support english language as well
@@ -56,7 +54,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     if args.anki {
         println!("Generating Anki-Deck!");
-        create_deck().await.compile();
+        create_deck().await.compile().await;
         sync_deck().await.unwrap();
     }
 

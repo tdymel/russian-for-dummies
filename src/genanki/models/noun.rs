@@ -4,13 +4,13 @@ use genanki_rs::{Field, Model, Template};
 
 use crate::genanki::models::css::CSS;
 
-const TEMPLATE_QUESTION: &'static str = r#"
+const TEMPLATE_QUESTION: &str = r#"
 <div class="rfd-container">
     <div class="rfd-header">{{Question}}</div>
 </div>
 "#;
 
-const TEMPLATE_ANSWER: &'static str = r#"
+const TEMPLATE_ANSWER: &str = r#"
 <div class="rfd-container">
     <div class="rfd-header">{{Question}}</div>
 

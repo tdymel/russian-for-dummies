@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "грушей,",
+        "content": "грушей",
         "stress": 2
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Dieses Jahr sind die Birnen groß.",
-    "russian": "Груши в этом году большие."
+    "translation": "Sie isst gerade eine Birne.",
+    "russian": "В да'нный моме'нт она ест гру'шу."
   }
 }

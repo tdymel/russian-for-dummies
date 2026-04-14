@@ -10,31 +10,106 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": false,
   "present": {
-    "i": {
-      "content": "стою",
-      "stress": 2
-    },
-    "you": {
-      "content": "стоишь",
-      "stress": 2
-    },
-    "you_they_formal": {
-      "content": "стоите",
-      "stress": 2
-    },
-    "he_she_it": {
-      "content": "стоит",
-      "stress": 2
-    },
-    "we": {
-      "content": "стоим",
-      "stress": 2
-    },
-    "they": {
-      "content": "стоят",
-      "stress": 2
-    }
+    "i": [
+      {
+        "content": "стою",
+        "stress": 2
+      }
+    ],
+    "you": [
+      {
+        "content": "стоишь",
+        "stress": 2
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "стоите",
+        "stress": 2
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "стоит",
+        "stress": 2
+      }
+    ],
+    "we": [
+      {
+        "content": "стоим",
+        "stress": 2
+      }
+    ],
+    "they": [
+      {
+        "content": "стоят",
+        "stress": 2
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "буду",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ],
+    "you": [
+      {
+        "content": "будешь",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "будете",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "будет",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ],
+    "we": [
+      {
+        "content": "будем",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ],
+    "they": [
+      {
+        "content": "будут",
+        "stress": 1
+      },
+      {
+        "content": "стоить",
+        "stress": 2
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -67,37 +142,45 @@
   "participles": {
     "active_present": {
       "translation": "wert, lohnend, wertvoll",
-      "russian": {
-        "content": "стоящий",
-        "stress": 2
-      }
+      "russian": [
+        {
+          "content": "стоящий",
+          "stress": 2
+        }
+      ]
     },
     "active_past": {
       "translation": "kostend, wert, der/die/das gekostet hat",
-      "russian": {
-        "content": "стоивший",
-        "stress": 2
-      }
+      "russian": [
+        {
+          "content": "стоивший",
+          "stress": 2
+        }
+      ]
     },
     "passive_present": null,
     "passive_past": null,
     "gerund_present": {
       "translation": "",
-      "russian": {
-        "content": "стоя",
-        "stress": 2
-      }
+      "russian": [
+        {
+          "content": "стоя",
+          "stress": 2
+        }
+      ]
     },
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "стоив",
-        "stress": null
-      }
+      "russian": [
+        {
+          "content": "стоив",
+          "stress": null
+        }
+      ]
     }
   },
   "example": {
-    "translation": "Das hat ihn seine Arbeit gekostet.",
-    "russian": "Это стоило ему работы."
+    "translation": "Es wird etwa zehntausend Yen kosten.",
+    "russian": "Э'то будет сто'ить около десяти ты'сяч ие'н."
   }
 }

@@ -11,31 +11,106 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": false,
   "present": {
-    "i": {
-      "content": "говорю",
-      "stress": 5
-    },
-    "you": {
-      "content": "говоришь",
-      "stress": 5
-    },
-    "you_they_formal": {
-      "content": "говорите",
-      "stress": 5
-    },
-    "he_she_it": {
-      "content": "говорит",
-      "stress": 5
-    },
-    "we": {
-      "content": "говорим",
-      "stress": 5
-    },
-    "they": {
-      "content": "говорят",
-      "stress": 5
-    }
+    "i": [
+      {
+        "content": "говорю",
+        "stress": 5
+      }
+    ],
+    "you": [
+      {
+        "content": "говоришь",
+        "stress": 5
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "говорите",
+        "stress": 5
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "говорит",
+        "stress": 5
+      }
+    ],
+    "we": [
+      {
+        "content": "говорим",
+        "stress": 5
+      }
+    ],
+    "they": [
+      {
+        "content": "говорят",
+        "stress": 5
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "буду",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ],
+    "you": [
+      {
+        "content": "будешь",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "будете",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "будет",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ],
+    "we": [
+      {
+        "content": "будем",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ],
+    "they": [
+      {
+        "content": "будут",
+        "stress": 1
+      },
+      {
+        "content": "говорить",
+        "stress": 5
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -68,49 +143,61 @@
   "participles": {
     "active_present": {
       "translation": "sprechend",
-      "russian": {
-        "content": "говорящий",
-        "stress": 5
-      }
+      "russian": [
+        {
+          "content": "говорящий",
+          "stress": 5
+        }
+      ]
     },
     "active_past": {
       "translation": "sprechend, der/die/das gesprochen hat, gesprochen habend",
-      "russian": {
-        "content": "говоривший",
-        "stress": 5
-      }
+      "russian": [
+        {
+          "content": "говоривший",
+          "stress": 5
+        }
+      ]
     },
     "passive_present": {
       "translation": "gesprochen, sagbar, aussprechbar",
-      "russian": {
-        "content": "говоримый",
-        "stress": 5
-      }
+      "russian": [
+        {
+          "content": "говоримый",
+          "stress": 5
+        }
+      ]
     },
     "passive_past": {
       "translation": "gesprochen, gesagt",
-      "russian": {
-        "content": "говорённый",
-        "stress": null
-      }
+      "russian": [
+        {
+          "content": "говорённый",
+          "stress": null
+        }
+      ]
     },
     "gerund_present": {
       "translation": "",
-      "russian": {
-        "content": "говоря",
-        "stress": 5
-      }
+      "russian": [
+        {
+          "content": "говоря",
+          "stress": 5
+        }
+      ]
     },
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "говорив",
-        "stress": null
-      }
+      "russian": [
+        {
+          "content": "говорив",
+          "stress": null
+        }
+      ]
     }
   },
   "example": {
-    "translation": "Er spricht nicht nur Französisch, er spricht auch Spanisch.",
-    "russian": "Он говорит не только на французском, но и на испанском."
+    "translation": "Sprecht leiser!",
+    "russian": "Говори'те тише!"
   }
 }

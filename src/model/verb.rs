@@ -8,7 +8,9 @@ pub struct Verb {
     pub translation: Vec<String>,
     pub root: Phrase,
     pub csfr: Csfr,
-    pub present: PresentConjugation,
+    pub is_perfective: bool,
+    pub present: Conjugation,
+    pub future: Conjugation,
     pub imperative: ImperativeConjugation,
     pub past: PastConjugation,
     pub participles: Participles,
@@ -16,13 +18,13 @@ pub struct Verb {
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
-pub struct PresentConjugation {
-    pub i: Word,
-    pub you: Word,
-    pub you_they_formal: Word,
-    pub he_she_it: Word,
-    pub we: Word,
-    pub they: Word,
+pub struct Conjugation {
+    pub i: Phrase,
+    pub you: Phrase,
+    pub you_they_formal: Phrase,
+    pub he_she_it: Phrase,
+    pub we: Phrase,
+    pub they: Phrase,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -52,5 +54,5 @@ pub struct Participles {
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Participle {
     pub translation: String,
-    pub russian: Word,
+    pub russian: Phrase,
 }

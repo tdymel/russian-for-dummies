@@ -10,31 +10,82 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": true,
   "present": {
-    "i": {
-      "content": "помогу",
-      "stress": 5
-    },
-    "you": {
-      "content": "поможешь",
-      "stress": 3
-    },
-    "you_they_formal": {
-      "content": "поможете",
-      "stress": 3
-    },
-    "he_she_it": {
-      "content": "поможет",
-      "stress": 3
-    },
-    "we": {
-      "content": "поможем",
-      "stress": 3
-    },
-    "they": {
-      "content": "помогут",
-      "stress": 3
-    }
+    "i": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "you": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "we": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ],
+    "they": [
+      {
+        "content": "-",
+        "stress": null
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "помогу",
+        "stress": 5
+      }
+    ],
+    "you": [
+      {
+        "content": "поможешь",
+        "stress": 3
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "поможете",
+        "stress": 3
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "поможет",
+        "stress": 3
+      }
+    ],
+    "we": [
+      {
+        "content": "поможем",
+        "stress": 3
+      }
+    ],
+    "they": [
+      {
+        "content": "помогут",
+        "stress": 3
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -68,24 +119,28 @@
     "active_present": null,
     "active_past": {
       "translation": "der geholfen hat, der Hilfe leistete",
-      "russian": {
-        "content": "помогший",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "помогший",
+          "stress": 3
+        }
+      ]
     },
     "passive_present": null,
     "passive_past": null,
     "gerund_present": null,
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "помогши",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "помогши",
+          "stress": 3
+        }
+      ]
     }
   },
   "example": {
-    "translation": "Das wird nicht helfen.",
-    "russian": "Это не поможет."
+    "translation": "Niemand half mir.",
+    "russian": "Никто мне не помо'г."
   }
 }

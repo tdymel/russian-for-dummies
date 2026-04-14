@@ -1,5 +1,5 @@
 use crate::{
-    model::{Csfr, Declension, Gender, Noun, Phrase, Sentence, Word, WordId},
+    model::{Csfr, Declension, Gender, Noun, Phrase, Sentence, WordId},
     open_russian::api::fetch_word,
 };
 
@@ -16,7 +16,7 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
         //     .iter()
         //     .map(|it| it.tls[0].clone())
         //     .collect(),
-        root: from_accented(&word_entry.accented),
+        root: Phrase::from(word_entry.accented.as_str()),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
         gender: word_entry
             .noun
@@ -37,11 +37,11 @@ pub async fn fetch_noun(id: WordId) -> Option<Noun> {
                     .as_ref()
                     .unwrap()
                     .clone(),
-                russian: it.clone().replace("'", ""),
+                russian: it.clone(),
             })
-            .or(word_entry.sentences.get(0).map(|it| Sentence {
+            .or(word_entry.sentences.first().map(|it| Sentence {
                 translation: it.tl.clone(),
-                russian: it.ru.clone().replace("'", ""),
+                russian: it.ru.clone(),
             })),
     })
 }
@@ -57,19 +57,10 @@ fn map_declension(declension: &crate::open_russian::api::DeclensionForms) -> Dec
     }
 }
 
-fn map_declension_words(word: &str) -> Option<Phrase> {
-    if word.is_empty() {
+fn map_declension_words(phrase: &str) -> Option<Phrase> {
+    if phrase.is_empty() {
         return None;
     }
 
-    Some(from_accented(word))
-}
-
-fn from_accented(accented: &str) -> Phrase {
-    Phrase(
-        accented
-            .split_whitespace()
-            .map(Word::from_stressed)
-            .collect(),
-    )
+    Some(Phrase::from(phrase))
 }

@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "гостиницей,",
+        "content": "гостиницей",
         "stress": 4
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Können Sie mir ein Hotel empfehlen?",
-    "russian": "Вы можете посоветовать мне гостиницу?"
+    "translation": "Ich kann mich in einem Hotel nicht wie zuhause fühlen.",
+    "russian": "Я не могу' чу'вствовать себя в гости'нице как дома."
   }
 }

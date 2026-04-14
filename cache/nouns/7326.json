@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "кукурузой,",
+        "content": "кукурузой",
         "stress": 5
       },
       {
@@ -93,6 +93,6 @@
   "gender": "Female",
   "example": {
     "translation": "Bourbon wird aus Mais gemacht.",
-    "russian": "Бурбон делают из кукурузы."
+    "russian": "Бурбо'н де'лают из кукуру'зы."
   }
 }

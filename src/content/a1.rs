@@ -15,7 +15,7 @@ pub async fn a1() -> Category {
         .add(get_verb(WordId::ToSpeak).await)
         .add(get_verb(WordId::ToWant).await)
         .add(get_verb(WordId::ToCost).await)
-        .add(get_noun(WordId::Person).await)
+        .add(get_noun(WordId::Person).await.decl_plural_keep("люд"))
         .add(get_noun(WordId::Beer).await)
         .add(get_noun(WordId::Coffee).await)
         .add(get_noun(WordId::Hotel).await)

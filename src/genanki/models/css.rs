@@ -1,4 +1,4 @@
-pub const CSS: &'static str = r#"
+pub const CSS: &str = r#"
     body {
         margin: 0;
         padding: 0;

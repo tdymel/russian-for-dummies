@@ -1,8 +1,9 @@
-use std::{fs, path::PathBuf};
+use std::path::PathBuf;
 
 use crate::{
     genanki::models::{NOUN_MODEL, VERB_MODEL},
-    model::{Deck, DeclensionType, FlashCard, Gender, Phrase, Sentence, Word},
+    model::{Deck, DeclensionType, FlashCard, Gender, Participle, Phrase, Sentence, Word},
+    tts::tts,
     utility::hash_to_base64,
 };
 
@@ -10,6 +11,14 @@ use genanki_rs::{Deck as AnkiDeck, Note, Package};
 
 trait ToTemplate {
     fn to_template(&self) -> String;
+}
+
+impl<T: ToTemplate> ToTemplate for Option<T> {
+    fn to_template(&self) -> String {
+        self.as_ref()
+            .map(|it| it.to_template())
+            .unwrap_or("-".to_string())
+    }
 }
 
 impl ToTemplate for Gender {
@@ -29,7 +38,7 @@ impl ToTemplate for Phrase {
             .iter()
             .map(|it| it.to_template())
             .collect::<Vec<_>>()
-            .join(" ")
+            .join("<br />")
     }
 }
 
@@ -63,19 +72,9 @@ impl ToTemplate for Word {
     }
 }
 
-impl ToTemplate for Option<Phrase> {
+impl ToTemplate for Sentence {
     fn to_template(&self) -> String {
-        self.as_ref()
-            .map(|it| it.to_template())
-            .unwrap_or("-".to_string())
-    }
-}
-
-impl ToTemplate for Option<Sentence> {
-    fn to_template(&self) -> String {
-        self.as_ref()
-            .map(|it| it.russian.clone())
-            .unwrap_or("".to_string())
+        self.to_string()
     }
 }
 
@@ -91,6 +90,12 @@ impl ToTemplate for DeclensionType {
             DeclensionType::M3 => "M3".to_string(),
             DeclensionType::N => "N".to_string(),
         }
+    }
+}
+
+impl ToTemplate for Participle {
+    fn to_template(&self) -> String {
+        self.russian.to_template()
     }
 }
 
@@ -136,6 +141,12 @@ impl ToAudio for Word {
     }
 }
 
+impl ToAudio for Participle {
+    fn to_audio(&self, id: &str) -> String {
+        self.russian.to_audio(id)
+    }
+}
+
 trait ToNote {
     fn to_note(self) -> Note;
 }
@@ -148,18 +159,35 @@ impl ToNote for FlashCard {
                 vec![
                     &verb.translation.join(", "),
                     &verb.root.to_template(),
+                    if verb.is_perfective {
+                        "Completed"
+                    } else {
+                        "Ongoing"
+                    },
                     &verb.present.i.to_template(),
                     &verb.present.you.to_template(),
                     &verb.present.he_she_it.to_template(),
                     &verb.present.we.to_template(),
                     &verb.present.you_they_formal.to_template(),
                     &verb.present.they.to_template(),
+                    &verb.future.i.to_template(),
+                    &verb.future.you.to_template(),
+                    &verb.future.he_she_it.to_template(),
+                    &verb.future.we.to_template(),
+                    &verb.future.you_they_formal.to_template(),
+                    &verb.future.they.to_template(),
                     &verb.imperative.you.to_template(),
                     &verb.imperative.you_they_formal.to_template(),
                     &verb.past.masculine.to_template(),
                     &verb.past.feminine.to_template(),
                     &verb.past.neuter.to_template(),
                     &verb.past.plural.to_template(),
+                    &verb.participles.active_present.to_template(),
+                    &verb.participles.active_past.to_template(),
+                    &verb.participles.passive_present.to_template(),
+                    &verb.participles.passive_past.to_template(),
+                    &verb.participles.gerund_present.to_template(),
+                    &verb.participles.gerund_past.to_template(),
                     &verb.example.to_template(),
                     &verb.root.to_audio("root"),
                     &verb.present.i.to_audio("Present1"),
@@ -168,12 +196,24 @@ impl ToNote for FlashCard {
                     &verb.present.we.to_audio("Present4"),
                     &verb.present.you_they_formal.to_audio("Present5"),
                     &verb.present.they.to_audio("Present6"),
+                    &verb.future.i.to_audio("Future1"),
+                    &verb.future.you.to_audio("Future2"),
+                    &verb.future.he_she_it.to_audio("Future3"),
+                    &verb.future.we.to_audio("Future4"),
+                    &verb.future.you_they_formal.to_audio("Future5"),
+                    &verb.future.they.to_audio("Future6"),
                     &verb.imperative.you.to_audio("Imp1"),
                     &verb.imperative.you_they_formal.to_audio("Imp2"),
                     &verb.past.masculine.to_audio("Past1"),
                     &verb.past.feminine.to_audio("Past2"),
                     &verb.past.neuter.to_audio("Past3"),
                     &verb.past.plural.to_audio("Past4"),
+                    &verb.participles.active_present.to_audio("ActivePresent"),
+                    &verb.participles.active_past.to_audio("ActivePast"),
+                    &verb.participles.passive_present.to_audio("PassivePresent"),
+                    &verb.participles.passive_past.to_audio("PassivePast"),
+                    &verb.participles.gerund_present.to_audio("GerundPresent"),
+                    &verb.participles.gerund_past.to_audio("GerundPast"),
                     &verb.example.to_audio("example"),
                 ],
             )
@@ -218,11 +258,11 @@ impl ToNote for FlashCard {
 }
 
 pub trait CompileAnkiDeck {
-    fn compile(self);
+    async fn compile(self);
 }
 
 impl CompileAnkiDeck for Deck {
-    fn compile(self) {
+    async fn compile(self) {
         let mut deck = AnkiDeck::new(
             1234,
             self.title,
@@ -235,26 +275,101 @@ impl CompileAnkiDeck for Deck {
             .flat_map(|it| it.flash_cards)
             .collect::<Vec<_>>();
 
-        flash_cards.sort_by(|l, r| l.csfr().cmp(&r.csfr()));
+        flash_cards.sort_by_key(|l| l.csfr());
+
+        let mut mp3_phrases = flash_cards
+            .iter()
+            .flat_map(|it| match it {
+                FlashCard::Noun(noun) => vec![
+                    noun.singular.nominative.as_ref().map(|it| it.accented()),
+                    noun.plural.nominative.as_ref().map(|it| it.accented()),
+                    noun.singular.genitive.as_ref().map(|it| it.accented()),
+                    noun.plural.genitive.as_ref().map(|it| it.accented()),
+                    noun.plural.accusative.as_ref().map(|it| it.accented()),
+                    noun.singular.accusative.as_ref().map(|it| it.accented()),
+                    noun.plural.prepositional.as_ref().map(|it| it.accented()),
+                    noun.singular.prepositional.as_ref().map(|it| it.accented()),
+                    noun.plural.dative.as_ref().map(|it| it.accented()),
+                    noun.singular.dative.as_ref().map(|it| it.accented()),
+                    noun.plural.instrumental.as_ref().map(|it| it.accented()),
+                    noun.plural.instrumental.as_ref().map(|it| it.accented()),
+                    noun.example.as_ref().map(|it| it.russian.clone()),
+                ],
+                FlashCard::Verb(verb) => vec![
+                    Some(verb.root.accented()),
+                    Some(verb.present.i.accented()),
+                    Some(verb.present.you.accented()),
+                    Some(verb.present.he_she_it.accented()),
+                    Some(verb.present.we.accented()),
+                    Some(verb.present.you_they_formal.accented()),
+                    Some(verb.present.they.accented()),
+                    Some(verb.future.i.accented()),
+                    Some(verb.future.you.accented()),
+                    Some(verb.future.he_she_it.accented()),
+                    Some(verb.future.we.accented()),
+                    Some(verb.future.you_they_formal.accented()),
+                    Some(verb.future.they.accented()),
+                    Some(verb.past.masculine.accented()),
+                    Some(verb.past.feminine.accented()),
+                    Some(verb.past.neuter.accented()),
+                    Some(verb.past.plural.accented()),
+                    Some(verb.imperative.you.accented()),
+                    Some(verb.imperative.you_they_formal.accented()),
+                    verb.participles
+                        .active_past
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.participles
+                        .active_present
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.participles
+                        .passive_past
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.participles
+                        .passive_present
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.participles
+                        .gerund_past
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.participles
+                        .gerund_present
+                        .as_ref()
+                        .map(|it| it.russian.accented()),
+                    verb.example.as_ref().map(|it| it.russian.clone()),
+                ],
+            })
+            .flatten()
+            .collect::<Vec<_>>();
+
+        mp3_phrases.sort();
+        mp3_phrases.dedup();
 
         for flash_card in flash_cards {
             deck.add_note(flash_card.to_note());
         }
 
-        let media_files = fs::read_dir(
-            PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-                .join("cache")
-                .join("mp3"),
-        )
-        .unwrap()
-        .map(|it| it.unwrap().path().to_string_lossy().to_string())
-        .collect::<Vec<_>>();
+        let mut paths = Vec::new();
+        let mp3_folder = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+            .join("cache")
+            .join("mp3");
+        for it in mp3_phrases {
+            if tts(&it).await {
+                let path = mp3_folder
+                    .clone()
+                    .join(hash_to_base64(&it.replace("'", "")) + ".mp3")
+                    .to_string_lossy()
+                    .to_string();
+                tts(&it).await;
+                paths.push(path);
+            }
+        }
+        let media_files: Vec<&str> = paths.iter().map(|s| s.as_str()).collect();
 
-        let mut package = Package::new(
-            vec![deck],
-            media_files.iter().map(|it| it.as_str()).collect::<Vec<_>>(),
-        )
-        .unwrap();
+        let mut package = Package::new(vec![deck], media_files).unwrap();
         package.write_to_file("russian_for_dummies.apkg").unwrap();
     }
 }

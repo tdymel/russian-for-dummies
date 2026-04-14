@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "вишней,",
+        "content": "вишней",
         "stress": 1
       },
       {
@@ -93,6 +93,6 @@
   "gender": "Female",
   "example": {
     "translation": "Kirschen sind rot.",
-    "russian": "Вишни красные."
+    "russian": "Ви'шни кра'сные."
   }
 }

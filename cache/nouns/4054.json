@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "капустой,",
+        "content": "капустой",
         "stress": 3
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Tom mag jedes Gemüse außer Kohl.",
-    "russian": "Том любит все овощи, кроме капусты."
+    "translation": "Ich liebe Sauerkraut.",
+    "russian": "Я люблю' ки'слую капу'сту."
   }
 }

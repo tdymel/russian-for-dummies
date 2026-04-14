@@ -37,7 +37,7 @@
     ],
     "instrumental": [
       {
-        "content": "водой,",
+        "content": "водой",
         "stress": 3
       },
       {
@@ -92,7 +92,7 @@
   },
   "gender": "Female",
   "example": {
-    "translation": "Es ist wenig Wasser im Eimer.",
-    "russian": "В ведре мало воды."
+    "translation": "Luft ist für uns, was Wasser für Fische ist.",
+    "russian": "Во'здух для нас, как вода для рыб."
   }
 }

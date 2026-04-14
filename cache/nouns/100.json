@@ -43,7 +43,7 @@
     ],
     "prepositional": [
       {
-        "content": "доме,",
+        "content": "доме",
         "stress": 1
       },
       {
@@ -96,7 +96,7 @@
   },
   "gender": "Male",
   "example": {
-    "translation": "Das Haus ist groß.",
-    "russian": "Дом большой."
+    "translation": "Mein Haus steht auf einem Hügel.",
+    "russian": "Мой дом стоит на холме'."
   }
 }

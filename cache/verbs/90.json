@@ -12,31 +12,106 @@
     }
   ],
   "csfr": "A1",
+  "is_perfective": false,
   "present": {
-    "i": {
-      "content": "хочу",
-      "stress": 3
-    },
-    "you": {
-      "content": "хочешь",
-      "stress": 1
-    },
-    "you_they_formal": {
-      "content": "хотите",
-      "stress": 3
-    },
-    "he_she_it": {
-      "content": "хочет",
-      "stress": 1
-    },
-    "we": {
-      "content": "хотим",
-      "stress": 3
-    },
-    "they": {
-      "content": "хотят",
-      "stress": 3
-    }
+    "i": [
+      {
+        "content": "хочу",
+        "stress": 3
+      }
+    ],
+    "you": [
+      {
+        "content": "хочешь",
+        "stress": 1
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "хотите",
+        "stress": 3
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "хочет",
+        "stress": 1
+      }
+    ],
+    "we": [
+      {
+        "content": "хотим",
+        "stress": 3
+      }
+    ],
+    "they": [
+      {
+        "content": "хотят",
+        "stress": 3
+      }
+    ]
+  },
+  "future": {
+    "i": [
+      {
+        "content": "буду",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ],
+    "you": [
+      {
+        "content": "будешь",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ],
+    "you_they_formal": [
+      {
+        "content": "будете",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ],
+    "he_she_it": [
+      {
+        "content": "будет",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ],
+    "we": [
+      {
+        "content": "будем",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ],
+    "they": [
+      {
+        "content": "будут",
+        "stress": 1
+      },
+      {
+        "content": "хотеть",
+        "stress": 3
+      }
+    ]
   },
   "imperative": {
     "you": {
@@ -69,37 +144,45 @@
   "participles": {
     "active_present": {
       "translation": "wollend, wünschend",
-      "russian": {
-        "content": "хотящий",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "хотящий",
+          "stress": 3
+        }
+      ]
     },
     "active_past": {
       "translation": "wollend, der wollte, wünschend",
-      "russian": {
-        "content": "хотевший",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "хотевший",
+          "stress": 3
+        }
+      ]
     },
     "passive_present": null,
     "passive_past": null,
     "gerund_present": {
       "translation": "",
-      "russian": {
-        "content": "хотя",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "хотя",
+          "stress": 3
+        }
+      ]
     },
     "gerund_past": {
       "translation": "",
-      "russian": {
-        "content": "хотев",
-        "stress": 3
-      }
+      "russian": [
+        {
+          "content": "хотев",
+          "stress": 3
+        }
+      ]
     }
   },
   "example": {
     "translation": "Möchtest du Tee?",
-    "russian": "Хочешь чаю?"
+    "russian": "Хо'чешь ча'ю?"
   }
 }

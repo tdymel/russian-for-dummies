@@ -1,7 +1,7 @@
 use crate::{
     model::{
-        Csfr, ImperativeConjugation, Participle, Participles, PastConjugation, Phrase,
-        PresentConjugation, Sentence, Verb, Word, WordId,
+        Conjugation, Csfr, ImperativeConjugation, Participle, Participles, PastConjugation, Phrase,
+        Sentence, Verb, Word, WordId,
     },
     open_russian::api::{VerbParticipleEntry, fetch_word},
 };
@@ -18,15 +18,24 @@ pub async fn fetch_verb(id: WordId) -> Option<Verb> {
             .first()
             .map(|t| t.tls.clone())
             .unwrap_or_default(),
+        is_perfective: verb.aspect != Some("imperfective".to_string()),
         root: from_accented(&word_entry.accented),
         csfr: word_entry.level.map(Csfr::from).unwrap_or(Csfr::C2Plus),
-        present: PresentConjugation {
-            i: map_word(verb.presfut.first()?)?,
-            you: map_word(verb.presfut.get(1)?)?,
-            he_she_it: map_word(verb.presfut.get(2)?)?,
-            we: map_word(verb.presfut.get(3)?)?,
-            you_they_formal: map_word(verb.presfut.get(4)?)?,
-            they: map_word(verb.presfut.get(5)?)?,
+        present: Conjugation {
+            i: map_phrase(verb.present.first()?)?,
+            you: map_phrase(verb.present.get(1)?)?,
+            he_she_it: map_phrase(verb.present.get(2)?)?,
+            we: map_phrase(verb.present.get(3)?)?,
+            you_they_formal: map_phrase(verb.present.get(4)?)?,
+            they: map_phrase(verb.present.get(5)?)?,
+        },
+        future: Conjugation {
+            i: map_phrase(verb.future.first()?)?,
+            you: map_phrase(verb.future.get(1)?)?,
+            he_she_it: map_phrase(verb.future.get(2)?)?,
+            we: map_phrase(verb.future.get(3)?)?,
+            you_they_formal: map_phrase(verb.future.get(4)?)?,
+            they: map_phrase(verb.future.get(5)?)?,
         },
         imperative: ImperativeConjugation {
             you: map_word(verb.imperatives.first()?)?,
@@ -45,12 +54,12 @@ pub async fn fetch_verb(id: WordId) -> Option<Verb> {
             .and_then(|t| {
                 t.example_ru.clone().map(|ru| Sentence {
                     translation: t.example_tl.clone().unwrap_or_default(),
-                    russian: ru.replace("'", ""),
+                    russian: ru,
                 })
             })
             .or(word_entry.sentences.first().map(|it| Sentence {
                 translation: it.tl.clone(),
-                russian: it.ru.clone().replace("'", ""),
+                russian: it.ru.clone(),
             })),
     })
 }
@@ -76,8 +85,16 @@ fn map_participle(entry: Option<&VerbParticipleEntry>) -> Option<Participle> {
             .and_then(|t| t.tls.first())
             .cloned()
             .unwrap_or_default(),
-        russian: Word::from_stressed(&entry.accented),
+        russian: Phrase::from(entry.accented.as_str()),
     })
+}
+
+fn map_phrase(phrase: &str) -> Option<Phrase> {
+    if phrase.is_empty() {
+        return None;
+    }
+
+    Some(Phrase::from(phrase))
 }
 
 fn map_word(word: &str) -> Option<Word> {

@@ -8,6 +8,6 @@ pub struct Sentence {
 
 impl std::fmt::Display for Sentence {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        self.russian.fmt(f)
+        self.russian.replace("'", "").fmt(f)
     }
 }

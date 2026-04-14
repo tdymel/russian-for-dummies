@@ -3,7 +3,7 @@ use crate::{
     model::Deck,
 };
 
-pub const DECK_NAME: &'static str = "Russisch für Dummies";
+pub const DECK_NAME: &str = "Russisch für Dummies";
 
 pub async fn create_deck() -> Deck {
     Deck::new(DECK_NAME)

@@ -1,7 +1,7 @@
 use std::path::PathBuf;
 
 use crate::{
-    genanki::models::{NOUN_MODEL, VERB_MODEL},
+    genanki::models::{NOUN_MODEL, OTHER_MODEL, VERB_MODEL},
     model::{Deck, DeclensionType, FlashCard, Gender, Participle, Phrase, Sentence, Word},
     tts::tts,
     utility::hash_to_base64,
@@ -154,6 +154,14 @@ trait ToNote {
 impl ToNote for FlashCard {
     fn to_note(self) -> Note {
         match self {
+            FlashCard::Other(other) => Note::new(OTHER_MODEL.clone(), vec![
+                    &other.translation.join(", "),
+                    &other.root.to_template(),
+                    &other.usage.unwrap_or_default(),
+                    &other.example.to_template(),
+                    &other.root.to_audio("root"),
+                    &other.example.to_audio("example"),
+            ]).unwrap(),
             FlashCard::Verb(verb) => Note::new(
                 VERB_MODEL.clone(),
                 vec![
@@ -280,6 +288,10 @@ impl CompileAnkiDeck for Deck {
         let mut mp3_phrases = flash_cards
             .iter()
             .flat_map(|it| match it {
+                FlashCard::Other(other) => vec![
+                    Some(other.root.accented()),
+                    other.example.as_ref().map(|it| it.russian.clone()),
+                ],
                 FlashCard::Noun(noun) => vec![
                     noun.singular.nominative.as_ref().map(|it| it.accented()),
                     noun.plural.nominative.as_ref().map(|it| it.accented()),

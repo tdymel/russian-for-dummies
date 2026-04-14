@@ -1,0 +1,18 @@
+{
+  "id": "With_From_Since",
+  "translation": [
+    "seit",
+    "ab"
+  ],
+  "root": [
+    {
+      "content": "с",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "seit heute / ab morgen",
+    "russian": "с сегодняшнего дня / с завтрашнего дня"
+  }
+}

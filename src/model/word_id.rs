@@ -67,7 +67,6 @@ word_ids! {
     ToLive = 117,
     ToSpeak = 53,
     ToWant = 90,
-
     ToCost = 1495,
     Person = 34,
     Beer = 1390,
@@ -87,6 +86,12 @@ word_ids! {
     House = 100,
     Water = 157,
     Russia = 217,
+    And_Also = 1,
+    Not = 3,
+    // TODO: What
+    What_That = 7, 
+    With_From_Since = 10,
+    ThatIs = 13,
 
     // Vegetables
     Garlic = 10770,

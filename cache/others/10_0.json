@@ -1,0 +1,17 @@
+{
+  "id": "With_From_Since",
+  "translation": [
+    "mit"
+  ],
+  "root": [
+    {
+      "content": "с",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "ich rede nicht mit dir",
+    "russian": "Я не с тобой разгова'риваю"
+  }
+}

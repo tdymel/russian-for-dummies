@@ -1,0 +1,17 @@
+{
+  "id": "What_That",
+  "translation": [
+    "dass"
+  ],
+  "root": [
+    {
+      "content": "что",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "ich hoffe, dass sie mir hilft.",
+    "russian": "я наде'юсь, что она мне помо'жет."
+  }
+}

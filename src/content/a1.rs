@@ -1,10 +1,19 @@
 use crate::{
-    content::cache::{get_noun, get_verb},
+    content::cache::{get_noun, get_other, get_verb},
     model::{Category, WordId},
 };
 
 pub async fn a1() -> Category {
     Category::new("A1")
+        .add(get_other(WordId::And_Also, 0).await)
+        .add(get_other(WordId::And_Also, 1).await)
+        .add(get_other(WordId::Not, 0).await)
+        .add(get_other(WordId::What_That, 1).await)
+        // TODO: Usage
+        .add(get_other(WordId::With_From_Since, 0).await.usage("+ Obj-Inst"))
+        .add(get_other(WordId::With_From_Since, 1).await.usage("+ Ort-Gen"))
+        .add(get_other(WordId::With_From_Since, 2).await.usage("+ Zeit-Gen"))
+        .add(get_other(WordId::ThatIs, 0).await.translation("Das (ist)"))
         .add(get_verb(WordId::Can_AbleTo).await)
         .add(get_verb(WordId::ToUnderstand).await)
         .add(get_verb(WordId::ToLove).await)

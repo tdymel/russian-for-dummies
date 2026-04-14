@@ -11,7 +11,9 @@ mod sentence;
 mod verb;
 mod word;
 mod word_id;
+mod other;
 
+pub use other::*;
 pub use category::*;
 pub use csfr::*;
 pub use deck::*;

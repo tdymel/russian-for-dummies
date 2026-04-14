@@ -1,0 +1,17 @@
+{
+  "id": "And_Also",
+  "translation": [
+    "auch"
+  ],
+  "root": [
+    {
+      "content": "и",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "aber auch Russisch",
+    "russian": "но и русский"
+  }
+}

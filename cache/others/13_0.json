@@ -1,0 +1,18 @@
+{
+  "id": "ThatIs",
+  "translation": [
+    "das"
+  ],
+  "root": [
+    {
+      "content": "это",
+      "stress": 0
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Nein, er ist nicht mein neuer Freund.",
+    "russian": "Нет, э'то не мой но'вый бойфренд."
+  },
+  "usage": null
+}

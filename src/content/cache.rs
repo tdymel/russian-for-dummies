@@ -1,8 +1,8 @@
 use std::{fs::File, path::PathBuf};
 
 use crate::{
-    model::{Noun, Verb, WordId},
-    open_russian::{fetch_noun, fetch_verb},
+    model::{Noun, Other, Verb, WordId},
+    open_russian::{fetch_noun, fetch_other, fetch_verb},
 };
 
 fn noun_path(id: WordId) -> PathBuf {
@@ -17,6 +17,13 @@ fn verb_path(id: WordId) -> PathBuf {
         .join("cache")
         .join("verbs")
         .join(format!("{id}.json"))
+}
+
+fn other_path(id: WordId, translation_index: usize) -> PathBuf {
+    PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+        .join("cache")
+        .join("others")
+        .join(format!("{id}_{translation_index}.json"))
 }
 
 pub async fn get_noun(id: WordId) -> Noun {
@@ -49,6 +56,23 @@ pub async fn get_verb(id: WordId) -> Verb {
     verb
 }
 
+pub async fn get_other(id: WordId, translation_index: usize) -> Other {
+    let path = other_path(id, translation_index);
+
+    if let Ok(file) = File::open(path)
+        && let Ok(other) = serde_json::from_reader(file)
+    {
+        return other;
+    }
+
+    let other = fetch_other(id, translation_index)
+        .await
+        .expect("Expected to fetch other!");
+    cache_other(&other, translation_index);
+
+    other
+}
+
 fn cache_noun(noun: &Noun) {
     let path = noun_path(noun.id);
 
@@ -63,4 +87,12 @@ fn cache_verb(verb: &Verb) {
     std::fs::create_dir_all(path.parent().unwrap()).unwrap();
     let file = File::create(path).unwrap();
     serde_json::to_writer_pretty(file, verb).unwrap();
+}
+
+fn cache_other(other: &Other, translation_index: usize) {
+    let path = other_path(other.id, translation_index);
+
+    std::fs::create_dir_all(path.parent().unwrap()).unwrap();
+    let file = File::create(path).unwrap();
+    serde_json::to_writer_pretty(file, other).unwrap();
 }

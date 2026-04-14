@@ -1,0 +1,17 @@
+{
+  "id": "Not",
+  "translation": [
+    "nicht"
+  ],
+  "root": [
+    {
+      "content": "не",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Ich will meine Ideen nicht verlieren, selbst wenn einige von ihnen ein bisschen extrem sind.",
+    "russian": "Я не хочу' меня'ть свои' взгля'ды, даже если они не'сколько экстремальны."
+  }
+}

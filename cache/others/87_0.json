@@ -1,0 +1,18 @@
+{
+  "id": "Very",
+  "translation": [
+    "sehr"
+  ],
+  "root": [
+    {
+      "content": "очень",
+      "stress": 0
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Das ist sehr romantisch!",
+    "russian": "Э'то очень романтично!"
+  },
+  "usage": null
+}

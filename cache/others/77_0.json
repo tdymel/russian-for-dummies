@@ -1,0 +1,19 @@
+{
+  "id": "There",
+  "translation": [
+    "dort",
+    "da"
+  ],
+  "root": [
+    {
+      "content": "там",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Sei vorsichtig! Wir wissen nicht, was da drin ist.",
+    "russian": "Будь осторо'жен. Мы не зна'ем, что там внутри."
+  },
+  "usage": null
+}

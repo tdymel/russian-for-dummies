@@ -1,0 +1,19 @@
+{
+  "id": "Hello",
+  "translation": [
+    "Hallo (formell)",
+    "Guten Tag"
+  ],
+  "root": [
+    {
+      "content": "здравствуйте",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Er sagte „Guten Tag!“ und ging ans Fenster.",
+    "russian": "Он сказа'л: \"Здравствуйте!\" – и подошел к окну'."
+  },
+  "usage": null
+}

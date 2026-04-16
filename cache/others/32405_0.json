@@ -1,0 +1,21 @@
+{
+  "id": "Russian",
+  "translation": [
+    "russisch",
+    "Russisch",
+    "auf russisch",
+    "in russisch"
+  ],
+  "root": [
+    {
+      "content": "по-русски",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Gewöhnlich spricht er nicht russisch, sondern seine Muttersprache.",
+    "russian": "Обыкновенно он говори'т не по-русски, а на своём родно'м языке'."
+  },
+  "usage": null
+}

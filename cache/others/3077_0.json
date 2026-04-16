@@ -1,0 +1,19 @@
+{
+  "id": "Beautifully",
+  "translation": [
+    "schön",
+    "hübsch"
+  ],
+  "root": [
+    {
+      "content": "красиво",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Sie sah in ihrem neuen Kleid sehr schön aus.",
+    "russian": "Она вы'глядела очень красиво в своём но'вом пла'тье."
+  },
+  "usage": null
+}

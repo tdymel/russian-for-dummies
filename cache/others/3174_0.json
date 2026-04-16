@@ -1,0 +1,18 @@
+{
+  "id": "Hotly",
+  "translation": [
+    "es ist heiß"
+  ],
+  "root": [
+    {
+      "content": "жарко",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Da ist es richtig heiß.",
+    "russian": "Там и пра'вда жарко."
+  },
+  "usage": null
+}

@@ -1,0 +1,169 @@
+{
+  "id": "Other",
+  "translation": [
+    "anderer"
+  ],
+  "root": [
+    {
+      "content": "другой",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "другого",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "другому",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "другим",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "другом",
+        "stress": 4
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": [
+      {
+        "content": "другая",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "другую",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "другой",
+        "stress": 4
+      }
+    ]
+  },
+  "neuter": {
+    "nominative": [
+      {
+        "content": "другое",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "другого",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "другому",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "другое",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "другим",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "другом",
+        "stress": 4
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "другие",
+        "stress": 4
+      }
+    ],
+    "genitive": [
+      {
+        "content": "других",
+        "stress": 4
+      }
+    ],
+    "dative": [
+      {
+        "content": "другим",
+        "stress": 4
+      }
+    ],
+    "accusative": [
+      {
+        "content": "другие",
+        "stress": 4
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "другими",
+        "stress": 4
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "других",
+        "stress": 4
+      }
+    ]
+  },
+  "example": {
+    "translation": "einander mal",
+    "russian": "друго'й раз"
+  }
+}

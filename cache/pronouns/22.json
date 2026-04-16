@@ -1,0 +1,79 @@
+{
+  "id": "We",
+  "translation": [
+    "wir"
+  ],
+  "root": [
+    {
+      "content": "мы",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "мы",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "нас",
+        "stress": null
+      }
+    ],
+    "dative": [
+      {
+        "content": "нам",
+        "stress": null
+      }
+    ],
+    "accusative": [
+      {
+        "content": "нас",
+        "stress": null
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "нами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "нас",
+        "stress": null
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Wir haben versucht, ihn zu überzeugen.",
+    "russian": "Мы про'бовали убеди'ть его."
+  }
+}

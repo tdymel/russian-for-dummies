@@ -1,0 +1,79 @@
+{
+  "id": "They",
+  "translation": [
+    "sie"
+  ],
+  "root": [
+    {
+      "content": "они",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "они",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "их",
+        "stress": null
+      }
+    ],
+    "dative": [
+      {
+        "content": "им",
+        "stress": null
+      }
+    ],
+    "accusative": [
+      {
+        "content": "их",
+        "stress": null
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "ими",
+        "stress": 0
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "них",
+        "stress": null
+      }
+    ]
+  },
+  "example": {
+    "translation": "Sie verteidigten ihre Heimat gegen die Eindringlinge.",
+    "russian": "Они защища'ли свою' ро'дину от захва'тчиков."
+  }
+}

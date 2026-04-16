@@ -1,0 +1,19 @@
+{
+  "id": "Only_Just",
+  "translation": [
+    "soeben",
+    "erst"
+  ],
+  "root": [
+    {
+      "content": "только",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Ich war gerade erst von einer Reise zurückgekehrt.",
+    "russian": "Я только что верну'лся из путеше'ствия."
+  },
+  "usage": null
+}

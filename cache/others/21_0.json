@@ -1,0 +1,19 @@
+{
+  "id": "From",
+  "translation": [
+    "aus",
+    "von"
+  ],
+  "root": [
+    {
+      "content": "из",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Wir importieren Tee aus Indien.",
+    "russian": "Мы импорти'руем чай из Индии."
+  },
+  "usage": null
+}

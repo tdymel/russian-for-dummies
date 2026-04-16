@@ -13,6 +13,11 @@ pub struct Other {
 }
 
 impl Other {
+    pub fn example(mut self, example: Sentence) -> Self {
+        self.example = Some(example);
+        self
+    }
+
     pub fn translation(mut self, translation: &str) -> Self {
         self.translation = vec![translation.to_string()];
         self

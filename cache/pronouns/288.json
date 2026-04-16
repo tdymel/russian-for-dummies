@@ -1,0 +1,76 @@
+{
+  "id": "It",
+  "translation": [
+    "es"
+  ],
+  "root": [
+    {
+      "content": "оно",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": [
+      {
+        "content": "оно",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "его",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "ему",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "его",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "им",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "нём",
+        "stress": null
+      }
+    ]
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": null
+}

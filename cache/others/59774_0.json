@@ -1,0 +1,18 @@
+{
+  "id": "ToBeCalled",
+  "translation": [
+    "heißen"
+  ],
+  "root": [
+    {
+      "content": "зовут",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "ich heiße Sarah",
+    "russian": "меня' зову'т Сара"
+  },
+  "usage": null
+}

@@ -1,0 +1,18 @@
+{
+  "id": "No_There_is_Not",
+  "translation": [
+    "nicht"
+  ],
+  "root": [
+    {
+      "content": "нет",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Er ist nicht zu Hause.",
+    "russian": "Его нет дома."
+  },
+  "usage": null
+}

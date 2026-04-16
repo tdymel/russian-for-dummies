@@ -1,5 +1,5 @@
 {
-  "id": "And_Also",
+  "id": "And",
   "translation": [
     "und"
   ],
@@ -13,5 +13,6 @@
   "example": {
     "translation": "Äpfel und Birnen",
     "russian": "яблоки и груши"
-  }
+  },
+  "usage": null
 }

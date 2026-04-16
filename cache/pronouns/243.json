@@ -1,0 +1,79 @@
+{
+  "id": "HowMuch",
+  "translation": [
+    "wieviel"
+  ],
+  "root": [
+    {
+      "content": "сколько",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "сколько",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "скольких",
+        "stress": 2
+      }
+    ],
+    "dative": [
+      {
+        "content": "скольким",
+        "stress": 2
+      }
+    ],
+    "accusative": [
+      {
+        "content": "сколько",
+        "stress": 2
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "сколькими",
+        "stress": 2
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "скольких",
+        "stress": 2
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Um wieviel (Uhr)...?",
+    "russian": "Во сколько...?"
+  }
+}

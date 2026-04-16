@@ -1,10 +1,11 @@
-use crate::model::{Csfr, Noun, Other, Verb};
+use crate::model::{Csfr, Noun, Other, Pronoun, Verb};
 
 #[derive(Debug, Clone)]
 pub enum FlashCard {
     Noun(Noun),
     Verb(Verb),
-    Other(Other)
+    Pronoun(Pronoun),
+    Other(Other),
 }
 
 impl FlashCard {
@@ -12,8 +13,15 @@ impl FlashCard {
         match self {
             FlashCard::Noun(noun) => noun.csfr,
             FlashCard::Verb(verb) => verb.csfr,
-            FlashCard::Other(other) => other.csfr
+            FlashCard::Other(other) => other.csfr,
+            FlashCard::Pronoun(pronoun) => pronoun.csfr,
         }
+    }
+}
+
+impl From<Pronoun> for FlashCard {
+    fn from(value: Pronoun) -> Self {
+        Self::Pronoun(value)
     }
 }
 

@@ -1,0 +1,18 @@
+{
+  "id": "Thanks",
+  "translation": [
+    "danke"
+  ],
+  "root": [
+    {
+      "content": "спасибо",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Danke, dass Sie mich gerettet haben!",
+    "russian": "Спасибо, что спасли' меня."
+  },
+  "usage": null
+}

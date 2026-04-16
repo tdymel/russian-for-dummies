@@ -1,0 +1,19 @@
+{
+  "id": "One_Can_May",
+  "translation": [
+    "man kann",
+    "es ist möglich"
+  ],
+  "root": [
+    {
+      "content": "можно",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Nach anderthalb Jahren Gebrauch können sie einmalig regeneriert werden.",
+    "russian": "После полутора лет использования их можно один раз регенерировать."
+  },
+  "usage": null
+}

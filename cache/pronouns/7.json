@@ -1,0 +1,79 @@
+{
+  "id": "What_That",
+  "translation": [
+    "was"
+  ],
+  "root": [
+    {
+      "content": "что",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "что",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "чего",
+        "stress": null
+      }
+    ],
+    "dative": [
+      {
+        "content": "чему",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "что",
+        "stress": null
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "чем",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "чём",
+        "stress": null
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "was machst du?",
+    "russian": "что ты де'лаешь?"
+  }
+}

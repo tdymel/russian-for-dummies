@@ -1,0 +1,19 @@
+{
+  "id": "Possession_By_At_With_From",
+  "translation": [
+    "by",
+    "at (place)"
+  ],
+  "root": [
+    {
+      "content": "у",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Book a window seat!",
+    "russian": "Заброни'руй ме'сто у окна'!"
+  },
+  "usage": null
+}

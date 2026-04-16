@@ -1,0 +1,83 @@
+{
+  "id": "She",
+  "translation": [
+    "sie"
+  ],
+  "root": [
+    {
+      "content": "она",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "feminine": {
+    "nominative": [
+      {
+        "content": "она",
+        "stress": 2
+      }
+    ],
+    "genitive": [
+      {
+        "content": "её",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "ей",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "её",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "ей",
+        "stress": null
+      },
+      {
+        "content": "ею",
+        "stress": 0
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ней",
+        "stress": 2
+      }
+    ]
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Sie muss vorsichtiger sein.",
+    "russian": "Ей нужно быть более осторо'жной."
+  }
+}

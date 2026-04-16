@@ -8,6 +8,7 @@ pub enum DeclensionType {
     M1,
     M2,
     M3,
+    M4,
     N,
     Irregular,
 }

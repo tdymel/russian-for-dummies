@@ -1,0 +1,79 @@
+{
+  "id": "You_They_Formal",
+  "translation": [
+    "ihr (Plural)"
+  ],
+  "root": [
+    {
+      "content": "вы",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "вы",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "вас",
+        "stress": null
+      }
+    ],
+    "dative": [
+      {
+        "content": "вам",
+        "stress": null
+      }
+    ],
+    "accusative": [
+      {
+        "content": "вас",
+        "stress": null
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "вами",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "вас",
+        "stress": null
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Wenn du mich nicht so gekannt hast, dann hast du mich einfach gar nicht gekannt.",
+    "russian": "Если вы не зна'ли меня с э'той стороны, то вы вообще меня не зна'ли."
+  }
+}

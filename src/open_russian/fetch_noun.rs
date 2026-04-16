@@ -5,7 +5,7 @@ use crate::{
 
 pub async fn fetch_noun(id: WordId) -> Option<Noun> {
     println!("Fetching {id}");
-    let word_entry = fetch_word(id).await?;
+    let word_entry = fetch_word(id, false).await?;
     // println!("{:#?}", word_entry);
 
     Some(Noun {

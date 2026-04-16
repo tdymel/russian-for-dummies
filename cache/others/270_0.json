@@ -1,0 +1,18 @@
+{
+  "id": "Fast",
+  "translation": [
+    "schnell"
+  ],
+  "root": [
+    {
+      "content": "быстро",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Oh! Bitte nicht so schnell.",
+    "russian": "О! Не так быстро, пожалуйста."
+  },
+  "usage": null
+}

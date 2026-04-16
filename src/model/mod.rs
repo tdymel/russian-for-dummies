@@ -12,7 +12,9 @@ mod verb;
 mod word;
 mod word_id;
 mod other;
+mod pronoun;
 
+pub use pronoun::*;
 pub use other::*;
 pub use category::*;
 pub use csfr::*;

@@ -1,0 +1,18 @@
+{
+  "id": "Today",
+  "translation": [
+    "heute"
+  ],
+  "root": [
+    {
+      "content": "сегодня",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Wir müssen heute nicht in die Schule.",
+    "russian": "Нам сего'дня не надо в шко'лу."
+  },
+  "usage": null
+}

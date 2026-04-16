@@ -1,0 +1,19 @@
+{
+  "id": "Possession_By_At_With_From",
+  "translation": [
+    "bei",
+    "neben"
+  ],
+  "root": [
+    {
+      "content": "у",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "ich habe Kaffee",
+    "russian": "у меня' есть ко'фе"
+  },
+  "usage": null
+}

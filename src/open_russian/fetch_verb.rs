@@ -8,7 +8,7 @@ use crate::{
 
 pub async fn fetch_verb(id: WordId) -> Option<Verb> {
     println!("Fetching {id}");
-    let word_entry = fetch_word(id).await?;
+    let word_entry = fetch_word(id, false).await?;
     let verb = word_entry.verb.as_ref()?;
 
     Some(Verb {

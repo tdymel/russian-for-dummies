@@ -1,0 +1,18 @@
+{
+  "id": "Free_Fluently",
+  "translation": [
+    "freely"
+  ],
+  "root": [
+    {
+      "content": "свободно",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "I hope that one day, all human beings will live in a world of peace and freedom.",
+    "russian": "Наде'юсь, что однажды всё челове'чество будет жить мирно и свободно во всём ми'ре."
+  },
+  "usage": null
+}

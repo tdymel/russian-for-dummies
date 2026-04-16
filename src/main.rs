@@ -23,6 +23,9 @@ TODO:
 * Support english language as well
 * CI/CD + Publish on GitHub later
 
+Grammar:
+* A von/of B = A(Nom) + B(Gen)
+
 
 */
 

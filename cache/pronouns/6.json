@@ -1,0 +1,79 @@
+{
+  "id": "I",
+  "translation": [
+    "ich"
+  ],
+  "root": [
+    {
+      "content": "я",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "я",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "меня",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "мне",
+        "stress": null
+      }
+    ],
+    "accusative": [
+      {
+        "content": "меня",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "мной",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "мне",
+        "stress": null
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Damals im Gymnasium bin ich jeden Morgen um 6 Uhr aufgestanden.",
+    "russian": "Когда я учи'лся в сре'дней шко'ле, я встава'л в 6:00 ка'ждое у'тро."
+  }
+}

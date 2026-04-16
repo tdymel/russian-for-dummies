@@ -1,7 +1,7 @@
 use std::path::PathBuf;
 
 use crate::{
-    genanki::models::{NOUN_MODEL, OTHER_MODEL, VERB_MODEL},
+    genanki::models::{NOUN_MODEL, OTHER_MODEL, PRONOUN_MODEL, VERB_MODEL},
     model::{Deck, DeclensionType, FlashCard, Gender, Participle, Phrase, Sentence, Word},
     tts::tts,
     utility::hash_to_base64,
@@ -88,6 +88,7 @@ impl ToTemplate for DeclensionType {
             DeclensionType::M1 => "M1".to_string(),
             DeclensionType::M2 => "M2".to_string(),
             DeclensionType::M3 => "M3".to_string(),
+            DeclensionType::M4 => "M4".to_string(),
             DeclensionType::N => "N".to_string(),
         }
     }
@@ -154,14 +155,75 @@ trait ToNote {
 impl ToNote for FlashCard {
     fn to_note(self) -> Note {
         match self {
-            FlashCard::Other(other) => Note::new(OTHER_MODEL.clone(), vec![
+            FlashCard::Pronoun(pronoun) => Note::new(
+                PRONOUN_MODEL.clone(),
+                vec![
+                    &pronoun.translation.join(", "),
+                    &pronoun.masculine.nominative.to_template(),
+                    &pronoun.feminine.nominative.to_template(),
+                    &pronoun.neuter.nominative.to_template(),
+                    &pronoun.plural.nominative.to_template(),
+                    &pronoun.masculine.nominative.to_audio("nom_masc"),
+                    &pronoun.feminine.nominative.to_audio("nom_fem"),
+                    &pronoun.neuter.nominative.to_audio("nom_neu"),
+                    &pronoun.plural.nominative.to_audio("nom_plu"),
+                    &pronoun.masculine.genitive.to_template(),
+                    &pronoun.feminine.genitive.to_template(),
+                    &pronoun.neuter.genitive.to_template(),
+                    &pronoun.plural.genitive.to_template(),
+                    &pronoun.masculine.genitive.to_audio("gen_masc"),
+                    &pronoun.feminine.genitive.to_audio("gen_fem"),
+                    &pronoun.neuter.genitive.to_audio("gen_neu"),
+                    &pronoun.plural.genitive.to_audio("gen_plu"),
+                    &pronoun.masculine.dative.to_template(),
+                    &pronoun.feminine.dative.to_template(),
+                    &pronoun.neuter.dative.to_template(),
+                    &pronoun.plural.dative.to_template(),
+                    &pronoun.masculine.dative.to_audio("dat_masc"),
+                    &pronoun.feminine.dative.to_audio("dat_fem"),
+                    &pronoun.neuter.dative.to_audio("dat_neu"),
+                    &pronoun.plural.dative.to_audio("dat_plu"),
+                    &pronoun.masculine.accusative.to_template(),
+                    &pronoun.feminine.accusative.to_template(),
+                    &pronoun.neuter.accusative.to_template(),
+                    &pronoun.plural.accusative.to_template(),
+                    &pronoun.masculine.accusative.to_audio("acc_masc"),
+                    &pronoun.feminine.accusative.to_audio("acc_fem"),
+                    &pronoun.neuter.accusative.to_audio("acc_neu"),
+                    &pronoun.plural.accusative.to_audio("acc_plu"),
+                    &pronoun.masculine.instrumental.to_template(),
+                    &pronoun.feminine.instrumental.to_template(),
+                    &pronoun.neuter.instrumental.to_template(),
+                    &pronoun.plural.instrumental.to_template(),
+                    &pronoun.masculine.instrumental.to_audio("ins_masc"),
+                    &pronoun.feminine.instrumental.to_audio("ins_fem"),
+                    &pronoun.neuter.instrumental.to_audio("ins_neu"),
+                    &pronoun.plural.instrumental.to_audio("ins_plu"),
+                    &pronoun.masculine.prepositional.to_template(),
+                    &pronoun.feminine.prepositional.to_template(),
+                    &pronoun.neuter.prepositional.to_template(),
+                    &pronoun.plural.prepositional.to_template(),
+                    &pronoun.masculine.prepositional.to_audio("pre_masc"),
+                    &pronoun.feminine.prepositional.to_audio("pre_fem"),
+                    &pronoun.neuter.prepositional.to_audio("pre_neu"),
+                    &pronoun.plural.prepositional.to_audio("pre_plu"),
+                    &pronoun.example.to_template(),
+                    &pronoun.example.to_audio("example"),
+                ],
+            )
+            .unwrap(),
+            FlashCard::Other(other) => Note::new(
+                OTHER_MODEL.clone(),
+                vec![
                     &other.translation.join(", "),
                     &other.root.to_template(),
                     &other.usage.unwrap_or_default(),
                     &other.example.to_template(),
                     &other.root.to_audio("root"),
                     &other.example.to_audio("example"),
-            ]).unwrap(),
+                ],
+            )
+            .unwrap(),
             FlashCard::Verb(verb) => Note::new(
                 VERB_MODEL.clone(),
                 vec![
@@ -288,6 +350,67 @@ impl CompileAnkiDeck for Deck {
         let mut mp3_phrases = flash_cards
             .iter()
             .flat_map(|it| match it {
+                FlashCard::Pronoun(pronoun) => {
+                    vec![
+                        pronoun
+                            .masculine
+                            .nominative
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun.feminine.nominative.as_ref().map(|it| it.accented()),
+                        pronoun.neuter.nominative.as_ref().map(|it| it.accented()),
+                        pronoun.plural.nominative.as_ref().map(|it| it.accented()),
+                        pronoun.masculine.genitive.as_ref().map(|it| it.accented()),
+                        pronoun.feminine.genitive.as_ref().map(|it| it.accented()),
+                        pronoun.neuter.genitive.as_ref().map(|it| it.accented()),
+                        pronoun.plural.genitive.as_ref().map(|it| it.accented()),
+                        pronoun.masculine.dative.as_ref().map(|it| it.accented()),
+                        pronoun.feminine.dative.as_ref().map(|it| it.accented()),
+                        pronoun.neuter.dative.as_ref().map(|it| it.accented()),
+                        pronoun.plural.dative.as_ref().map(|it| it.accented()),
+                        pronoun
+                            .masculine
+                            .accusative
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun.feminine.accusative.as_ref().map(|it| it.accented()),
+                        pronoun.neuter.accusative.as_ref().map(|it| it.accented()),
+                        pronoun.plural.accusative.as_ref().map(|it| it.accented()),
+                        pronoun
+                            .masculine
+                            .instrumental
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun
+                            .feminine
+                            .instrumental
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun.neuter.instrumental.as_ref().map(|it| it.accented()),
+                        pronoun.plural.instrumental.as_ref().map(|it| it.accented()),
+                        pronoun
+                            .masculine
+                            .prepositional
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun
+                            .feminine
+                            .prepositional
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun
+                            .neuter
+                            .prepositional
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun
+                            .plural
+                            .prepositional
+                            .as_ref()
+                            .map(|it| it.accented()),
+                        pronoun.example.as_ref().map(|it| it.russian.clone()),
+                    ]
+                }
                 FlashCard::Other(other) => vec![
                     Some(other.root.accented()),
                     other.example.as_ref().map(|it| it.russian.clone()),

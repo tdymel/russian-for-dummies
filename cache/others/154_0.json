@@ -1,0 +1,19 @@
+{
+  "id": "Good",
+  "translation": [
+    "gut",
+    "schön"
+  ],
+  "root": [
+    {
+      "content": "хорошо",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Ich fühle mich nicht wohl.",
+    "russian": "Мне не очень хорошо."
+  },
+  "usage": null
+}

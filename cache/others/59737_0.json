@@ -1,0 +1,19 @@
+{
+  "id": "GoodBye",
+  "translation": [
+    "auf Wiedersehen"
+  ],
+  "root": [
+    {
+      "content": "до",
+      "stress": null
+    },
+    {
+      "content": "свидания",
+      "stress": 4
+    }
+  ],
+  "csfr": "A1",
+  "example": null,
+  "usage": null
+}

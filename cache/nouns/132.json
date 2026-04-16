@@ -1,0 +1,98 @@
+{
+  "id": "Work",
+  "translation": [
+    "Arbeit"
+  ],
+  "root": [
+    {
+      "content": "работа",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "работа",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "работы",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "работе",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "работу",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "работой",
+        "stress": 3
+      },
+      {
+        "content": "работою",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "работе",
+        "stress": 3
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "работы",
+        "stress": 3
+      }
+    ],
+    "genitive": [
+      {
+        "content": "работ",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "работам",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "работы",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "работами",
+        "stress": 3
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "работах",
+        "stress": 3
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Gute Arbeit!",
+    "russian": "Хоро'шая рабо'та!"
+  }
+}

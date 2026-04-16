@@ -1,0 +1,79 @@
+{
+  "id": "Who",
+  "translation": [
+    "wer"
+  ],
+  "root": [
+    {
+      "content": "кто",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "masculine": {
+    "nominative": [
+      {
+        "content": "кто",
+        "stress": null
+      }
+    ],
+    "genitive": [
+      {
+        "content": "кого",
+        "stress": 3
+      }
+    ],
+    "dative": [
+      {
+        "content": "кому",
+        "stress": 3
+      }
+    ],
+    "accusative": [
+      {
+        "content": "кого",
+        "stress": 3
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "кем",
+        "stress": null
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "ком",
+        "stress": null
+      }
+    ]
+  },
+  "feminine": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "neuter": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "plural": {
+    "nominative": null,
+    "genitive": null,
+    "dative": null,
+    "accusative": null,
+    "instrumental": null,
+    "prepositional": null
+  },
+  "example": {
+    "translation": "Wer ist der Autor dieser Erzählung?",
+    "russian": "Кто а'втор э'того расска'за?"
+  }
+}

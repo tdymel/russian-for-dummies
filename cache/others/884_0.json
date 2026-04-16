@@ -1,0 +1,19 @@
+{
+  "id": "Right_Correct",
+  "translation": [
+    "right",
+    "rightly"
+  ],
+  "root": [
+    {
+      "content": "правильно",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "But as a beginner, it's not easy to get it right.",
+    "russian": "Но новичку непросто сделать это правильно."
+  },
+  "usage": null
+}

@@ -3,10 +3,11 @@ use serde_json::Value;
 
 use crate::model::WordId;
 
-pub async fn fetch_word(id: WordId) -> Option<WordEntry> {
+pub async fn fetch_word(id: WordId, english_source: bool) -> Option<WordEntry> {
     let url = format!(
-        "https://api.openrussian.org/api/words/{}?all=&lang=de",
-        id.id()
+        "https://api.openrussian.org/api/words/{}?all=&lang={}",
+        id.id(),
+        if english_source { "en" } else { "de" }
     );
 
     Some(
@@ -70,6 +71,7 @@ pub struct WordEntry {
     pub is_participle: Option<bool>,
     pub noun: Option<NounData>,
     pub verb: Option<VerbData>,
+    pub pronoun: Option<PronounData>,
     #[serde(default)]
     pub sentences: Vec<Sentence>,
 }
@@ -201,6 +203,35 @@ pub struct VerbData {
     #[serde(rename = "hasPresfutStressChange")]
     pub has_presfut_stress_change: Option<bool>,
     pub participles: Option<VerbParticiples>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PronounData {
+    pub declension: PronounDeclensions,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PronounDeclensions {
+    pub m: PronounDeclension,
+    pub f: Option<PronounDeclension>,
+    pub n: Option<PronounDeclension>,
+    pub pl: Option<PronounDeclension>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PronounDeclension {
+    #[serde(default)]
+    pub nom: Vec<String>,
+    #[serde(rename = "gen", default)]
+    pub r#gen: Vec<String>,
+    #[serde(default)]
+    pub dat: Vec<String>,
+    #[serde(default)]
+    pub acc: Vec<String>,
+    #[serde(default)]
+    pub inst: Vec<String>,
+    #[serde(default)]
+    pub prep: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

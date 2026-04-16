@@ -1,0 +1,18 @@
+{
+  "id": "Still_Else_Yet",
+  "translation": [
+    "noch"
+  ],
+  "root": [
+    {
+      "content": "ещё",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "nochmal",
+    "russian": "ещё раз"
+  },
+  "usage": null
+}

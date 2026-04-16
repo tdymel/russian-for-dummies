@@ -1,0 +1,19 @@
+{
+  "id": "Tasty",
+  "translation": [
+    "lecker",
+    "schmackhaft"
+  ],
+  "root": [
+    {
+      "content": "вкусно",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Macht nichts. Hauptsache es schmeckt.",
+    "russian": "Ничего стра'шного. Главное - вкусно."
+  },
+  "usage": null
+}

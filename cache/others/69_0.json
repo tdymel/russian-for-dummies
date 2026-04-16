@@ -1,0 +1,18 @@
+{
+  "id": "Where",
+  "translation": [
+    "wo"
+  ],
+  "root": [
+    {
+      "content": "где",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Wissen Sie zufällig, wo sie wohnt?",
+    "russian": "Вы, случа'йно, не зна'ете, где она живёт?"
+  },
+  "usage": null
+}

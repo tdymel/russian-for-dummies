@@ -1,0 +1,20 @@
+{
+  "id": "Please_YouAreWelcome",
+  "translation": [
+    "bitte",
+    "bitte sehr",
+    "bitte schön"
+  ],
+  "root": [
+    {
+      "content": "пожалуйста",
+      "stress": 3
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Bitte setz dich doch.",
+    "russian": "Сядь, пожалуйста!"
+  },
+  "usage": null
+}

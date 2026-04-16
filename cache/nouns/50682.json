@@ -1,0 +1,94 @@
+{
+  "id": "ATM",
+  "translation": [
+    "Geldautomat"
+  ],
+  "root": [
+    {
+      "content": "банкомат",
+      "stress": 6
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "банкомат",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "банкомата",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "банкомату",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "банкомат",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "банкоматом",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "банкомате",
+        "stress": 6
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "банкоматы",
+        "stress": 6
+      }
+    ],
+    "genitive": [
+      {
+        "content": "банкоматов",
+        "stress": 6
+      }
+    ],
+    "dative": [
+      {
+        "content": "банкоматам",
+        "stress": 6
+      }
+    ],
+    "accusative": [
+      {
+        "content": "банкоматы",
+        "stress": 6
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "банкоматами",
+        "stress": 6
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "банкоматах",
+        "stress": 6
+      }
+    ]
+  },
+  "gender": "Male",
+  "example": {
+    "translation": "Gibt es hier in der Nähe einen Geldautomaten?",
+    "russian": "Здесь есть поблизости банкома'т?"
+  }
+}

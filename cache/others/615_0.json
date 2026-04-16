@@ -1,0 +1,20 @@
+{
+  "id": "Difficulty",
+  "translation": [
+    "schwierig",
+    "schwer",
+    "mühsam"
+  ],
+  "root": [
+    {
+      "content": "трудно",
+      "stress": 2
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Diese Frage war schwer zu beantworten.",
+    "russian": "На э'тот вопро'с трудно бы'ло отве'тить."
+  },
+  "usage": null
+}

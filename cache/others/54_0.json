@@ -1,0 +1,19 @@
+{
+  "id": "Or",
+  "translation": [
+    "oder",
+    "denn"
+  ],
+  "root": [
+    {
+      "content": "или",
+      "stress": 0
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Möchten Sie Tee oder Kaffee?",
+    "russian": "Вы хоти'те чай или ко'фе?"
+  },
+  "usage": null
+}

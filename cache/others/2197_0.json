@@ -1,0 +1,20 @@
+{
+  "id": "Coldly",
+  "translation": [
+    "es ist kalt",
+    "kühl",
+    "kalt"
+  ],
+  "root": [
+    {
+      "content": "холодно",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Es ist kalt hier.",
+    "russian": "Здесь холодно."
+  },
+  "usage": null
+}

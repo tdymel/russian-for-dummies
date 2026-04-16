@@ -32,7 +32,7 @@ impl Noun {
             'ь' if self.gender == Gender::Female => DeclensionType::F3,
             'а' if self.gender == Gender::Male => DeclensionType::M2,
             'я' if self.gender == Gender::Male => DeclensionType::M3,
-            'й' | 'ь' if self.gender == Gender::Male => DeclensionType::M1,
+            'й' | 'ь' if self.gender == Gender::Male => DeclensionType::M4,
             'о' | 'е' if self.gender == Gender::Neuter => DeclensionType::N,
             c if c.is_alphabetic() && self.gender == Gender::Male => DeclensionType::M1,
             _ => DeclensionType::Irregular,

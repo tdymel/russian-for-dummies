@@ -1,0 +1,18 @@
+{
+  "id": "Slowly",
+  "translation": [
+    "langsam"
+  ],
+  "root": [
+    {
+      "content": "медленно",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Der Luftballon leerte sich langsam.",
+    "russian": "Возду'шный шар медленно опусти'лся."
+  },
+  "usage": null
+}

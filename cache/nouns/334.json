@@ -1,0 +1,98 @@
+{
+  "id": "Girl_Girlfriend",
+  "translation": [
+    "Mädchen"
+  ],
+  "root": [
+    {
+      "content": "девушка",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "singular": {
+    "nominative": [
+      {
+        "content": "девушка",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "девушки",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "девушке",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "девушку",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "девушкой",
+        "stress": 1
+      },
+      {
+        "content": "девушкою",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "девушке",
+        "stress": 1
+      }
+    ]
+  },
+  "plural": {
+    "nominative": [
+      {
+        "content": "девушки",
+        "stress": 1
+      }
+    ],
+    "genitive": [
+      {
+        "content": "девушек",
+        "stress": 1
+      }
+    ],
+    "dative": [
+      {
+        "content": "девушкам",
+        "stress": 1
+      }
+    ],
+    "accusative": [
+      {
+        "content": "девушек",
+        "stress": 1
+      }
+    ],
+    "instrumental": [
+      {
+        "content": "девушками",
+        "stress": 1
+      }
+    ],
+    "prepositional": [
+      {
+        "content": "девушках",
+        "stress": 1
+      }
+    ]
+  },
+  "gender": "Female",
+  "example": {
+    "translation": "Mary ist ein sehr schönes Mädchen.",
+    "russian": "Мэри очень краси'вая де'вушка."
+  }
+}

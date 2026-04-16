@@ -1,0 +1,19 @@
+{
+  "id": "Also_Too",
+  "translation": [
+    "auch",
+    "ebenfalls"
+  ],
+  "root": [
+    {
+      "content": "тоже",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Gehen Sie auch?",
+    "russian": "Вы тоже пойдёте?"
+  },
+  "usage": null
+}

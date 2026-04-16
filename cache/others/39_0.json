@@ -1,0 +1,21 @@
+{
+  "id": "Only_Just",
+  "translation": [
+    "nur",
+    "lediglich",
+    "bloß",
+    "jedoch"
+  ],
+  "root": [
+    {
+      "content": "только",
+      "stress": 1
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Wir haben nur Tee.",
+    "russian": "У нас есть только чай."
+  },
+  "usage": null
+}

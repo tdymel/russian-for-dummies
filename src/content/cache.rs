@@ -1,8 +1,8 @@
 use std::{fs::File, path::PathBuf};
 
 use crate::{
-    model::{Noun, Other, Verb, WordId},
-    open_russian::{fetch_noun, fetch_other, fetch_verb},
+    model::{Noun, Other, Pronoun, Verb, WordId},
+    open_russian::{fetch_noun, fetch_other, fetch_pronoun, fetch_verb},
 };
 
 fn noun_path(id: WordId) -> PathBuf {
@@ -16,6 +16,13 @@ fn verb_path(id: WordId) -> PathBuf {
     PathBuf::from(env!("CARGO_MANIFEST_DIR"))
         .join("cache")
         .join("verbs")
+        .join(format!("{id}.json"))
+}
+
+fn pronoun_path(id: WordId) -> PathBuf {
+    PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+        .join("cache")
+        .join("pronouns")
         .join(format!("{id}.json"))
 }
 
@@ -56,7 +63,22 @@ pub async fn get_verb(id: WordId) -> Verb {
     verb
 }
 
-pub async fn get_other(id: WordId, translation_index: usize) -> Other {
+pub async fn get_pronoun(id: WordId) -> Pronoun {
+    let path = pronoun_path(id);
+
+    if let Ok(file) = File::open(path)
+        && let Ok(pronoun) = serde_json::from_reader(file)
+    {
+        return pronoun;
+    }
+
+    let pronoun = fetch_pronoun(id).await.expect("Expected to fetch pronoun!");
+    cache_pronoun(&pronoun);
+
+    pronoun
+}
+
+pub async fn get_other(id: WordId, translation_index: usize, english_source: bool) -> Other {
     let path = other_path(id, translation_index);
 
     if let Ok(file) = File::open(path)
@@ -65,7 +87,7 @@ pub async fn get_other(id: WordId, translation_index: usize) -> Other {
         return other;
     }
 
-    let other = fetch_other(id, translation_index)
+    let other = fetch_other(id, translation_index, english_source)
         .await
         .expect("Expected to fetch other!");
     cache_other(&other, translation_index);
@@ -87,6 +109,14 @@ fn cache_verb(verb: &Verb) {
     std::fs::create_dir_all(path.parent().unwrap()).unwrap();
     let file = File::create(path).unwrap();
     serde_json::to_writer_pretty(file, verb).unwrap();
+}
+
+fn cache_pronoun(pronoun: &Pronoun) {
+    let path = pronoun_path(pronoun.id);
+
+    std::fs::create_dir_all(path.parent().unwrap()).unwrap();
+    let file = File::create(path).unwrap();
+    serde_json::to_writer_pretty(file, pronoun).unwrap();
 }
 
 fn cache_other(other: &Other, translation_index: usize) {

@@ -1,0 +1,19 @@
+{
+  "id": "Here",
+  "translation": [
+    "hier",
+    "da"
+  ],
+  "root": [
+    {
+      "content": "здесь",
+      "stress": null
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Es ist hier verboten, Wasser zu verschwenden.",
+    "russian": "Тра'тить во'ду впустую здесь противозако'нно."
+  },
+  "usage": null
+}

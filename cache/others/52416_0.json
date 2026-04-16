@@ -1,0 +1,19 @@
+{
+  "id": "Sorry",
+  "translation": [
+    "Entschuldigen Sie!",
+    "Entschuldigung!"
+  ],
+  "root": [
+    {
+      "content": "извините",
+      "stress": 5
+    }
+  ],
+  "csfr": "A1",
+  "example": {
+    "translation": "Es tut mir leid, dass ich euch habe warten lassen.",
+    "russian": "Извините, что заста'вил вас ждать."
+  },
+  "usage": null
+}

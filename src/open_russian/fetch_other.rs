@@ -3,9 +3,9 @@ use crate::{
     open_russian::api::fetch_word,
 };
 
-pub async fn fetch_other(id: WordId, translation_index: usize) -> Option<Other> {
+pub async fn fetch_other(id: WordId, translation_index: usize, english_source: bool) -> Option<Other> {
     println!("Fetching {id}");
-    let word_entry = fetch_word(id).await?;
+    let word_entry = fetch_word(id, english_source).await?;
     let translation = word_entry.translations.get(translation_index);
 
     Some(Other {
